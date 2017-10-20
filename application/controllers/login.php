@@ -24,6 +24,7 @@ class Login extends CI_Controller {
         $user = $this->m_login->getUserData($username, $password);
         $cek = count($user);
         if ($cek >= 1){
+            $_SESSION['loggedIn'] = 1;
             $_SESSION['name'] = $user['nama'];
             $_SESSION['id'] = $user['id_user'];
             $_SESSION['level'] = $user['id_akses'];
@@ -31,6 +32,14 @@ class Login extends CI_Controller {
         } else {
             redirect('/login');
         }
+    }
+    public function logout()
+    {
+        unset($_SESSION['loggedIn']);
+        unset($_SESSION['name']);
+        unset($_SESSION['id']);
+        unset($_SESSION['level']);
+        redirect('/login');
     }
     public function cekUsername()
     {

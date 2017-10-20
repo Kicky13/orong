@@ -52,7 +52,7 @@
             <h3>MASUK</h3>
             <p>Halaman log in khusus admin dan pelatih</i></p>
         </div>
-        <form action="<?php echo base_url('index.php/login/login') ?>" method="POST" style="margin-bottom: 50px">
+        <form action="<?php echo base_url('index.php/login/login') ?>" method="POST">
             <div class="form-group clearfix">
                 <label>Username atau Email</label>
                 <input required class="input-area input" id="username" name="username" type="text" placeholder="Masukkan username anda">
@@ -63,7 +63,7 @@
                 <input required class="input-area" name="password" type="password" placeholder="Masukkan password anda">
             </div>
             <div class="form-group clearfix">
-                <button class="btn btn-raised" type="button" id="submit">Masuk</button>
+                <button class="btn btn-raised" type="submit" id="submit">Masuk</button>
             </div>
         </form>
     </div>
