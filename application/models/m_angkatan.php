@@ -50,6 +50,12 @@ class M_angkatan extends CI_Model
         $id = $this->db->query('SELECT * FROM tb_angkatan ORDER BY id_angkatan DESC')->result_array();
         return $id[0]['id_angkatan'];
     }
+    public function editAngkatan($id, $nama)
+    {
+        $this->db->set('nama_angkatan', $nama);
+        $this->db->where('id_angkatan', $id);
+        $this->db->update('tb_angkatan');
+    }
     public function addRequires($angkatan, $posisi, $jumlah)
     {
         $data = array(
@@ -59,6 +65,13 @@ class M_angkatan extends CI_Model
             'jumlah_require' => $jumlah
         );
         $this->db->insert('tb_requires', $data);
+    }
+    public function editRequires($angkatan, $posisi, $jumlah)
+    {
+        $this->db->set('jumlah_require', $jumlah);
+        $this->db->where('id_angkatan', $angkatan);
+        $this->db->where('id_posisi', $posisi);
+        $this->db->update('tb_requires');
     }
     public function getAngkatanEdit($id)
     {

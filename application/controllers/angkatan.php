@@ -81,17 +81,16 @@ class Angkatan extends CI_Controller {
             redirect('/login');
         }
     }
-    public function sunting()
+    public function sunting($id)
     {
         if (isset($_SESSION['loggedIn'])){
             if ($_SESSION['level'] == 1){
                 $nama = $_POST['nama'];
-                $tahun = $_POST['tahun'];
                 $posisi = $this->m_angkatan->getPosisi();
-                $id = $this->m_angkatan->addAngkatan($nama, $tahun);
+                $this->m_angkatan->editAngkatan($id, $nama);
                 foreach ($posisi as $value){
                     $jumlah = $_POST['jumlah'.$value['id_posisi']];
-                    $this->m_angkatan->addRequires($id, $value['id_posisi'], $jumlah);
+                    $this->m_angkatan->editRequires($id, $value['id_posisi'], $jumlah);
                 }
                 redirect('/angkatan');
             } else {

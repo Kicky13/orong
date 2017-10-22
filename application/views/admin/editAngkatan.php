@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="post" action="<?php echo base_url('index.php/angkatan/sunting'); ?>" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/angkatan/sunting/'.$angkatan['id_angkatan']); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
                                     <h4 class="card-title">Form Elements</h4>
                                 </div>
@@ -53,7 +53,7 @@
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Tahun Angkatan</label>
                                         <div class="col-md-10">
-                                            <select required name="tahun" id="tahun" class="form-control">
+                                            <select disabled required name="tahun" id="tahun" class="form-control">
                                                 <option selected disabled> Pilih Tahun</option>
                                                 <?php foreach ($tahun as $value){ ?>
                                                     <option <?php echo ($value['tahun'] == $angkatan['tahun_angkatan']) ? "selected" : ""; ?> value="<?php echo $value['tahun']; ?>"> <?php echo $value['tahun']; ?></option>
