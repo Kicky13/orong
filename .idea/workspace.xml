@@ -10,7 +10,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="peserta.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m_peserta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+              <folding>
+                <marker date="1508687221409" expanded="true" signature="264:441" ph="SELECT * FRO... tb_peserta" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,7 +60,9 @@
         <option value="$PROJECT_DIR$/application/views/admin/addAngkatan.php" />
         <option value="$PROJECT_DIR$/application/views/admin/editAngkatan.php" />
         <option value="$PROJECT_DIR$/application/controllers/angkatan.php" />
+        <option value="$PROJECT_DIR$/application/controllers/peserta.php" />
         <option value="$PROJECT_DIR$/application/models/m_angkatan.php" />
+        <option value="$PROJECT_DIR$/application/models/m_peserta.php" />
       </list>
     </option>
   </component>
@@ -157,17 +182,18 @@
       <workItem from="1508351949351" duration="5261000" />
       <workItem from="1508383951990" duration="13623000" />
       <workItem from="1508516924835" duration="247000" />
-      <workItem from="1508659181270" duration="1833000" />
+      <workItem from="1508659181270" duration="6086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34978000" />
+    <option name="totallyTimeSpent" value="39231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -530,14 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -558,26 +576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="78" column="12" lean-forward="false" selection-start-line="78" selection-start-column="12" selection-end-line="92" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/m_angkatan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <marker date="1508660856397" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
-            <marker date="1508660856397" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1508660856397" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
-            <marker date="1508660856397" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,6 +607,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="93" column="17" lean-forward="true" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_angkatan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="84" column="5" lean-forward="false" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+          <folding>
+            <marker date="1508660856397" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508660856397" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
+            <marker date="1508660856397" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1508660856397" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508660856397" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508660856397" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508660856397" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508660856397" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508660856397" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508660856397" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508660856397" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <marker date="1508687221409" expanded="true" signature="264:441" ph="SELECT * FRO... tb_peserta" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
