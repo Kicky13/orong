@@ -30,7 +30,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/peserta'); ?>">
+                <a class="nav-link" href="<?php echo base_url('index.php/peserta/table/id_rekrutmen'); ?>">
                     <i class="material-icons">person_outline</i>
                     <p>
                         Calon Peserta

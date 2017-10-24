@@ -83,4 +83,9 @@ class M_angkatan extends CI_Model
         $data = $this->db->query('SELECT * FROM tb_requires r JOIN tb_posisi p ON r.id_posisi = p.id_posisi WHERE id_angkatan = '.$id)->result_array();
         return $data;
     }
+    public function getOpenAngkatan()
+    {
+        $data = $this->db->query('SELECT * FROM tb_angkatan WHERE status_angkatan = "Open"')->result_array();
+        return $data[0]['id_angkatan'];
+    }
 }

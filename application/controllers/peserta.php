@@ -22,4 +22,16 @@ class Peserta extends CI_Controller {
             redirect('/login');
         }
     }
+    public function viewTambah()
+    {
+        if (isset($_SESSION['loggedIn'])){
+            if ($_SESSION['level'] == 1){
+                $this->load->view('admin/addPeserta');
+            } else {
+                echo 'Forbidden Access';
+            }
+        } else {
+            redirect('/login');
+        }
+    }
 }

@@ -11,12 +11,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="peserta.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="peserta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state relative-caret-position="448">
+              <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addPeserta.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="68" column="93" lean-forward="false" selection-start-line="68" selection-start-column="93" selection-end-line="68" selection-end-column="93" />
+              <folding>
+                <element signature="e#7976#7981#0#HTML" expanded="true" />
+                <element signature="e#14323#14329#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -24,10 +37,33 @@
       <file leaf-file-name="m_peserta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding>
-                <marker date="1508687221409" expanded="true" signature="264:441" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1508712933931" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1508712933931" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1508712933931" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1508712933931" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1508712933931" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1508712933931" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewPeserta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/viewPeserta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="37" selection-end-column="14" />
+              <folding>
+                <marker date="1508856505512" expanded="true" signature="4012:4378" ph="..." />
+                <marker date="1508856505512" expanded="true" signature="4561:4972" ph="..." />
+                <marker date="1508856505512" expanded="true" signature="4606:4972" ph="..." />
+                <marker date="1508856505512" expanded="true" signature="5138:5329" ph="..." />
+                <marker date="1508856505512" expanded="true" signature="5264:5329" ph="..." />
+                <marker date="1508856505512" expanded="true" signature="7125:7489" ph="..." />
+                <marker date="1508856505512" expanded="true" signature="7473:7489" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -55,14 +91,16 @@
         <option value="$PROJECT_DIR$/application/views/part/head.php" />
         <option value="$PROJECT_DIR$/application/views/admin/dashboard.php" />
         <option value="$PROJECT_DIR$/application/views/part/footer.php" />
-        <option value="$PROJECT_DIR$/application/views/part/nav_admin.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewAngkatan.php" />
         <option value="$PROJECT_DIR$/application/views/admin/addAngkatan.php" />
         <option value="$PROJECT_DIR$/application/views/admin/editAngkatan.php" />
         <option value="$PROJECT_DIR$/application/controllers/angkatan.php" />
-        <option value="$PROJECT_DIR$/application/controllers/peserta.php" />
-        <option value="$PROJECT_DIR$/application/models/m_angkatan.php" />
         <option value="$PROJECT_DIR$/application/models/m_peserta.php" />
+        <option value="$PROJECT_DIR$/application/views/part/nav_admin.php" />
+        <option value="$PROJECT_DIR$/application/models/m_angkatan.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/viewPeserta.php" />
+        <option value="$PROJECT_DIR$/application/controllers/peserta.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/addPeserta.php" />
       </list>
     </option>
   </component>
@@ -182,12 +220,14 @@
       <workItem from="1508351949351" duration="5261000" />
       <workItem from="1508383951990" duration="13623000" />
       <workItem from="1508516924835" duration="247000" />
-      <workItem from="1508659181270" duration="6086000" />
+      <workItem from="1508659181270" duration="6229000" />
+      <workItem from="1508711943359" duration="1802000" />
+      <workItem from="1508830453522" duration="7682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39231000" />
+    <option name="totallyTimeSpent" value="48858000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -224,6 +264,29 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <marker date="1508712933931" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/angkatan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -237,17 +300,18 @@
         <state relative-caret-position="1173">
           <caret line="69" column="90" lean-forward="false" selection-start-line="69" selection-start-column="90" selection-end-line="69" selection-end-column="90" />
           <folding>
-            <marker date="1508660856397" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
-            <marker date="1508660856397" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1508660856397" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
-            <marker date="1508660856397" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
+            <marker date="1508713424518" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1508713424518" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="2725:2781" ph="SELECT * FRO... tb_angkatan" />
           </folding>
         </state>
       </provider>
@@ -289,17 +353,18 @@
         <state relative-caret-position="1173">
           <caret line="69" column="90" lean-forward="true" selection-start-line="69" selection-start-column="90" selection-end-line="69" selection-end-column="90" />
           <folding>
-            <marker date="1508660856397" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
-            <marker date="1508660856397" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1508660856397" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
-            <marker date="1508660856397" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
+            <marker date="1508713424518" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1508713424518" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="2725:2781" ph="SELECT * FRO... tb_angkatan" />
           </folding>
         </state>
       </provider>
@@ -349,17 +414,18 @@
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <marker date="1508660856397" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
-            <marker date="1508660856397" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1508660856397" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
-            <marker date="1508660856397" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
+            <marker date="1508713424518" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1508713424518" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="2725:2781" ph="SELECT * FRO... tb_angkatan" />
           </folding>
         </state>
       </provider>
@@ -534,28 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/part/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/part/nav_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2879">
-          <caret line="555" column="39" lean-forward="false" selection-start-line="555" selection-start-column="39" selection-end-line="555" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -587,14 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/addAngkatan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/editAngkatan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
@@ -621,39 +657,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/m_angkatan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="84" column="5" lean-forward="false" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        <state relative-caret-position="550">
+          <caret line="90" column="1" lean-forward="true" selection-start-line="90" selection-start-column="1" selection-end-line="90" selection-end-column="1" />
           <folding>
-            <marker date="1508660856397" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
-            <marker date="1508660856397" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1508660856397" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1508660856397" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
-            <marker date="1508660856397" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
+            <marker date="1508713424518" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1508713424518" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1508713424518" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1508713424518" expanded="true" signature="2725:2781" ph="SELECT * FRO... tb_angkatan" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/addAngkatan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="555" column="39" lean-forward="false" selection-start-line="555" selection-start-column="39" selection-end-line="555" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/part/nav_admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="32" column="99" lean-forward="false" selection-start-line="32" selection-start-column="99" selection-end-line="32" selection-end-column="99" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding>
-            <marker date="1508687221409" expanded="true" signature="264:441" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1508712933931" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/viewPeserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <marker date="1508856505512" expanded="true" signature="4012:4378" ph="..." />
+            <marker date="1508856505512" expanded="true" signature="4561:4972" ph="..." />
+            <marker date="1508856505512" expanded="true" signature="4606:4972" ph="..." />
+            <marker date="1508856505512" expanded="true" signature="5138:5329" ph="..." />
+            <marker date="1508856505512" expanded="true" signature="5264:5329" ph="..." />
+            <marker date="1508856505512" expanded="true" signature="7125:7489" ph="..." />
+            <marker date="1508856505512" expanded="true" signature="7473:7489" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        <state relative-caret-position="448">
+          <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/part/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="70" lean-forward="true" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="68" column="93" lean-forward="false" selection-start-line="68" selection-start-column="93" selection-end-line="68" selection-end-column="93" />
+          <folding>
+            <element signature="e#7976#7981#0#HTML" expanded="true" />
+            <element signature="e#14323#14329#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
