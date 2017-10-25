@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 18, 2017 at 03:22 PM
+-- Generation Time: Oct 25, 2017 at 06:35 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.9
 
@@ -44,6 +44,17 @@ INSERT INTO `tb_akses` (`id_akses`, `akses`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tb_anggota`
+--
+
+CREATE TABLE `tb_anggota` (
+  `id_anggota` int(5) NOT NULL,
+  `id_penilaian` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tb_angkatan`
 --
 
@@ -53,6 +64,13 @@ CREATE TABLE `tb_angkatan` (
   `tahun_angkatan` varchar(10) NOT NULL,
   `status_angkatan` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_angkatan`
+--
+
+INSERT INTO `tb_angkatan` (`id_angkatan`, `nama_angkatan`, `tahun_angkatan`, `status_angkatan`) VALUES
+(1, 'Tigabelas', '2017/2018', 'Open');
 
 -- --------------------------------------------------------
 
@@ -65,6 +83,14 @@ CREATE TABLE `tb_jeniskriteria` (
   `nama_jenis` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `tb_jeniskriteria`
+--
+
+INSERT INTO `tb_jeniskriteria` (`id_jenis`, `nama_jenis`) VALUES
+(1, 'Benefit'),
+(2, 'Cost');
+
 -- --------------------------------------------------------
 
 --
@@ -74,9 +100,48 @@ CREATE TABLE `tb_jeniskriteria` (
 CREATE TABLE `tb_kriteria` (
   `id_kriteria` int(5) NOT NULL,
   `nama_kriteria` varchar(35) NOT NULL,
-  `id_posisi` int(5) NOT NULL,
-  `id_jenis` int(3) NOT NULL
+  `id_posisi` varchar(5) NOT NULL,
+  `id_jenis` int(3) NOT NULL,
+  `bobot` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_kriteria`
+--
+
+INSERT INTO `tb_kriteria` (`id_kriteria`, `nama_kriteria`, `id_posisi`, `id_jenis`, `bobot`) VALUES
+(1, 'Postur', 'GP', 1, 20),
+(2, 'BarisBerbaris', 'GP', 1, 10),
+(3, 'PemahamanTempo', 'GP', 1, 20),
+(4, 'Musikalisasi', 'GP', 1, 10),
+(5, 'Ketenangan', 'GP', 1, 10),
+(6, 'Penampilan', 'GP', 1, 10),
+(7, 'PrestasiKelas', 'GP', 2, 10),
+(8, 'Kelas', 'GP', 2, 10),
+(9, 'Musikalisasi', 'BR', 1, 20),
+(10, 'KekuatanNafas', 'BR', 1, 20),
+(11, 'CepatTanggap', 'BR', 1, 15),
+(12, 'BarisBerbaris', 'BR', 1, 10),
+(13, 'JarakRumah', 'BR', 2, 20),
+(14, 'PrestasiKelas', 'BR', 2, 15),
+(15, 'PemahamanTempo', 'BT', 1, 25),
+(16, 'PosturTubuh', 'BT', 1, 20),
+(17, 'Stamina', 'BT', 1, 20),
+(18, 'Ketenangan', 'BT', 1, 15),
+(19, 'PrestasiKelas', 'BT', 2, 15),
+(20, 'JarakRumah', 'BT', 2, 5),
+(21, 'Musikalisasi', 'PT', 1, 20),
+(22, 'CepatTanggap', 'PT', 1, 20),
+(23, 'Stamina', 'PT', 1, 20),
+(24, 'PosturTubuh', 'PT', 1, 10),
+(25, 'PrestasiKelas', 'PT', 2, 15),
+(26, 'JarakRumah', 'PT', 2, 15),
+(27, 'KelincahanTubuh', 'CG', 1, 20),
+(28, 'PosturTubuh', 'CG', 1, 15),
+(29, 'Ketenangan', 'CG', 1, 15),
+(30, 'Stamina', 'CG', 1, 25),
+(31, 'PrestasiKelas', 'CG', 2, 15),
+(32, 'JarakRumah', 'CG', 2, 10);
 
 -- --------------------------------------------------------
 
@@ -119,10 +184,21 @@ INSERT INTO `tb_peserta` (`id_peserta`, `nama_peserta`, `kelas`, `no_absen`, `ta
 --
 
 CREATE TABLE `tb_posisi` (
-  `id_posisi` int(5) NOT NULL,
+  `id_posisi` varchar(4) NOT NULL,
   `nama_posisi` varchar(35) NOT NULL,
   `deskripsi_posisi` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_posisi`
+--
+
+INSERT INTO `tb_posisi` (`id_posisi`, `nama_posisi`, `deskripsi_posisi`) VALUES
+('BR', 'Brassline', 'Brassline adalah'),
+('BT', 'Battery', 'Battery adalah '),
+('CG', 'Colour Guard', 'Colour Guard adalah'),
+('GP', 'GitaPati', 'Gita Pati adalah'),
+('PT', 'Pit Instrument', 'Pit Instrument adalah');
 
 -- --------------------------------------------------------
 
@@ -133,9 +209,33 @@ CREATE TABLE `tb_posisi` (
 CREATE TABLE `tb_rekrutmen` (
   `id_rekrutmen` int(5) NOT NULL,
   `id_angkatan` int(5) NOT NULL,
-  `id_posisi` int(5) NOT NULL,
-  `id_peserta` int(5) NOT NULL
+  `id_posisi` varchar(4) NOT NULL,
+  `id_peserta` int(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_requires`
+--
+
+CREATE TABLE `tb_requires` (
+  `id_require` int(5) NOT NULL,
+  `id_angkatan` int(5) NOT NULL,
+  `id_posisi` varchar(4) NOT NULL,
+  `jumlah_require` int(3) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_requires`
+--
+
+INSERT INTO `tb_requires` (`id_require`, `id_angkatan`, `id_posisi`, `jumlah_require`) VALUES
+(1, 1, 'BR', 5),
+(2, 1, 'BT', 5),
+(3, 1, 'CG', 6),
+(4, 1, 'GP', 5),
+(5, 1, 'PT', 7);
 
 -- --------------------------------------------------------
 
@@ -171,6 +271,13 @@ INSERT INTO `tb_user` (`id_user`, `nama`, `email`, `alamat`, `jumlah_akses_pandu
 --
 ALTER TABLE `tb_akses`
   ADD PRIMARY KEY (`id_akses`);
+
+--
+-- Indexes for table `tb_anggota`
+--
+ALTER TABLE `tb_anggota`
+  ADD PRIMARY KEY (`id_anggota`),
+  ADD KEY `id_penilaian` (`id_penilaian`);
 
 --
 -- Indexes for table `tb_angkatan`
@@ -222,6 +329,15 @@ ALTER TABLE `tb_rekrutmen`
   ADD KEY `id_peserta` (`id_peserta`);
 
 --
+-- Indexes for table `tb_requires`
+--
+ALTER TABLE `tb_requires`
+  ADD PRIMARY KEY (`id_require`),
+  ADD KEY `id_angkatan` (`id_angkatan`),
+  ADD KEY `id_angkatan_2` (`id_angkatan`),
+  ADD KEY `id_posisi` (`id_posisi`);
+
+--
 -- Indexes for table `tb_user`
 --
 ALTER TABLE `tb_user`
@@ -233,22 +349,28 @@ ALTER TABLE `tb_user`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_anggota`
+--
+ALTER TABLE `tb_anggota`
+  MODIFY `id_anggota` int(5) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tb_angkatan`
 --
 ALTER TABLE `tb_angkatan`
-  MODIFY `id_angkatan` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_angkatan` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tb_jeniskriteria`
 --
 ALTER TABLE `tb_jeniskriteria`
-  MODIFY `id_jenis` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_jenis` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tb_kriteria`
 --
 ALTER TABLE `tb_kriteria`
-  MODIFY `id_kriteria` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kriteria` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `tb_penilaian`
@@ -263,16 +385,16 @@ ALTER TABLE `tb_peserta`
   MODIFY `id_peserta` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `tb_posisi`
---
-ALTER TABLE `tb_posisi`
-  MODIFY `id_posisi` int(5) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `tb_rekrutmen`
 --
 ALTER TABLE `tb_rekrutmen`
   MODIFY `id_rekrutmen` int(5) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tb_requires`
+--
+ALTER TABLE `tb_requires`
+  MODIFY `id_require` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tb_user`
@@ -283,6 +405,12 @@ ALTER TABLE `tb_user`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `tb_anggota`
+--
+ALTER TABLE `tb_anggota`
+  ADD CONSTRAINT `tb_anggota_ibfk_1` FOREIGN KEY (`id_anggota`) REFERENCES `tb_penilaian` (`id_penilaian`);
 
 --
 -- Constraints for table `tb_kriteria`
