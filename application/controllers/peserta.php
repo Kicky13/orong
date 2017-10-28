@@ -26,7 +26,9 @@ class Peserta extends CI_Controller {
     {
         if (isset($_SESSION['loggedIn'])){
             if ($_SESSION['level'] == 1){
-                $this->load->view('admin/addPeserta');
+                $jumlah = $this->m_peserta->getCountPosisi();
+                $data = $this->m_peserta->getDataPosisi();
+                $this->load->view('admin/addPeserta', array('data' => $data, 'jumlah' => $jumlah));
             } else {
                 echo 'Forbidden Access';
             }

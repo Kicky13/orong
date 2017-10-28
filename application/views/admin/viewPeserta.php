@@ -27,16 +27,13 @@
                             <p>selamat datang Ahmad Ichsanul Karim</p>
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link active" href="http://localhost/orong2">
                             <i class="material-icons">home</i>
                         </a>
                     </li>
-
             </div>
         </nav>
-
         <div class="content">
             <div class="container-fluid">
                 <a href="<?php echo base_url('index.php/peserta/viewTambah'); ?>" class="btn btn-success">

