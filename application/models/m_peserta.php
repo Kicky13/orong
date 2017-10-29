@@ -21,16 +21,29 @@ class M_peserta extends CI_Model {
     }
     public function getCountPosisi()
     {
-        $data = array();
         $this->load->model('m_angkatan');
         $angkatan = $this->m_angkatan->getOpenAngkatan();
         $posisi = $this->db->query('SELECT * FROM tb_posisi')->result_array();
         foreach ($posisi as $value){
             $x = $this->db->query('SELECT * FROM tb_rekrutmen WHERE id_angkatan = '.$angkatan.' AND id_posisi = "'.$value['id_posisi'].'"')->num_rows();
             $y = $this->db->query('SELECT * FROM tb_requires WHERE id_angkatan = '.$angkatan.' AND id_posisi = "'.$value['id_posisi'].'"')->result_array();
-            $data[]['masuk'] = $x;
-            $data[]['butuh'] = $y[0]['jumlah_require'];
+            $data[] = array(
+                'masuk' => $x,
+                'butuh' => $y[0]['jumlah_require']
+            );
         }
         return $data;
+    }
+    public function getIDPeserta($nama, $kelas, $absen, $ttl)
+    {
+        $data = array(
+            'id_peserta' => null,
+            'nama_peserta' => $nama,
+            'kelas' => $kelas,
+            'no_absen' => $absen,
+            'tanggal_lahir' => $ttl
+        );
+        $this->db->insert('tb_peserta', $data);
+        $id = $this->db->query('SELECT * FROM tb_peserta')->result_array();
     }
 }

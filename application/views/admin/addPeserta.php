@@ -61,7 +61,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="get" action="/" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah'); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
                                     <h4 class="card-title">Tambah Peserta</h4>
                                 </div>
@@ -95,15 +95,18 @@
                                         <div class="col-md-10">
                                             <?php $n = 0;
                                             foreach ($data as $value){ ?>
-                                            <div class="checkbox form-check-inline">
+                                            <div <?php echo ($jumlah[$n]['masuk'] >= $jumlah[$n]['butuh']) ? "hidden" : ""; ?> class="checkbox form-check-inline">
                                                 <label>
-                                                    <input <?php echo ($jumlah[$n]['masuk'] <= $jumlah[$n]['butuh']) ? "hidden" : ""; ?>type="checkbox" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
+                                                    <input type="checkbox" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
                                                 </label>
                                             </div>
                                             <?php $n++;
                                             } ?>
                                         </div>
                                     </div>
+                                    <button type="submit" id="submit" class="btn btn-primary btn-round">
+                                        <i class="material-icons">assignment</i> Submit
+                                    </button
                                 </div>
                             </form>
                         </div>

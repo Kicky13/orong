@@ -36,4 +36,13 @@ class Peserta extends CI_Controller {
             redirect('/login');
         }
     }
+    public function tambah()
+    {
+        $nama = $_POST['nama'];
+        $kelas = $_POST['kelas'];
+        $absen = $_POST['absen'];
+        $ttl = $_POST['ttl'];
+        $posisi = $_POST['posisi'];
+        $peserta = $this->m_peserta->getIDPeserta($nama, $kelas, $absen, $ttl);
+    }
 }

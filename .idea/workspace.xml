@@ -11,37 +11,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="peserta.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="peserta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            <state relative-caret-position="482">
+              <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m_peserta.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="m_peserta.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+            <state relative-caret-position="516">
+              <caret line="46" column="56" lean-forward="false" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
               <folding>
-                <marker date="1509204100940" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
-                <marker date="1509204100940" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
-                <marker date="1509204100940" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
-                <marker date="1509204100940" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
-                <marker date="1509204100940" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
-                <marker date="1509204100940" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
-                <marker date="1509204100940" expanded="true" signature="717:790" ph="SELECT * FRO... tb_requires" />
-                <marker date="1509204100940" expanded="true" signature="1042:1065" ph="SELECT * FRO... tb_posisi" />
-                <marker date="1509204100940" expanded="true" signature="1157:1203" ph="SELECT * FRO... tb_rekrutmen" />
-                <marker date="1509204100940" expanded="true" signature="1157:1204" ph="SELECT * FRO... tb_rekrutmen" />
-                <marker date="1509204100940" expanded="true" signature="1157:1225" ph="SELECT * FRO... tb_rekrutmen" />
-                <marker date="1509204100940" expanded="true" signature="1157:1235" ph="SELECT * FRO... tb_rekrutmen" />
-                <marker date="1509204100940" expanded="true" signature="1157:1259" ph="SELECT * FRO... tb_rekrutmen" />
-                <marker date="1509204100940" expanded="true" signature="1157:1260" ph="SELECT * FRO... tb_rekrutmen" />
-                <marker date="1509204100940" expanded="true" signature="1310:1411" ph="SELECT * FRO... tb_requires" />
+                <marker date="1509248422816" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1509248422816" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1509248422816" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1509248422816" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1509248422816" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1509248422816" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
+                <marker date="1509248422816" expanded="true" signature="717:790" ph="SELECT * FRO... tb_requires" />
+                <marker date="1509248422816" expanded="true" signature="1017:1040" ph="SELECT * FRO... tb_posisi" />
+                <marker date="1509248422816" expanded="true" signature="1132:1178" ph="SELECT * FRO... tb_rekrutmen" />
+                <marker date="1509248422816" expanded="true" signature="1132:1179" ph="SELECT * FRO... tb_rekrutmen" />
+                <marker date="1509248422816" expanded="true" signature="1132:1200" ph="SELECT * FRO... tb_rekrutmen" />
+                <marker date="1509248422816" expanded="true" signature="1132:1210" ph="SELECT * FRO... tb_rekrutmen" />
+                <marker date="1509248422816" expanded="true" signature="1132:1234" ph="SELECT * FRO... tb_rekrutmen" />
+                <marker date="1509248422816" expanded="true" signature="1132:1235" ph="SELECT * FRO... tb_rekrutmen" />
+                <marker date="1509248422816" expanded="true" signature="1285:1386" ph="SELECT * FRO... tb_requires" />
+                <marker date="1509248422816" expanded="true" signature="1924:1948" ph="SELECT * FRO... tb_peserta" />
               </folding>
             </state>
           </provider>
@@ -50,9 +51,11 @@
       <file leaf-file-name="addPeserta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="99" column="93" lean-forward="false" selection-start-line="99" selection-start-column="93" selection-end-line="99" selection-end-column="93" />
-              <folding />
+            <state relative-caret-position="17">
+              <caret line="65" column="78" lean-forward="true" selection-start-line="65" selection-start-column="78" selection-end-line="65" selection-end-column="78" />
+              <folding>
+                <marker date="1509247494440" expanded="true" signature="6321:6386" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,8 +63,8 @@
       <file leaf-file-name="viewPeserta.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/admin/viewPeserta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1681">
-              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+            <state relative-caret-position="17">
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding>
                 <marker date="1509200233371" expanded="true" signature="4009:4375" ph="..." />
               </folding>
@@ -98,9 +101,9 @@
         <option value="$PROJECT_DIR$/application/views/part/footer.php" />
         <option value="$PROJECT_DIR$/application/views/part/head.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewPeserta.php" />
-        <option value="$PROJECT_DIR$/application/models/m_peserta.php" />
         <option value="$PROJECT_DIR$/application/views/admin/addPeserta.php" />
         <option value="$PROJECT_DIR$/application/controllers/peserta.php" />
+        <option value="$PROJECT_DIR$/application/models/m_peserta.php" />
       </list>
     </option>
   </component>
@@ -185,8 +188,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,11 +227,12 @@
       <workItem from="1508711943359" duration="1802000" />
       <workItem from="1508830453522" duration="7682000" />
       <workItem from="1509192211011" duration="10388000" />
+      <workItem from="1509246107584" duration="2807000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59246000" />
+    <option name="totallyTimeSpent" value="62053000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -277,21 +281,22 @@
         <state relative-caret-position="221">
           <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding>
-            <marker date="1509204100940" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="717:790" ph="SELECT * FRO... tb_requires" />
-            <marker date="1509204100940" expanded="true" signature="1042:1065" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1509204100940" expanded="true" signature="1157:1203" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1204" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1225" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1235" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1259" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1260" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1310:1411" ph="SELECT * FRO... tb_requires" />
+            <marker date="1509248422816" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="717:790" ph="SELECT * FRO... tb_requires" />
+            <marker date="1509248422816" expanded="true" signature="1017:1040" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1509248422816" expanded="true" signature="1132:1178" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1179" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1200" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1210" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1234" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1235" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1285:1386" ph="SELECT * FRO... tb_requires" />
+            <marker date="1509248422816" expanded="true" signature="1924:1948" ph="SELECT * FRO... tb_peserta" />
           </folding>
         </state>
       </provider>
@@ -329,7 +334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="55" lean-forward="false" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -382,7 +386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -443,7 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="41" lean-forward="false" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="55" column="55" lean-forward="false" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="32" column="99" lean-forward="false" selection-start-line="32" selection-start-column="99" selection-end-line="32" selection-end-column="99" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,17 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/viewPeserta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1681">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding>
-            <marker date="1509200233371" expanded="true" signature="4009:4375" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,43 +716,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
+    <entry file="file://$PROJECT_DIR$/application/views/admin/viewPeserta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="99" column="93" lean-forward="false" selection-start-line="99" selection-start-column="93" selection-end-line="99" selection-end-column="93" />
-          <folding />
+        <state relative-caret-position="17">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding>
+            <marker date="1509200233371" expanded="true" signature="4009:4375" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
+    <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="17">
+          <caret line="65" column="78" lean-forward="true" selection-start-line="65" selection-start-column="78" selection-end-line="65" selection-end-column="78" />
           <folding>
-            <marker date="1509204100940" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
-            <marker date="1509204100940" expanded="true" signature="717:790" ph="SELECT * FRO... tb_requires" />
-            <marker date="1509204100940" expanded="true" signature="1042:1065" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1509204100940" expanded="true" signature="1157:1203" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1204" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1225" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1235" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1259" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1157:1260" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1509204100940" expanded="true" signature="1310:1411" ph="SELECT * FRO... tb_requires" />
+            <marker date="1509247494440" expanded="true" signature="6321:6386" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" column="13" lean-forward="true" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        <state relative-caret-position="482">
+          <caret line="44" column="35" lean-forward="true" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="46" column="56" lean-forward="false" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="56" />
+          <folding>
+            <marker date="1509248422816" expanded="true" signature="364:541" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:563" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:564" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:586" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:587" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="364:588" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1509248422816" expanded="true" signature="717:790" ph="SELECT * FRO... tb_requires" />
+            <marker date="1509248422816" expanded="true" signature="1017:1040" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1509248422816" expanded="true" signature="1132:1178" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1179" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1200" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1210" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1234" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1132:1235" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1509248422816" expanded="true" signature="1285:1386" ph="SELECT * FRO... tb_requires" />
+            <marker date="1509248422816" expanded="true" signature="1924:1948" ph="SELECT * FRO... tb_peserta" />
+          </folding>
         </state>
       </provider>
     </entry>
