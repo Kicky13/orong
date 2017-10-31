@@ -15,7 +15,9 @@ class Penilaian extends CI_Controller {
             if ($_SESSION['level'] == 1){
                 $posisi = $this->m_penilaian->getPosisi();
                 $kriteria = $this->m_penilaian->getKriteria($id);
-                $this->load->view('admin/viewPenilaian', array('posisi' => $posisi, 'id' => $id, 'kriteria' => $kriteria));
+                $data = $this->m_penilaian->getDataTable($id);
+//                print json_encode($data);
+                $this->load->view('admin/viewPenilaian', array('data' => $data, 'posisi' => $posisi, 'id' => $id, 'kriteria' => $kriteria));
             } else {
                 echo 'Forbidden Access';
             }
