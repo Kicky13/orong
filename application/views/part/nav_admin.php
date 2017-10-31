@@ -39,7 +39,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url('index.php/penilaian/tabelNilai/0'); ?>">
+                <a class="nav-link" href="<?php echo base_url('index.php/penilaian/tabelNilai/AL'); ?>">
                     <i class="material-icons">create</i>
                     <p>
                         Penilaian

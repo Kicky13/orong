@@ -53,7 +53,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <section <?php echo ($id == 0) ? "hidden" : ""; ?>>
+                                <section <?php echo ($id == 'AL') ? "hidden" : ""; ?>>
                                 <div class="material-datatables">
                                     <table id="datatables" class="table table-striped table-no-bordered table-hover"
                                            cellspacing="0" width="100%" style="width:100%">
@@ -61,7 +61,9 @@
                                         <tr>
                                             <th>Nama</th>
                                             <th>Posisi</th>
-                                            <th>kat 1</th>
+                                            <?php foreach ($kriteria as $value){ ?>
+                                            <th><?php echo $value['id_kriteria']; ?></th>
+                                            <?php } ?>
                                             <th>Nilai Total</th>
                                             <th class="disabled-sorting text-center">Aksi</th>
                                         </tr>
@@ -71,7 +73,7 @@
                                             <th>Nama</th>
                                             <th>Posisi</th>
                                             <?php foreach ($kriteria as $value){ ?>
-                                            <th><?php echo $value['nama_kriteria']; ?></th>
+                                            <th><?php echo $value['id_kriteria']; ?></th>
                                             <?php } ?>
                                             <th>Nilai Total</th>
                                             <th class="text-center">Aksi</th>
@@ -81,10 +83,11 @@
                                             <tr>
                                                 <td></td>
                                                 <td></td>
+                                                <?php foreach ($kriteria as $value){ ?>
                                                 <td></td>
+                                                <?php } ?>
                                                 <td></td>
-                                                <td>Anonim</td>
-                                                <td>
+                                                <td class="text-center">
                                                     <a href="" class="btn btn-warning">
                                         <span class="btn-label">
                                             <i class="material-icons">create</i>
