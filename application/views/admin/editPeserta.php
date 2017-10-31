@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah'); ?>" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/peserta/edit/'.$detail['id_rekrutmen'].'/'.$detail['id_peserta']); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
                                     <h4 class="card-title">Tambah Peserta</h4>
                                 </div>
@@ -66,39 +66,38 @@
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Nama</label>
                                         <div class="col-md-10">
-                                            <input required name="nama" type="text" class="form-control" placeholder="Masukkan Nama Peserta">
+                                            <input required value="<?php echo $detail['nama_peserta']; ?>" name="nama" type="text" class="form-control" placeholder="Masukkan Nama Peserta">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Kelas</label>
                                         <div class="col-md-10">
-                                            <input required name="kelas" type="text" class="form-control" placeholder="Masukkan Kelas Peserta">
+                                            <input required value="<?php echo $detail['kelas']; ?>" name="kelas" type="text" class="form-control" placeholder="Masukkan Kelas Peserta">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">No. Absen</label>
                                         <div class="col-md-10">
-                                            <input required name="absen" type="text" class="form-control" placeholder="Masukkan Nomor Absen">
+                                            <input required value="<?php echo $detail['no_absen']; ?>" name="absen" type="text" class="form-control" placeholder="Masukkan Nomor Absen">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Tanggal Lahir</label>
                                         <div class="col-md-10">
-                                            <input required name="ttl" type="text" class="form-control datepicker" placeholder="Pilih Tanggal"/>
+                                            <input required value="<?php echo $detail['tanggal_lahir']; ?>" name="ttl" type="text" class="form-control datepicker" placeholder="Pilih Tanggal"/>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Pilih Posisi</label>
                                         <div class="col-md-10">
-                                            <?php $n = 0;
-                                            foreach ($data as $value){ ?>
-                                            <div <?php echo ($jumlah[$n]['masuk'] >= $jumlah[$n]['butuh']) ? "hidden" : ""; ?> class="checkbox form-check-inline">
-                                                <label>
-                                                    <input type="checkbox" id="posisi-<?php echo $n; ?>" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
-                                                </label>
+                                            <div class="dropdown">
+                                                <select id="sort" name="posisi" class="dropdown-toggle btn btn-primary btn-round btn-block">
+                                                    <option disabled class="dropdown-item">Pilih Salah Satu Posisi</option>
+                                                    <?php foreach ($data as $value){ ?>
+                                                    <option <?php echo ($value['id_posisi'] == $detail['id_posisi']) ? "selected" : ""; ?> value="<?php echo $value['id_posisi']; ?>" class="dropdown-item"> <?php echo $value['nama_posisi']; ?></option>
+                                                    <?php } ?>
+                                                </select>
                                             </div>
-                                            <?php $n++;
-                                            } ?>
                                         </div>
                                     </div>
                                     <button type="submit" id="submit" class="btn btn-primary btn-round">

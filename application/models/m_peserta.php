@@ -34,6 +34,33 @@ class M_peserta extends CI_Model {
         }
         return $data;
     }
+    public function getDetailRekrut($id)
+    {
+        $data = $this->db->query('SELECT * FROM tb_rekrutmen r JOIN tb_peserta p ON r.id_peserta = p.id_peserta WHERE id_rekrutmen = '.$id)->result_array();
+        return $data[0];
+    }
+    public function editPeserta($id, $nama, $kelas, $absen, $ttl)
+    {
+        $this->db->set('nama_peserta', $nama);
+        $this->db->set('kelas', $kelas);
+        $this->db->set('no_absen', $absen);
+        $this->db->set('tanggal_lahir', $ttl);
+        $this->db->where('id_peserta', $id);
+        $this->db->update('tb_peserta');
+    }
+    public function editRekrut($id, $posisi)
+    {
+        $this->db->set('id_posisi', $posisi);
+        $this->db->where('id_rekrutmen', $id);
+        $this->db->update('tb_rekrutmen');
+    }
+    public function deleteRekrut($id)
+    {
+        $this->db->where('id_rekrutmen', $id);
+        $this->db->delete('tb_penilaian');
+        $this->db->where('id_rekrutmen', $id);
+        $this->db->delete('tb_rekrutmen');
+    }
     public function getIDPeserta($nama, $kelas, $absen, $ttl)
     {
         $data = array(
@@ -44,6 +71,19 @@ class M_peserta extends CI_Model {
             'tanggal_lahir' => $ttl
         );
         $this->db->insert('tb_peserta', $data);
-        $id = $this->db->query('SELECT * FROM tb_peserta')->result_array();
+        $id = $this->db->query('SELECT * FROM tb_peserta ORDER BY id_peserta DESC')->result_array();
+        return $id[0]['id_peserta'];
+    }
+    public function addRekrutmen($posisi, $peserta)
+    {
+        $this->load->model('m_angkatan');
+        $angkatan = $this->m_angkatan->getOpenAngkatan();
+        $data = array(
+            'id_rekrutmen' => null,
+            'id_angkatan' => $angkatan,
+            'id_posisi' => $posisi,
+            'id_peserta' => $peserta
+        );
+        $this->db->insert('tb_rekrutmen', $data);
     }
 }
