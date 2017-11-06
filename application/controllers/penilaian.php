@@ -24,4 +24,9 @@ class Penilaian extends CI_Controller {
             redirect('/login');
         }
     }
+    public function getNilaiPersonal($rekrutmen, $kriteria)
+    {
+        $data = $this->m_penilaian->getNilaiPersonal($rekrutmen, $kriteria);
+        echo $data;
+    }
 }

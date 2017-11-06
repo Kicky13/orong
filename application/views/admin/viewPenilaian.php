@@ -80,21 +80,23 @@
                                         </tr>
                                         </tfoot>
                                         <tbody>
+                                        <?php foreach ($data as $item){ ?>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
+                                                <td><?php echo $item['nama_peserta']; ?></td>
+                                                <td><?php echo $item['nama_posisi']; ?></td>
                                                 <?php foreach ($kriteria as $value){ ?>
-                                                <td>a</td>
+                                                <td id="nilai"></td>
                                                 <?php } ?>
                                                 <td></td>
                                                 <td class="text-center">
-                                                    <a href="" class="btn btn-warning">
+                                                    <a href="<?php echo base_url(); ?>" class="btn btn-warning">
                                         <span class="btn-label">
                                             <i class="material-icons">create</i>
                                         </span>
                                                     </a>
                                                 </td>
                                             </tr>
+                                        <?php } ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -117,8 +119,16 @@
                 console.log('Ganti');
                 var show = $(this).val();
                 window.location.replace('<?php echo base_url('index.php/penilaian/tabelNilai/'); ?>'+show)
-            })
-        })
+            });
+            $('#nilai').html();
+            $.ajax({
+                type: 'POST',
+                url: '<?php echo base_url('index.php/penilaian/getNilaiPersonal'); ?>',
+                data:
+            }).done(function () {
+               $('#nilai').html(data);
+            });
+        });
         $(function () {
             $("#datepicker").datepicker({
                 changeMonth: true,
