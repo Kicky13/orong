@@ -47,7 +47,7 @@
                                             <select id="show" name="show" class="dropdown-toggle btn btn-primary btn-round btn-block">
                                                 <option selected disabled class="dropdown-item">Tampilkan Posisi</option>
                                                 <?php foreach ($posisi as $value){ ?>
-                                                <option value="<?php echo $value['id_posisi']; ?>" class="dropdown-item"><?php echo $value['nama_posisi']; ?></option>
+                                                <option <?php echo($id == $value['id_posisi']) ? "selected" : ""; ?> value="<?php echo $value['id_posisi']; ?>" class="dropdown-item"><?php echo $value['nama_posisi']; ?></option>
                                                 <?php } ?>
                                             </select>
                                         </div>
@@ -84,7 +84,7 @@
                                                 <td></td>
                                                 <td></td>
                                                 <?php foreach ($kriteria as $value){ ?>
-                                                <td></td>
+                                                <td>a</td>
                                                 <?php } ?>
                                                 <td></td>
                                                 <td class="text-center">
