@@ -15,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/application/controllers/penilaian.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+              <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -24,8 +24,8 @@
       <file leaf-file-name="m_penilaian.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/m_penilaian.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+            <state relative-caret-position="561">
+              <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <marker date="1509995706849" expanded="true" signature="258:281" ph="SELECT * FRO... tb_posisi" />
                 <marker date="1509995706849" expanded="true" signature="507:652" ph="SELECT * FRO... tb_penilaian" />
@@ -50,12 +50,10 @@
       <file leaf-file-name="viewPenilaian.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/admin/viewPenilaian.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
+            <state relative-caret-position="196">
               <caret line="122" column="31" lean-forward="false" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
               <folding>
                 <marker date="1509997210306" expanded="true" signature="3273:3317" ph="..." />
-                <marker date="1509997210306" expanded="true" signature="6739:7313" ph="{...}" />
-                <marker date="1509997210306" expanded="true" signature="6817:7019" ph="{...}" />
                 <marker date="1509997210306" expanded="true" signature="7338:7354" ph="{...}" />
               </folding>
             </state>
@@ -199,7 +197,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../brilife" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../malangkab" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -241,12 +239,14 @@
       <workItem from="1509814087995" duration="48000" />
       <workItem from="1509852944567" duration="2570000" />
       <workItem from="1509945595699" duration="599000" />
-      <workItem from="1509981483119" duration="9071000" />
+      <workItem from="1509981483119" duration="9176000" />
+      <workItem from="1510057836693" duration="1329000" />
+      <workItem from="1510123031338" duration="38000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98374000" />
+    <option name="totallyTimeSpent" value="99846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -728,15 +728,15 @@
     <entry file="file://$PROJECT_DIR$/application/controllers/penilaian.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+          <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/m_penilaian.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="561">
+          <caret line="33" column="25" lean-forward="false" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
             <marker date="1509995706849" expanded="true" signature="258:281" ph="SELECT * FRO... tb_posisi" />
             <marker date="1509995706849" expanded="true" signature="507:652" ph="SELECT * FRO... tb_penilaian" />
@@ -759,12 +759,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/viewPenilaian.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="196">
           <caret line="122" column="31" lean-forward="false" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
           <folding>
             <marker date="1509997210306" expanded="true" signature="3273:3317" ph="..." />
-            <marker date="1509997210306" expanded="true" signature="6739:7313" ph="{...}" />
-            <marker date="1509997210306" expanded="true" signature="6817:7019" ph="{...}" />
             <marker date="1509997210306" expanded="true" signature="7338:7354" ph="{...}" />
           </folding>
         </state>
