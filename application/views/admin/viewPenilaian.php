@@ -60,22 +60,16 @@
                                         <thead class="text-primary">
                                         <tr>
                                             <th>Nama</th>
+                                            <th>Kelas</th>
                                             <th>Posisi</th>
-                                            <?php foreach ($kriteria as $value){ ?>
-                                            <th><?php echo $value['id_kriteria']; ?></th>
-                                            <?php } ?>
-                                            <th>Nilai Total</th>
                                             <th class="disabled-sorting text-center">Aksi</th>
                                         </tr>
                                         </thead>
                                         <tfoot>
                                         <tr>
                                             <th>Nama</th>
+                                            <th>Kelas</th>
                                             <th>Posisi</th>
-                                            <?php foreach ($kriteria as $value){ ?>
-                                            <th><?php echo $value['id_kriteria']; ?></th>
-                                            <?php } ?>
-                                            <th>Nilai Total</th>
                                             <th class="text-center">Aksi</th>
                                         </tr>
                                         </tfoot>
@@ -83,11 +77,8 @@
                                         <?php foreach ($data as $item){ ?>
                                             <tr>
                                                 <td><?php echo $item['nama_peserta']; ?></td>
+                                                <td><?php echo $item['kelas']; ?></td>
                                                 <td><?php echo $item['nama_posisi']; ?></td>
-                                                <?php foreach ($kriteria as $value){ ?>
-                                                <td id="nilai"></td>
-                                                <?php } ?>
-                                                <td></td>
                                                 <td class="text-center">
                                                     <a href="<?php echo base_url(); ?>" class="btn btn-warning">
                                         <span class="btn-label">
@@ -114,19 +105,11 @@
     <?php $this->load->view('part/footer'); ?>
     <script>
         $(document).ready(function () {
-            console.log('Masuk');
+            console.log('ready');
             $('#show').change(function () {
-                console.log('Ganti');
-                var show = $(this).val();
-                window.location.replace('<?php echo base_url('index.php/penilaian/tabelNilai/'); ?>'+show)
-            });
-            $('#nilai').html();
-            $.ajax({
-                type: 'POST',
-                url: '<?php echo base_url('index.php/penilaian/getNilaiPersonal'); ?>',
-                data:
-            }).done(function () {
-               $('#nilai').html(data);
+                console.log('ganti');
+                var id = $(this).val();
+                window.location.replace('<?php echo base_url('index.php/penilaian/tabelNilai/')?>'+id);
             });
         });
         $(function () {
