@@ -21,7 +21,8 @@ class M_penilaian extends CI_Model {
     }
     public function getKriteria($id)
     {
-        $data = $this->db->query('SELECT * FROM tb_kriteria WHERE id_posisi = "'.$id.'"')->result_array();
+        $posisi = $this->db->query('SELECT * FROM tb_rekrutmen WHERE id_rekrutmen = '.$id)->result_array();
+        $data = $this->db->query('SELECT * FROM tb_kriteria WHERE id_posisi = "'.$posisi[0]['id_posisi'].'"')->result_array();
         return $data;
     }
     public function getNilaiPersoonal($rekrutmen, $kriteria)
@@ -33,5 +34,34 @@ class M_penilaian extends CI_Model {
             $data = 0;
             return $data;
         }
+    }
+    public function cekNilai($id)
+    {
+        $data = $this->db->query('SELECT * FROM tb_penilaian WHERE id_rekrutmen = '.$id)->num_rows();
+        return $data;
+    }
+    public function insert($rekrut, $kriteria, $nilai)
+    {
+        $data = array(
+            'id_penilaian' => null,
+            'id_rekrutmen' => $rekrut,
+            'id_kriteria' => $kriteria,
+            'nilai' => $nilai
+        );
+        $this->db->insert('tb_penilaian', $data);
+    }
+    public function getDataedit($id)
+    {
+        $nilai = $this->db->query('SELECT * FROM tb_penilaian WHERE id_rekrutmen = '.$id)->result_array();
+        $data = array();
+        foreach ($nilai as $value){
+            $data[$value['id_kriteria']] = $value['nilai'];
+        }
+        return $data;
+    }
+    public function alterNilai($id)
+    {
+        $this->db->where('id_rekrutmen', $id);
+        $this->db->delete('tb_penilaian');
     }
 }

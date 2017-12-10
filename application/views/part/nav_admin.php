@@ -48,7 +48,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link active" href="<?php echo base_url('index.php/perhitungan'); ?>">
+                <a class="nav-link active" href="<?php echo base_url('index.php/perhitungan/tabelNilai/AL'); ?>">
                     <i class="material-icons">playlist_add_check</i>
                     <p>
                         Perhitungan

@@ -18,7 +18,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#"> Penilaian Calon Peserta </a>
+                <a class="navbar-brand" href="#"> Hitung Nilai Calon Peserta </a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -47,50 +47,56 @@
                                             <select id="show" name="show" class="dropdown-toggle btn btn-primary btn-round btn-block">
                                                 <option selected disabled class="dropdown-item">Tampilkan Posisi</option>
                                                 <?php foreach ($posisi as $value){ ?>
-                                                <option <?php echo($id == $value['id_posisi']) ? "selected" : ""; ?> value="<?php echo $value['id_posisi']; ?>" class="dropdown-item"><?php echo $value['nama_posisi']; ?></option>
+                                                    <option <?php echo($id == $value['id_posisi']) ? "selected" : ""; ?> value="<?php echo $value['id_posisi']; ?>" class="dropdown-item"><?php echo $value['nama_posisi']; ?></option>
                                                 <?php } ?>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <section <?php echo ($id == 'AL') ? "hidden" : ""; ?>>
-                                <div class="material-datatables">
-                                    <table id="datatables" class="table table-striped table-no-bordered table-hover"
-                                           cellspacing="0" width="100%" style="width:100%">
-                                        <thead class="text-primary">
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Kelas</th>
-                                            <th>Posisi</th>
-                                            <th class="disabled-sorting text-center">Aksi</th>
-                                        </tr>
-                                        </thead>
-                                        <tfoot>
-                                        <tr>
-                                            <th>Nama</th>
-                                            <th>Kelas</th>
-                                            <th>Posisi</th>
-                                            <th class="text-center">Aksi</th>
-                                        </tr>
-                                        </tfoot>
-                                        <tbody>
-                                        <?php foreach ($data as $item){ ?>
+                                    <div class="material-datatables">
+                                        <table id="datatables" class="table table-striped table-no-bordered table-hover"
+                                               cellspacing="0" width="100%" style="width:100%">
+                                            <thead class="text-primary">
                                             <tr>
-                                                <td><?php echo $item['nama_peserta']; ?></td>
-                                                <td><?php echo $item['kelas']; ?></td>
-                                                <td><?php echo $item['nama_posisi']; ?></td>
-                                                <td class="text-center">
-                                                    <a href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-warning">
+                                                <th>Nama</th>
+                                                <th>Posisi</th>
+                                                <?php foreach ($kriteria as $item){ ?>
+                                                <th><?php echo $item['nama_kriteria']; ?></th>
+                                                <?php } ?>
+                                                <th class="disabled-sorting text-center">Aksi</th>
+                                            </tr>
+                                            </thead>
+                                            <tfoot>
+                                            <tr>
+                                                <th>Nama</th>
+                                                <th>Posisi</th>
+                                                <?php foreach ($kriteria as $item){ ?>
+                                                    <th><?php echo $item['nama_kriteria']; ?></th>
+                                                <?php } ?>
+                                                <th class="text-center">Aksi</th>
+                                            </tr>
+                                            </tfoot>
+                                            <tbody>
+                                            <?php foreach ($data as $item){ ?>
+                                                <tr>
+                                                    <td><?php echo $item['nama_peserta']; ?></td>
+                                                    <td><?php echo $item['nama_posisi']; ?></td>
+                                                    <?php foreach ($kriteria as $value){ ?>
+                                                        <th><?php echo $value['nama_kriteria']; ?></th>
+                                                    <?php } ?>
+                                                    <td class="text-center">
+                                                        <a href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-warning">
                                         <span class="btn-label">
                                             <i class="material-icons">create</i>
                                         </span>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        <?php } ?>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </section>
                             </div>
                             <!-- end content-->
@@ -109,7 +115,7 @@
             $('#show').change(function () {
                 console.log('ganti');
                 var id = $(this).val();
-                window.location.replace('<?php echo base_url('index.php/penilaian/tabelNilai/')?>'+id);
+                window.location.replace('<?php echo base_url('index.php/perhitungan/tabelNilai/')?>'+id);
             });
         });
         $(function () {

@@ -58,18 +58,18 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="post" action="<?php echo base_url('index.php/penilaian/tambah/'.$id); ?>" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/penilaian/edit/'.$id); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
                                     <h4 class="card-title">Input Penilaian Baru</h4>
                                 </div>
                                 <div class="card-content">
                                     <?php foreach ($kriteria as $k){ ?>
-                                    <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right"><?php echo $k['nama_kriteria']; ?></label>
-                                        <div class="col-md-10">
-                                            <input required name="<?php echo $k['id_kriteria']; ?>" type="text" class="form-control" placeholder="Masukkan Nilai Untuk Kriteria <?php echo $k['nama_kriteria']; ?>">
+                                        <div class="form-group row">
+                                            <label class="col-md-2 col-form-label text-right"><?php echo $k['nama_kriteria']; ?></label>
+                                            <div class="col-md-10">
+                                                <input required name="<?php echo $k['id_kriteria']; ?>" value="<?php echo $data[$k['id_kriteria']]; ?>" type="text" class="form-control" placeholder="Masukkan Nilai Untuk Kriteria <?php echo $k['nama_kriteria']; ?>">
+                                            </div>
                                         </div>
-                                    </div>
                                     <?php } ?>
                                     <button type="submit" id="submit" class="btn btn-primary btn-round">
                                         <i class="material-icons">assignment</i> Submit
