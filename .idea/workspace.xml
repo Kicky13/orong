@@ -15,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -24,14 +24,20 @@
       <file leaf-file-name="m_hitung.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/m_hitung.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="261">
+              <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding>
-                <marker date="1512878904030" expanded="true" signature="255:278" ph="SELECT * FRO... tb_posisi" />
-                <marker date="1512878904030" expanded="true" signature="504:678" ph="SELECT * FRO... tb_rekrutmen" />
-                <marker date="1512878904030" expanded="true" signature="813:858" ph="SELECT * FRO... tb_kriteria" />
-                <marker date="1512878904030" expanded="true" signature="813:866" ph="SELECT * FRO... tb_kriteria" />
-                <marker date="1512878904030" expanded="true" signature="813:867" ph="SELECT * FRO... tb_kriteria" />
+                <marker date="1512927326917" expanded="true" signature="255:278" ph="SELECT * FRO... tb_posisi" />
+                <marker date="1512927326917" expanded="true" signature="507:713" ph="SELECT * FRO... tb_penilaian" />
+                <marker date="1512927326917" expanded="true" signature="507:714" ph="SELECT * FRO... tb_penilaian" />
+                <marker date="1512927326917" expanded="true" signature="507:742" ph="SELECT * FRO... tb_rekrutmen" />
+                <marker date="1512927326917" expanded="true" signature="507:778" ph="SELECT * FRO... tb_penilaian" />
+                <marker date="1512927326917" expanded="true" signature="507:779" ph="SELECT * FRO... tb_penilaian" />
+                <marker date="1512927326917" expanded="true" signature="1663:1708" ph="SELECT * FRO... tb_kriteria" />
+                <marker date="1512927326917" expanded="true" signature="1663:1716" ph="SELECT * FRO... tb_kriteria" />
+                <marker date="1512927326917" expanded="true" signature="1663:1717" ph="SELECT * FRO... tb_kriteria" />
+                <marker date="1512927326917" expanded="true" signature="1846:1893" ph="SELECT * FRO... tb_penilaian" />
+                <marker date="1512927326917" expanded="true" signature="1846:1894" ph="SELECT * FRO... tb_penilaian" />
               </folding>
             </state>
           </provider>
@@ -40,8 +46,8 @@
       <file leaf-file-name="viewHitung.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/admin/viewHitung.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="85" column="77" lean-forward="false" selection-start-line="85" selection-start-column="77" selection-end-line="85" selection-end-column="77" />
+            <state relative-caret-position="442">
+              <caret line="85" column="71" lean-forward="false" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -86,9 +92,9 @@
         <option value="$PROJECT_DIR$/application/models/m_penilaian.php" />
         <option value="$PROJECT_DIR$/application/controllers/hitung.php" />
         <option value="$PROJECT_DIR$/application/views/part/nav_admin.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/viewHitung.php" />
         <option value="$PROJECT_DIR$/application/controllers/perhitungan.php" />
         <option value="$PROJECT_DIR$/application/models/m_hitung.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/viewHitung.php" />
       </list>
     </option>
   </component>
@@ -226,12 +232,12 @@
       <workItem from="1510123031338" duration="38000" />
       <workItem from="1512722717955" duration="2712000" />
       <workItem from="1512823575482" duration="14208000" />
-      <workItem from="1512923805318" duration="130000" />
+      <workItem from="1512923805318" duration="3602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116896000" />
+    <option name="totallyTimeSpent" value="120368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -239,7 +245,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -279,6 +285,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="62" column="46" lean-forward="true" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -522,6 +529,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
           <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -631,6 +639,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="83" column="64" lean-forward="true" selection-start-line="83" selection-start-column="64" selection-end-line="83" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -638,6 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="69" column="262" lean-forward="false" selection-start-line="69" selection-start-column="198" selection-end-line="69" selection-end-column="262" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -645,6 +655,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="69" column="210" lean-forward="false" selection-start-line="69" selection-start-column="210" selection-end-line="69" selection-end-column="210" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -660,6 +671,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="70" column="36" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <marker date="1512839661378" expanded="true" signature="3273:3317" ph="..." />
+            <marker date="1512839661378" expanded="true" signature="6449:6465" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,6 +720,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -712,35 +728,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="50" column="105" lean-forward="false" selection-start-line="50" selection-start-column="105" selection-end-line="50" selection-end-column="105" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/m_hitung.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="261">
+          <caret line="25" column="51" lean-forward="false" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
           <folding>
-            <marker date="1512878904030" expanded="true" signature="255:278" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1512878904030" expanded="true" signature="504:678" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1512878904030" expanded="true" signature="813:858" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1512878904030" expanded="true" signature="813:866" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1512878904030" expanded="true" signature="813:867" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1512927326917" expanded="true" signature="255:278" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1512927326917" expanded="true" signature="507:713" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1512927326917" expanded="true" signature="507:714" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1512927326917" expanded="true" signature="507:742" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1512927326917" expanded="true" signature="507:778" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1512927326917" expanded="true" signature="507:779" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1512927326917" expanded="true" signature="1663:1708" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1512927326917" expanded="true" signature="1663:1716" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1512927326917" expanded="true" signature="1663:1717" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1512927326917" expanded="true" signature="1846:1893" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1512927326917" expanded="true" signature="1846:1894" ph="SELECT * FRO... tb_penilaian" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/viewHitung.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="85" column="77" lean-forward="false" selection-start-line="85" selection-start-column="77" selection-end-line="85" selection-end-column="77" />
+        <state relative-caret-position="442">
+          <caret line="85" column="71" lean-forward="false" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
           <folding />
         </state>
       </provider>

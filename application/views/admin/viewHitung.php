@@ -44,10 +44,14 @@
                                 <div class="toolbar">
                                     <div class="col-lg-4 col-md-6 col-sm-3">
                                         <div class="dropdown">
-                                            <select id="show" name="show" class="dropdown-toggle btn btn-primary btn-round btn-block">
-                                                <option selected disabled class="dropdown-item">Tampilkan Posisi</option>
-                                                <?php foreach ($posisi as $value){ ?>
-                                                    <option <?php echo($id == $value['id_posisi']) ? "selected" : ""; ?> value="<?php echo $value['id_posisi']; ?>" class="dropdown-item"><?php echo $value['nama_posisi']; ?></option>
+                                            <select id="show" name="show"
+                                                    class="dropdown-toggle btn btn-primary btn-round btn-block">
+                                                <option selected disabled class="dropdown-item">Tampilkan Posisi
+                                                </option>
+                                                <?php foreach ($posisi as $value) { ?>
+                                                    <option <?php echo ($id == $value['id_posisi']) ? "selected" : ""; ?>
+                                                            value="<?php echo $value['id_posisi']; ?>"
+                                                            class="dropdown-item"><?php echo $value['nama_posisi']; ?></option>
                                                 <?php } ?>
                                             </select>
                                         </div>
@@ -61,40 +65,33 @@
                                             <tr>
                                                 <th>Nama</th>
                                                 <th>Posisi</th>
-                                                <?php foreach ($kriteria as $item){ ?>
-                                                <th><?php echo $item['nama_kriteria']; ?></th>
+                                                <?php foreach ($kriteria as $item) { ?>
+                                                    <th><?php echo $item['nama_kriteria']; ?></th>
                                                 <?php } ?>
-                                                <th class="disabled-sorting text-center">Aksi</th>
                                             </tr>
                                             </thead>
                                             <tfoot>
                                             <tr>
                                                 <th>Nama</th>
                                                 <th>Posisi</th>
-                                                <?php foreach ($kriteria as $item){ ?>
+                                                <?php foreach ($kriteria as $item) { ?>
                                                     <th><?php echo $item['nama_kriteria']; ?></th>
                                                 <?php } ?>
-                                                <th class="text-center">Aksi</th>
                                             </tr>
                                             </tfoot>
-                                            <tbody>
-                                            <?php foreach ($data as $item){ ?>
-                                                <tr>
-                                                    <td><?php echo $item['nama_peserta']; ?></td>
-                                                    <td><?php echo $item['nama_posisi']; ?></td>
-                                                    <?php foreach ($kriteria as $value){ ?>
-                                                        <th><?php echo $value['nama_kriteria']; ?></th>
-                                                    <?php } ?>
-                                                    <td class="text-center">
-                                                        <a href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-warning">
-                                        <span class="btn-label">
-                                            <i class="material-icons">create</i>
-                                        </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            <?php } ?>
-                                            </tbody>
+                                            <section hidden>
+                                                <tbody>
+                                                <?php foreach ($data as $item) { ?>
+                                                    <tr>
+                                                        <td><?php echo $item['nama_peserta']; ?></td>
+                                                        <td><?php echo $item['nama_posisi']; ?></td>
+                                                        <?php foreach ($kriteria as $value) { ?>
+                                                            <th><?php echo $item[$value['id_kriteria']]; ?></th>
+                                                        <?php } ?>
+                                                    </tr>
+                                                <?php } ?>
+                                                </tbody>
+                                            </section>
                                         </table>
                                     </div>
                                 </section>
@@ -115,7 +112,7 @@
             $('#show').change(function () {
                 console.log('ganti');
                 var id = $(this).val();
-                window.location.replace('<?php echo base_url('index.php/perhitungan/tabelNilai/')?>'+id);
+                window.location.replace('<?php echo base_url('index.php/perhitungan/tabelNilai/')?>' + id);
             });
         });
         $(function () {
