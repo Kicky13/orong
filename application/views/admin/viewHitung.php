@@ -93,6 +93,9 @@
                                                 </tbody>
                                             </section>
                                         </table>
+                                        <a href="<?php echo base_url('index.php/perhitungan/hitungNilai/'.$id); ?>" type="button" class="btn btn-info btn-round">
+                                            <i class="material-icons">assignment</i> Hitung
+                                        </a>
                                     </div>
                                 </section>
                             </div>

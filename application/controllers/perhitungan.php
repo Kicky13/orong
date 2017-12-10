@@ -16,4 +16,8 @@ class Perhitungan extends CI_Controller {
         $posisi = $this->m_hitung->getPosisi();
         $this->load->view('admin/viewHitung', array('id' => $id, 'posisi' => $posisi, 'data' => $data, 'kriteria' => $kriteria));
     }
+    public function hitungNilai($id)
+    {
+        echo 'Yuk Dihitung';
+    }
 }

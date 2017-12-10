@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="perhitungan.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="perhitungan.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -43,12 +43,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewHitung.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="viewHitung.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/admin/viewHitung.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="85" column="71" lean-forward="false" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
-              <folding />
+            <state relative-caret-position="159">
+              <caret line="95" column="109" lean-forward="true" selection-start-line="95" selection-start-column="109" selection-end-line="95" selection-end-column="109" />
+              <folding>
+                <marker date="1512927654584" expanded="true" signature="6760:7051" ph="{...}" />
+                <marker date="1512927654584" expanded="true" signature="6838:7039" ph="{...}" />
+                <marker date="1512927654584" expanded="true" signature="7076:7092" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,9 +96,9 @@
         <option value="$PROJECT_DIR$/application/models/m_penilaian.php" />
         <option value="$PROJECT_DIR$/application/controllers/hitung.php" />
         <option value="$PROJECT_DIR$/application/views/part/nav_admin.php" />
+        <option value="$PROJECT_DIR$/application/models/m_hitung.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewHitung.php" />
         <option value="$PROJECT_DIR$/application/controllers/perhitungan.php" />
-        <option value="$PROJECT_DIR$/application/models/m_hitung.php" />
       </list>
     </option>
   </component>
@@ -232,12 +236,12 @@
       <workItem from="1510123031338" duration="38000" />
       <workItem from="1512722717955" duration="2712000" />
       <workItem from="1512823575482" duration="14208000" />
-      <workItem from="1512923805318" duration="3602000" />
+      <workItem from="1512923805318" duration="3873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120368000" />
+    <option name="totallyTimeSpent" value="120639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -651,14 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/addPenilaian.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="69" column="210" lean-forward="false" selection-start-line="69" selection-start-column="210" selection-end-line="69" selection-end-column="210" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -732,11 +728,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
+    <entry file="file://$PROJECT_DIR$/application/views/admin/addPenilaian.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="75" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/viewHitung.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="95" column="109" lean-forward="true" selection-start-line="95" selection-start-column="109" selection-end-line="95" selection-end-column="109" />
+          <folding>
+            <marker date="1512927654584" expanded="true" signature="6760:7051" ph="{...}" />
+            <marker date="1512927654584" expanded="true" signature="6838:7039" ph="{...}" />
+            <marker date="1512927654584" expanded="true" signature="7076:7092" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -760,10 +768,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/viewHitung.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="85" column="71" lean-forward="false" selection-start-line="85" selection-start-column="71" selection-end-line="85" selection-end-column="71" />
+        <state relative-caret-position="340">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding />
         </state>
       </provider>
