@@ -49,4 +49,47 @@ class M_hitung extends CI_Model {
         $data = $this->db->query('SELECT * FROM tb_penilaian WHERE id_rekrutmen = '.$id)->result_array();
         return $data;
     }
+    public function hitungNilai($id)
+    {
+        $this->load->model('m_angkatan');
+        $angkatan = $this->m_angkatan->getOpenAngkatan();
+        $peserta = $this->db->query('SELECT * FROM tb_penilaian p JOIN tb_rekrutmen r ON p.id_rekrutmen = r.id_rekrutmen JOIN tb_peserta ps ON r.id_peserta = ps.id_peserta WHERE id_posisi = "'.$id.'" AND id_angkatan = '.$angkatan.' GROUP BY r.id_rekrutmen')->result_array();
+        $data = array();
+        $x = 0;
+        foreach ($peserta as $n){
+            $pst = $n['id_rekrutmen'];
+            $data[$x]['nama_peserta'] = $n['nama_peserta'];
+            $data[$x]['id_peserta'] = $n['id_rekrutmen'];
+            $nilai = $this->db->query('SELECT * FROM tb_penilaian p JOIN tb_kriteria k ON p.id_kriteria = k.id_kriteria WHERE id_rekrutmen = '.$pst)->result_array();
+            $total = 0;
+            foreach ($nilai as $item){
+                if ($item['id_jenis'] == 1){
+                    $data[$x][$item['id_kriteria']] = $this->hitungBenefit($angkatan, $item['id_kriteria'], $item['nilai']);
+                    $total += $data[$x][$item['id_kriteria']];
+                } else {
+                    $data[$x][$item['id_kriteria']] = $this->hitungCost($angkatan, $item['id_kriteria'], $item['nilai']);
+                    $total += $data[$x][$item['id_kriteria']];
+                }
+            }
+            $data[$x]['total'] = $total;
+            $x++;
+        }
+        return $data;
+    }
+    public function hitungBenefit($angkatan, $kriteria, $nilai)
+    {
+        $bobot = $this->db->query('SELECT * FROM tb_kriteria WHERE id_kriteria = "'.$kriteria.'"')->result_array();
+        $max = $this->db->query('SELECT MAX(nilai) AS max FROM tb_penilaian p JOIN tb_rekrutmen r ON p.id_rekrutmen = r.id_rekrutmen WHERE id_kriteria = "'.$kriteria.'" AND id_angkatan = '.$angkatan)->result_array();
+        $nor = $nilai/$max[0]['max'];
+        $hasil = $nor*$bobot[0]['bobot'];
+        return $hasil;
+    }
+    public function hitungCost($angkatan, $kriteria, $nilai)
+    {
+        $bobot = $this->db->query('SELECT * FROM tb_kriteria WHERE id_kriteria = "'.$kriteria.'"')->result_array();
+        $min = $this->db->query('SELECT MIN(nilai) AS min FROM tb_penilaian p JOIN tb_rekrutmen r ON p.id_rekrutmen = r.id_rekrutmen WHERE id_kriteria = "'.$kriteria.'" AND id_angkatan = '.$angkatan)->result_array();
+        $nor = $min[0]['min']/$nilai;
+        $hasil = $nor*$bobot[0]['bobot'];
+        return $hasil;
+    }
 }

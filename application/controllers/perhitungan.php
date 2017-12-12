@@ -18,6 +18,7 @@ class Perhitungan extends CI_Controller {
     }
     public function hitungNilai($id)
     {
-        echo 'Yuk Dihitung';
+        $data = $this->m_hitung->hitungNilai($id);
+        print json_encode($data);
     }
 }
