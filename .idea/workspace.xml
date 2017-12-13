@@ -21,7 +21,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="m_hitung.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="m_hitung.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/m_hitung.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -57,6 +57,16 @@
                 <marker date="1513186482257" expanded="true" signature="4137:4198" ph="SELECT * FRO... tb_kriteria" />
                 <marker date="1513186482257" expanded="true" signature="4251:4405" ph="SELECT MIN(n... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addPeserta.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="90" column="76" lean-forward="false" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,7 +110,6 @@
         <option value="$PROJECT_DIR$/application/models/m_angkatan.php" />
         <option value="$PROJECT_DIR$/application/views/part/footer.php" />
         <option value="$PROJECT_DIR$/application/views/part/head.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/addPeserta.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewPeserta.php" />
         <option value="$PROJECT_DIR$/application/views/admin/editPeserta.php" />
         <option value="$PROJECT_DIR$/application/controllers/peserta.php" />
@@ -115,6 +124,7 @@
         <option value="$PROJECT_DIR$/application/models/m_peserta.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewHitung.php" />
         <option value="$PROJECT_DIR$/application/models/m_hitung.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/addPeserta.php" />
       </list>
     </option>
   </component>
@@ -255,12 +265,12 @@
       <workItem from="1512923805318" duration="4017000" />
       <workItem from="1512967428165" duration="13137000" />
       <workItem from="1513037738800" duration="2034000" />
-      <workItem from="1513175530478" duration="3020000" />
+      <workItem from="1513175530478" duration="3206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138974000" />
+    <option name="totallyTimeSpent" value="139160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -568,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/editPeserta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="93" column="78" lean-forward="false" selection-start-line="93" selection-start-column="78" selection-end-line="93" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/angkatan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -594,20 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="55" column="55" lean-forward="false" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="83" column="64" lean-forward="true" selection-start-line="83" selection-start-column="64" selection-end-line="83" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/editPenilaian.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="69" column="262" lean-forward="false" selection-start-line="69" selection-start-column="198" selection-end-line="69" selection-end-column="262" />
         </state>
       </provider>
     </entry>
@@ -762,6 +751,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/editPenilaian.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="69" column="262" lean-forward="false" selection-start-line="69" selection-start-column="198" selection-end-line="69" selection-end-column="262" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/editPeserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/m_hitung.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -797,6 +802,14 @@
             <marker date="1513186482257" expanded="true" signature="4137:4198" ph="SELECT * FRO... tb_kriteria" />
             <marker date="1513186482257" expanded="true" signature="4251:4405" ph="SELECT MIN(n... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="90" column="76" lean-forward="false" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>

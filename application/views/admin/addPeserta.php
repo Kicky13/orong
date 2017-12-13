@@ -92,7 +92,7 @@
                                         <div class="col-md-10">
                                             <?php $n = 0;
                                             foreach ($data as $value){ ?>
-                                            <div <?php echo ($jumlah[$n]['masuk'] >= $jumlah[$n]['butuh']) ? "hidden" : ""; ?> class="checkbox form-check-inline">
+                                            <div class="checkbox form-check-inline">
                                                 <label>
                                                     <input type="checkbox" id="posisi-<?php echo $n; ?>" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
                                                 </label>
