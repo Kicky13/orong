@@ -76,11 +76,11 @@
                                         <tbody>
                                         <?php foreach ($data as $item){ ?>
                                             <tr>
-                                                <td style="<?php echo ($item['status'] == 'cek') ? "background-color: #298A2C" : ""; ?>"><?php echo $item['nama_peserta']; ?></td>
-                                                <td style="<?php echo ($item['status'] == 'cek') ? "background-color: #298A2C" : ""; ?>"><?php echo $item['kelas']; ?></td>
-                                                <td style="<?php echo ($item['status'] == 'cek') ? "background-color: #298A2C" : ""; ?>"><?php echo $item['nama_posisi']; ?></td>
-                                                <td style="<?php echo ($item['status'] == 'cek') ? "background-color: #298A2C" : ""; ?>" class="text-center">
-                                                    <a href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-warning">
+                                                <td><?php echo $item['nama_peserta']; ?></td>
+                                                <td><?php echo $item['kelas']; ?></td>
+                                                <td><?php echo $item['nama_posisi']; ?></td>
+                                                <td class="text-center">
+                                                    <a href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-<?php echo ($item['status'] == 'cek') ? "success" : "info"; ?>">
                                         <span class="btn-label">
                                             <i class="material-icons">create</i>
                                         </span>
