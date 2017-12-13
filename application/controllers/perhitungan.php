@@ -18,7 +18,7 @@ class Perhitungan extends CI_Controller {
     }
     public function hitungNilai($id)
     {
-        $data = $this->m_hitung->hitungNilai($id);
-        print json_encode($data);
+        $this->m_hitung->hitungNilai($id);
+        redirect('/perhitungan/tabelNilai/'.$id);
     }
 }

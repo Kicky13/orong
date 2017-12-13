@@ -68,6 +68,7 @@
                                                 <?php foreach ($kriteria as $item) { ?>
                                                     <th><?php echo $item['nama_kriteria']; ?></th>
                                                 <?php } ?>
+                                                <th>Skor</th>
                                             </tr>
                                             </thead>
                                             <tfoot>
@@ -77,6 +78,7 @@
                                                 <?php foreach ($kriteria as $item) { ?>
                                                     <th><?php echo $item['nama_kriteria']; ?></th>
                                                 <?php } ?>
+                                                <th>Skor</th>
                                             </tr>
                                             </tfoot>
                                             <section hidden>
@@ -88,6 +90,7 @@
                                                         <?php foreach ($kriteria as $value) { ?>
                                                             <th><?php echo $item[$value['id_kriteria']]; ?></th>
                                                         <?php } ?>
+                                                        <td><?php echo ($item['skor'] == '') ? "" : $item['skor']; ?></td>
                                                     </tr>
                                                 <?php } ?>
                                                 </tbody>
