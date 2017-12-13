@@ -76,10 +76,10 @@
                                         <tbody>
                                         <?php foreach ($data as $item){ ?>
                                             <tr>
-                                                <td><?php echo $item['nama_peserta']; ?></td>
-                                                <td><?php echo $item['kelas']; ?></td>
-                                                <td><?php echo $item['nama_posisi']; ?></td>
-                                                <td class="text-center">
+                                                <td style="<?php echo ($item['status'] == 'cek') ? "background-color: #00CC00" : ""; ?>"><?php echo $item['nama_peserta']; ?></td>
+                                                <td style="<?php echo ($item['status'] == 'cek') ? "background-color: #00CC00" : ""; ?>"><?php echo $item['kelas']; ?></td>
+                                                <td style="<?php echo ($item['status'] == 'cek') ? "background-color: #00CC00" : ""; ?>"><?php echo $item['nama_posisi']; ?></td>
+                                                <td style="<?php echo ($item['status'] == 'cek') ? "background-color: #00CC00" : ""; ?>" class="text-center">
                                                     <a href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-warning">
                                         <span class="btn-label">
                                             <i class="material-icons">create</i>

@@ -17,6 +17,16 @@ class M_penilaian extends CI_Model {
         $this->load->model('m_angkatan');
         $angkatan = $this->m_angkatan->getOpenAngkatan();
         $data = $this->db->query('SELECT * FROM tb_rekrutmen b JOIN tb_peserta c ON c.id_peserta = b.id_peserta JOIN tb_posisi d ON b.id_posisi = d.id_posisi WHERE b.id_posisi = "'.$id.'" AND b.id_angkatan = '.$angkatan)->result_array();
+        $n = 0;
+        foreach ($data as $item){
+            $x = $this->db->query('SELECT * FROM tb_penilaian WHERE id_rekrutmen = '.$item['id_rekrutmen'])->num_rows();
+            if ($x < 1){
+                $data[$n]['status'] = 'kosong';
+            } else {
+                $data[$n]['status'] = 'cek';
+            }
+            $n++;
+        }
         return $data;
     }
     public function getKriteria($id)
