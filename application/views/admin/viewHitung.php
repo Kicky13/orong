@@ -81,18 +81,19 @@
                                                 <th>Skor</th>
                                             </tr>
                                             </tfoot>
-                                            <section hidden>
+                                            <section>
                                                 <tbody>
-                                                <?php foreach ($data as $item) { ?>
-                                                    <tr>
+                                                <?php $x = 1;
+                                                foreach ($data as $item) { ?>
+                                                    <tr style="<?php echo ($x > $limit) ? "background-color: #FF530D" : ""; ?>">
                                                         <td><?php echo $item['nama_peserta']; ?></td>
                                                         <td><?php echo $item['nama_posisi']; ?></td>
                                                         <?php foreach ($kriteria as $value) { ?>
-                                                            <th><?php echo $item[$value['id_kriteria']]; ?></th>
+                                                            <td><?php echo $item[$value['id_kriteria']]; ?></td>
                                                         <?php } ?>
                                                         <td><?php echo ($item['skor'] == '') ? "" : $item['skor']; ?></td>
                                                     </tr>
-                                                <?php } ?>
+                                                <?php $x++; } ?>
                                                 </tbody>
                                             </section>
                                         </table>

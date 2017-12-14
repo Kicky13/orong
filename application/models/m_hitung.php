@@ -96,4 +96,14 @@ class M_hitung extends CI_Model {
         $hasil = $nor*$bobot[0]['bobot'];
         return $hasil;
     }
+    public function getLimit($id)
+    {
+        $data = $this->db->query('SELECT * FROM tb_requires WHERE id_posisi = "'.$id.'"')->result_array();
+        if ($id == 'AL'){
+            $x = 'Kosong';
+        } else {
+            $x = $data[0]['jumlah_require'];
+        }
+        return $x;
+    }
 }

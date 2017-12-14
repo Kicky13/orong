@@ -14,7 +14,8 @@ class Perhitungan extends CI_Controller {
         $data = $this->m_hitung->getDataTable($id);
         $kriteria = $this->m_hitung->getKriteria($id);
         $posisi = $this->m_hitung->getPosisi();
-        $this->load->view('admin/viewHitung', array('id' => $id, 'posisi' => $posisi, 'data' => $data, 'kriteria' => $kriteria));
+        $limit = $this->m_hitung->getLimit($id);
+        $this->load->view('admin/viewHitung', array('id' => $id, 'posisi' => $posisi, 'data' => $data, 'kriteria' => $kriteria, 'limit' => $limit));
     }
     public function hitungNilai($id)
     {
