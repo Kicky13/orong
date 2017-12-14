@@ -16,7 +16,7 @@ class M_hitung extends CI_Model {
     {
         $this->load->model('m_angkatan');
         $angkatan = $this->m_angkatan->getOpenAngkatan();
-        $peserta = $this->db->query('SELECT * FROM tb_penilaian p JOIN tb_rekrutmen r ON p.id_rekrutmen = r.id_rekrutmen JOIN tb_peserta ps ON r.id_peserta = ps.id_peserta JOIN tb_posisi pos ON r.id_posisi = pos.id_posisi WHERE pos.id_posisi = "'.$id.'" AND id_angkatan = '.$angkatan.' GROUP BY ps.id_peserta ORDER BY r.skor')->result_array();
+        $peserta = $this->db->query('SELECT * FROM tb_penilaian p JOIN tb_rekrutmen r ON p.id_rekrutmen = r.id_rekrutmen JOIN tb_peserta ps ON r.id_peserta = ps.id_peserta JOIN tb_posisi pos ON r.id_posisi = pos.id_posisi WHERE pos.id_posisi = "'.$id.'" AND id_angkatan = '.$angkatan.' GROUP BY ps.id_peserta ORDER BY r.skor DESC')->result_array();
         $x = count($peserta);
         if ($x < 1){
             $data[0]['nama_peserta'] = '';
