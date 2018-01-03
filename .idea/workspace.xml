@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nav_pelatih.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav_pelatih.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/part/nav_pelatih.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding>
                 <marker date="1515005986739" expanded="true" signature="835:898" ph="..." />
                 <marker date="1515005986739" expanded="true" signature="971:1220" ph="..." />
@@ -24,6 +24,16 @@
                 <marker date="1515005986739" expanded="true" signature="1254:1317" ph="..." />
                 <marker date="1515005986739" expanded="true" signature="1429:1485" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="54" column="81" lean-forward="false" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -41,7 +51,6 @@
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/controllers/Welcome.php" />
         <option value="$PROJECT_DIR$/application/models/m_login.php" />
-        <option value="$PROJECT_DIR$/application/views/home.php" />
         <option value="$PROJECT_DIR$/application/controllers/home.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/controllers/login.php" />
@@ -73,6 +82,7 @@
         <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
         <option value="$PROJECT_DIR$/application/views/pelatih/dashboard.php" />
         <option value="$PROJECT_DIR$/application/views/part/nav_pelatih.php" />
+        <option value="$PROJECT_DIR$/application/views/home.php" />
       </list>
     </option>
   </component>
@@ -146,20 +156,6 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="orong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="orong" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="part" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="orong" type="b2602c69:ProjectViewProjectNode" />
-              <item name="orong" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pelatih" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -227,12 +223,12 @@
       <workItem from="1514289184496" duration="13450000" />
       <workItem from="1514857453701" duration="592000" />
       <workItem from="1514976628199" duration="745000" />
-      <workItem from="1515002758187" duration="3216000" />
+      <workItem from="1515002758187" duration="3342000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172738000" />
+    <option name="totallyTimeSpent" value="172864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -459,13 +455,6 @@
             <marker date="1508229395257" expanded="true" signature="492:543" ph="SELECT * FRO... tb_user" />
             <marker date="1508229395257" expanded="true" signature="492:544" ph="SELECT * FRO... tb_user" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="41" column="83" lean-forward="true" selection-start-line="41" selection-start-column="83" selection-end-line="41" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -777,8 +766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/part/nav_pelatih.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
             <marker date="1515005986739" expanded="true" signature="835:898" ph="..." />
             <marker date="1515005986739" expanded="true" signature="971:1220" ph="..." />
@@ -787,6 +776,14 @@
             <marker date="1515005986739" expanded="true" signature="1254:1317" ph="..." />
             <marker date="1515005986739" expanded="true" signature="1429:1485" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="54" column="81" lean-forward="false" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>

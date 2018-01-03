@@ -52,7 +52,7 @@
         <div class="area">
             <div class="cell">
                 <h1>Selamat datang di media informasi Marching Band Gita Orong - Orong</h1>
-                <a href="<?php echo base_url('index.php/login/register'); ?>">DAFTAR SEKARANG</a>
+                <a href="<?php echo base_url('index.php/peserta/viewTambahPeserta'); ?>">DAFTAR SEKARANG</a>
             </div>
         </div>
     </section>
