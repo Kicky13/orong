@@ -10,9 +10,11 @@ class Dashboard extends CI_Controller {
     }
     public function index()
     {
-        if (isset($_SESSION['loggedIn'])){
-            if ($_SESSION['level'] == 1){
+        if (isset($_SESSION['loggedIn'])) {
+            if ($_SESSION['level'] == 1) {
                 $this->load->view('admin/dashboard');
+            } else if ($_SESSION['level'] == 2) {
+                $this->load->view('pelatih/dashboard');
             } else {
                 echo 'Forbidden Access';
             }

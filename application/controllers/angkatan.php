@@ -14,7 +14,8 @@ class Angkatan extends CI_Controller {
         if (isset($_SESSION['loggedIn'])){
             if ($_SESSION['level'] == 1){
                 $data = $this->m_angkatan->getDataTable();
-                $this->load->view('admin/viewAngkatan', array('data' => $data));
+                $n = $this->m_angkatan->countOpenAngkatan();
+                $this->load->view('admin/viewAngkatan', array('data' => $data, 'open' => $n));
             } else {
                 echo 'Forbidden Access';
             }
@@ -99,5 +100,20 @@ class Angkatan extends CI_Controller {
         } else {
             redirect('/login');
         }
+    }
+    public function lockAngkatan($id)
+    {
+        $this->m_angkatan->lockAngkatan($id);
+        redirect('/angkatan');
+    }
+    public function unlockAngkatan($id)
+    {
+        $this->m_angkatan->unlockAngkatan($id);
+        redirect('/angkatan');
+    }
+    public function countAngkatan()
+    {
+        $open = $this->m_angkatan->countOpenAngkatan();
+        echo $open;
     }
 }

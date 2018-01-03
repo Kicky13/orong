@@ -32,7 +32,7 @@
             <ul class="clearfix">
                 <li class="left"><a href="<?php echo base_url('index.php/home'); ?>">Home</a></li>
                 <li class="left"><a href="">Tentang Gita Orong - Orong</a></li>
-                <li class="left"><a href="<?php echo base_url('index.php/login/register'); ?>">Daftar</a></li>
+                <li class="left"><a href="<?php echo base_url('index.php/peserta/viewTambahPeserta'); ?>">Daftar</a></li>
             </ul>
         </nav>
         <nav class="nav-m right dropdown">

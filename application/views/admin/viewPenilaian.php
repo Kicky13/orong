@@ -59,6 +59,7 @@
                                            cellspacing="0" width="100%" style="width:100%">
                                         <thead class="text-primary">
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Posisi</th>
@@ -67,6 +68,7 @@
                                         </thead>
                                         <tfoot>
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Posisi</th>
@@ -74,8 +76,10 @@
                                         </tr>
                                         </tfoot>
                                         <tbody>
-                                        <?php foreach ($data as $item){ ?>
+                                        <?php $no = 1;
+                                        foreach ($data as $item){ ?>
                                             <tr>
+                                                <td><?php echo $no++; ?></td>
                                                 <td><?php echo $item['nama_peserta']; ?></td>
                                                 <td><?php echo $item['kelas']; ?></td>
                                                 <td><?php echo $item['nama_posisi']; ?></td>

@@ -11,10 +11,12 @@ class Peserta extends CI_Controller {
     }
     public function table($sort)
     {
+        $this->load->model('m_angkatan');
         if (isset($_SESSION['loggedIn'])){
             if ($_SESSION['level'] == 1){
                 $data = $this->m_peserta->getDataTable($sort);
-                $this->load->view('admin/viewPeserta', array('data' => $data));
+                $open = $this->m_angkatan->countOpenAngkatan();
+                $this->load->view('admin/viewPeserta', array('data' => $data, 'open' => $open));
             } else {
                 echo 'Forbidden Access';
             }
@@ -36,6 +38,11 @@ class Peserta extends CI_Controller {
             redirect('/login');
         }
     }
+    public function viewTambahPeserta()
+    {
+        $data = $this->m_peserta->getDataPosisi();
+        $this->load->view('tambahPeserta', array('data' => $data));
+    }
     public function viewEdit($id)
     {
         if (isset($_SESSION['loggedIn'])){
@@ -51,7 +58,7 @@ class Peserta extends CI_Controller {
             redirect('/login');
         }
     }
-    public function tambah()
+    public function tambah($submitter)
     {
         if (isset($_POST['posisi'])) {
             $nama = $_POST['nama'];
@@ -62,7 +69,7 @@ class Peserta extends CI_Controller {
             $posisi = $_POST['posisi'];
             $peserta = $this->m_peserta->getIDPeserta($nama, $kelas, $absen, $ttl);
             foreach ($posisi as $value) {
-                $this->m_peserta->addRekrutmen($value, $peserta);
+                $this->m_peserta->addRekrutmen($value, $peserta, $submitter);
             }
             redirect('peserta/table/id_rekrutmen');
         } else {

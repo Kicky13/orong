@@ -63,6 +63,7 @@
                                                cellspacing="0" width="100%" style="width:100%">
                                             <thead class="text-primary">
                                             <tr>
+                                                <th>No</th>
                                                 <th>Nama</th>
                                                 <th>Posisi</th>
                                                 <?php foreach ($kriteria as $item) { ?>
@@ -73,6 +74,7 @@
                                             </thead>
                                             <tfoot>
                                             <tr>
+                                                <th>No</th>
                                                 <th>Nama</th>
                                                 <th>Posisi</th>
                                                 <?php foreach ($kriteria as $item) { ?>
@@ -83,9 +85,11 @@
                                             </tfoot>
                                             <section>
                                                 <tbody>
-                                                <?php $x = 1;
+                                                <?php $no = 1;
+                                                $x = 1;
                                                 foreach ($data as $item) { ?>
                                                     <tr style="<?php echo ($x > $limit) ? "background-color: #FF530D" : ""; ?>">
+                                                        <td><?php echo $no++; ?></td>
                                                         <td><?php echo $item['nama_peserta']; ?></td>
                                                         <td><?php echo $item['nama_posisi']; ?></td>
                                                         <?php foreach ($kriteria as $value) { ?>

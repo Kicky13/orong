@@ -41,12 +41,12 @@
                         <div class="card-header card-header-text">
                             <h4 class="card-title">Tabel Angkatan</h4>
                             <p class="category">Terakhir Update Hari ini</p>
-                            <a href="<?php echo base_url('index.php/angkatan/formAdd'); ?>" class="btn btn-success">
+                            <button id="tambah" class="btn btn-success">
                                         <span class="btn-label">
                                             <i class="material-icons">group_add</i>
                                         </span>
                                 Tambah Angkatan
-                            </a>
+                            </button>
                         </div>
                         <div class="card-content table-responsive">
                             <table class="table table-hover">
@@ -66,19 +66,25 @@
                                         <td><?php echo $value['tahun_angkatan']; ?></td>
                                         <td><?php echo $value['status_angkatan']; ?></td>
                                         <td class="text-center">
-                                            <a href="<?php echo base_url('index.php/angkatan/formEdit/' . $value['id_angkatan']); ?>"
+                                            <a <?php echo ($value['status_angkatan'] == 'Open') ? "" : "hidden"; ?> href="<?php echo base_url('index.php/angkatan/formEdit/' . $value['id_angkatan']); ?>"
                                                class="btn btn-warning">
                                         <span class="btn-label">
                                             <i class="material-icons">people_outline</i>
                                         </span>
                                                 Edit Angkatan
                                             </a>
-                                            <a href="" class="btn btn-danger">
+                                            <button type="button" data-id="<?php echo $value['id_angkatan']; ?>" <?php echo ($value['status_angkatan'] == 'Open') ? "" : "hidden"; ?> class="btn btn-danger lock">
                                         <span class="btn-label">
-                                            <i class="material-icons">cancel</i>
+                                            <i class="material-icons">lock</i>
                                         </span>
-                                                Hapus Angkatan
-                                            </a>
+                                                Lock Angkatan
+                                            </button>
+                                            <button type="button" data-id="<?php echo $value['id_angkatan']; ?>" <?php echo ($open == 1) ? "hidden" : ""; ?> class="btn btn-info unlock">
+                                        <span class="btn-label">
+                                            <i class="material-icons">lock</i>
+                                        </span>
+                                                Unlock Angkatan
+                                            </button>
                                         </td>
                                     </tr>
                                 <?php } ?>
@@ -93,11 +99,54 @@
     </div>
 </div>
 </body>
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php $this->load->view('part/footer'); ?>
 <script>
+    $(document).ready(function () {
+        console.log('ready');
+        $('#tambah').click(function () {
+           var x = <?php echo $open; ?>;
+            console.log(x);
+           if (x == 0){
+               window.location.replace('<?php echo base_url('index.php/angkatan/formAdd'); ?>');
+           } else {
+               swal('ERROR!', 'Semua angkatan harus lock terlebih dahulu', 'error');
+           }
+        });
+        $('.unlock').click(function () {
+           console.log('unlock');
+           var n = $(this).attr('data-id');
+            swal({
+                    title: "Apa anda yakin?",
+                    text: "Angkatan akan dibuka kembali!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "Ya, Unlock Angkatan ini!",
+                    closeOnConfirm: false
+                },
+                function(){
+                    window.location.replace('<?php echo base_url('index.php/angkatan/unlockAngkatan/'); ?>'+n);
+                });
+        });
+        $('.lock').click(function () {
+            console.log('lock');
+            var id = $(this).attr('data-id');
+            swal({
+                    title: "Apa anda yakin?",
+                    text: "Mengunci angkatan yang anda pilih!",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "Ya, Lock Angkatan ini!",
+                    closeOnConfirm: false
+                },
+                function(){
+                    window.location.replace('<?php echo base_url('index.php/angkatan/lockAngkatan/'); ?>'+id);
+                });
+        });
+    });
     $(function () {
         $("#datepicker").datepicker({
             changeMonth: true,

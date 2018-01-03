@@ -30,8 +30,6 @@
 <script src="<?php echo base_url() . 'assets/'; ?>dashboard/vendors/jquery-jvectormap.js "></script>
 <!-- Sliders Plugin -->
 <script src="<?php echo base_url() . 'assets/'; ?>dashboard/vendors/nouislider.min.js "></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <!-- Select Plugin -->
 <script src="<?php echo base_url() . 'assets/'; ?>dashboard/vendors/jquery.select-bootstrap.js "></script>
 <!-- Sweet Alert 2 plugin -->
@@ -44,4 +42,5 @@
 <script src="<?php echo base_url() . 'assets/'; ?>dashboard/vendors/jquery.tagsinput.js "></script>
 <!-- Material Dashboard javascript methods -->
 <script src="<?php echo base_url() . 'assets/'; ?>dashboard/js/wunder.min.js "></script>
+<script src="<?php echo base_url() . 'assets/'; ?>js/sweetalert.min.js "></script>
 

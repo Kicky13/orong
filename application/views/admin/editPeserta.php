@@ -71,8 +71,21 @@
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Kelas</label>
-                                        <div class="col-md-10">
-                                            <input required value="<?php echo $detail['kelas']; ?>" name="kelas" type="text" class="form-control" placeholder="Masukkan Kelas Peserta">
+                                        <div class="col-md-3">
+                                            <div class="dropdown">
+                                                <select required id="sort" name="kelas" class="dropdown-toggle btn btn-primary btn-round btn-block">
+                                                    <option selected disabled class="dropdown-item">Pilih Kelas Peserta</option>
+                                                    <option <?php echo ($detail['kelas'] == '4A') ? "selected" : "";?> value="4A" class="dropdown-item">4A</option>
+                                                    <option <?php echo ($detail['kelas'] == '4B') ? "selected" : "";?> value="4B" class="dropdown-item">4B</option>
+                                                    <option <?php echo ($detail['kelas'] == '4C') ? "selected" : "";?> value="4C" class="dropdown-item">4C</option>
+                                                    <option <?php echo ($detail['kelas'] == '5A') ? "selected" : "";?> value="5A" class="dropdown-item">5A</option>
+                                                    <option <?php echo ($detail['kelas'] == '5B') ? "selected" : "";?> value="5B" class="dropdown-item">5B</option>
+                                                    <option <?php echo ($detail['kelas'] == '5C') ? "selected" : "";?> value="5C" class="dropdown-item">5C</option>
+                                                    <option <?php echo ($detail['kelas'] == '6A') ? "selected" : "";?> value="6A" class="dropdown-item">6A</option>
+                                                    <option <?php echo ($detail['kelas'] == '6B') ? "selected" : "";?> value="6B" class="dropdown-item">6B</option>
+                                                    <option <?php echo ($detail['kelas'] == '6C') ? "selected" : "";?> value="6C" class="dropdown-item">6C</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">

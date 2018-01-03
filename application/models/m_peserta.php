@@ -74,7 +74,7 @@ class M_peserta extends CI_Model {
         $id = $this->db->query('SELECT * FROM tb_peserta ORDER BY id_peserta DESC')->result_array();
         return $id[0]['id_peserta'];
     }
-    public function addRekrutmen($posisi, $peserta)
+    public function addRekrutmen($posisi, $peserta, $submitter)
     {
         $this->load->model('m_angkatan');
         $angkatan = $this->m_angkatan->getOpenAngkatan();
@@ -83,6 +83,7 @@ class M_peserta extends CI_Model {
             'id_angkatan' => $angkatan,
             'id_posisi' => $posisi,
             'id_peserta' => $peserta,
+            'submitter' => $submitter,
             'skor' => null
         );
         $this->db->insert('tb_rekrutmen', $data);

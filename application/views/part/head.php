@@ -11,6 +11,7 @@
     <link href="<?php echo base_url().'assets/'; ?>dashboard/vendors/material.min.css" rel="stylesheet" />
     <!--  Material Dashboard CSS    -->
     <link href="<?php echo base_url().'assets/'; ?>dashboard/css/wunder.css" rel="stylesheet" />
+    <link href="<?php echo base_url().'assets/'; ?>css/sweetalert.css" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="<?php echo base_url().'assets/'; ?>dashboard/css/demo.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">

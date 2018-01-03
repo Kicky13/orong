@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah'); ?>" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah/admin'); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
                                     <h4 class="card-title">Tambah Peserta</h4>
                                 </div>
@@ -71,8 +71,21 @@
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Kelas</label>
-                                        <div class="col-md-10">
-                                            <input required name="kelas" type="text" class="form-control" placeholder="Masukkan Kelas Peserta">
+                                        <div class="col-md-3">
+                                            <div class="dropdown">
+                                                <select required id="sort" name="kelas" class="dropdown-toggle btn btn-primary btn-round btn-block">
+                                                    <option selected disabled class="dropdown-item">Pilih Kelas Peserta</option>
+                                                    <option value="4A" class="dropdown-item">4A</option>
+                                                    <option value="4B" class="dropdown-item">4B</option>
+                                                    <option value="4C" class="dropdown-item">4C</option>
+                                                    <option value="5A" class="dropdown-item">5A</option>
+                                                    <option value="5B" class="dropdown-item">5B</option>
+                                                    <option value="5C" class="dropdown-item">5C</option>
+                                                    <option value="6A" class="dropdown-item">6A</option>
+                                                    <option value="6B" class="dropdown-item">6B</option>
+                                                    <option value="6C" class="dropdown-item">6C</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">

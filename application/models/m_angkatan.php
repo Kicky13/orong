@@ -88,4 +88,21 @@ class M_angkatan extends CI_Model
         $data = $this->db->query('SELECT * FROM tb_angkatan WHERE status_angkatan = "Open"')->result_array();
         return $data[0]['id_angkatan'];
     }
+    public function countOpenAngkatan()
+    {
+        $data = $this->db->query('SELECT * FROM tb_angkatan WHERE status_angkatan = "Open"')->num_rows();
+        return $data;
+    }
+    public function lockAngkatan($id)
+    {
+        $this->db->set('status_angkatan', 'Lock');
+        $this->db->where('id_angkatan', $id);
+        $this->db->update('tb_angkatan');
+    }
+    public function unlockAngkatan($id)
+    {
+        $this->db->set('status_angkatan', 'Open');
+        $this->db->where('id_angkatan', $id);
+        $this->db->update('tb_angkatan');
+    }
 }

@@ -36,7 +36,7 @@
         </nav>
         <div class="content">
             <div class="container-fluid">
-                <a href="<?php echo base_url('index.php/peserta/viewTambah'); ?>" class="btn btn-success">
+                <a href="<?php echo base_url('index.php/peserta/viewTambah'); ?>" id="tambah" class="btn btn-success">
                                         <span class="btn-label">
                                             <i class="material-icons">person_add</i>
                                         </span>
@@ -65,16 +65,18 @@
                                            cellspacing="0" width="100%" style="width:100%">
                                         <thead class="text-primary">
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Posisi</th>
                                             <th>Tanggal Lahir</th>
                                             <th>Disubmit oleh</th>
-                                            <th class="disabled-sorting text-center">Aksi</th>
+                                            <th class="text-center">Aksi</th>
                                         </tr>
                                         </thead>
                                         <tfoot>
                                         <tr>
+                                            <th>No</th>
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Posisi</th>
@@ -84,14 +86,16 @@
                                         </tr>
                                         </tfoot>
                                         <tbody>
-                                        <?php foreach ($data as $value) { ?>
+                                        <?php $no = 1;
+                                        foreach ($data as $value) { ?>
                                             <tr>
+                                                <td><?php echo $no++; ?></td>
                                                 <td><?php echo $value['nama_peserta']; ?></td>
                                                 <td><?php echo $value['kelas']; ?></td>
                                                 <td><?php echo $value['nama_posisi']; ?></td>
                                                 <td><?php echo $value['tanggal_lahir']; ?></td>
-                                                <td>Anonim</td>
-                                                <td>
+                                                <td><?php echo $value['submitter']; ?></td>
+                                                <td class="text-center">
                                                     <a href="<?php echo base_url('index.php/peserta/viewEdit/'.$value['id_rekrutmen']); ?>" class="btn btn-warning">
                                         <span class="btn-label">
                                             <i class="material-icons">create</i>
@@ -126,8 +130,8 @@
                 console.log('Ganti');
                 var sort = $(this).val();
                 window.location.replace('<?php echo base_url('index.php/peserta/table/'); ?>'+sort)
-            })
-        })
+            });
+        });
         $(function () {
             $("#datepicker").datepicker({
                 changeMonth: true,
