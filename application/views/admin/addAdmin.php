@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah/'.$_SESSION['name']); ?>" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/admin/tambah'); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
                                     <h4 class="card-title">Tambah Admin</h4>
                                 </div>
@@ -81,12 +81,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <section id="posisi" hidden>
+                                    <section id="posisi">
                                         <div class="form-group row">
                                             <label class="col-md-2 col-form-label text-right">Posisi Pelatih</label>
                                             <div class="col-md-3">
                                                 <div class="dropdown">
-                                                    <select required name="posisi" class="dropdown-toggle btn btn-primary btn-round btn-block">
+                                                    <select name="posisi" class="dropdown-toggle btn btn-primary btn-round btn-block">
                                                         <option selected disabled class="dropdown-item">Pilih Posisi Pelatih</option>
                                                         <?php foreach ($posisi as $value){ ?>
                                                         <option value="<?php echo $value['id_posisi']; ?>" class="dropdown-item"><?php echo $value['nama_posisi']; ?></option>
@@ -168,13 +168,14 @@
 <script>
     $(document).ready(function () {
         console.log('ready');
+        $('#posisi').hide();
         $('#jabatan').change(function () {
            console.log('ganti');
            var x = $(this).val();
-           if (x == 1){
-
+           if (x == 2){
+                $('#posisi').show();
            } else {
-
+                $('#posisi').hide();
            };
         });
     });

@@ -17,4 +17,34 @@ class M_admin extends CI_Model {
         $data = $this->db->query('SELECT * FROM tb_posisi')->result_array();
         return $data;
     }
+    public function getDetailUser($id)
+    {
+        $data = $this->db->query('SELECT * FROM tb_user WHERE id_user = '.$id)->result_array();
+        return $data[0];
+    }
+    public function tambah($nama, $jabatan, $posisi, $email, $alamat, $password)
+    {
+        $data = array(
+            'id_user' => null,
+            'nama' => $nama,
+            'role' => $posisi,
+            'email' => $email,
+            'alamat' => $alamat,
+            'jumlah_akses_panduan' => 0,
+            'jenis_panduan' => null,
+            'jumlah_akses_uji' => 0,
+            'password' => $password,
+            'id_akses' => $jabatan
+        );
+        $this->db->insert('tb_user', $data);
+    }
+    public function update($id, $nama, $email, $alamat, $password)
+    {
+        $this->db->set('nama', $nama);
+        $this->db->set('email', $email);
+        $this->db->set('alamat', $alamat);
+        $this->db->set('password', $password);
+        $this->db->where('id_user', $id);
+        $this->db->update('tb_user');
+    }
 }

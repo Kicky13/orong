@@ -37,7 +37,7 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#"> Calon Peserta </a>
+                <a class="navbar-brand" href="#"> Tambah Admin </a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -58,64 +58,37 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah/'.$_SESSION['name']); ?>" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/admin/edit/'.$data['id_user']); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
-                                    <h4 class="card-title">Tambah Peserta <span class="label label-info" id="msg"></span></h4>
+                                    <h4 class="card-title">Edit Admin</h4>
                                 </div>
                                 <div class="card-content">
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Nama</label>
                                         <div class="col-md-10">
-                                            <input required id="nama" name="nama" type="text" class="form-control validasi" placeholder="Masukkan Nama Peserta">
+                                            <input required value="<?php echo $data['nama']; ?>" name="nama" type="text" class="form-control" placeholder="Masukkan Nama">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">Kelas</label>
-                                        <div class="col-md-3">
-                                            <div class="dropdown">
-                                                <select required id="kelas" name="kelas" class="dropdown-toggle btn btn-primary btn-round btn-block validasi">
-                                                    <option selected disabled class="dropdown-item">Pilih Kelas Peserta</option>
-                                                    <option value="4A" class="dropdown-item">4A</option>
-                                                    <option value="4B" class="dropdown-item">4B</option>
-                                                    <option value="4C" class="dropdown-item">4C</option>
-                                                    <option value="5A" class="dropdown-item">5A</option>
-                                                    <option value="5B" class="dropdown-item">5B</option>
-                                                    <option value="5C" class="dropdown-item">5C</option>
-                                                    <option value="6A" class="dropdown-item">6A</option>
-                                                    <option value="6B" class="dropdown-item">6B</option>
-                                                    <option value="6C" class="dropdown-item">6C</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right validasi">No. Absen</label>
+                                        <label class="col-md-2 col-form-label text-right">Email</label>
                                         <div class="col-md-10">
-                                            <input required id="absen" name="absen" type="text" class="form-control validasi" placeholder="Masukkan Nomor Absen">
+                                            <input required value="<?php echo $data['email']; ?>" name="email" type="text" class="form-control" placeholder="Masukkan Email Anda">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">Tanggal Lahir</label>
+                                        <label class="col-md-2 col-form-label text-right">Alamat</label>
                                         <div class="col-md-10">
-                                            <input required name="ttl" type="text" class="form-control datepicker" placeholder="Pilih Tanggal"/>
+                                            <input required value="<?php echo $data['alamat']; ?>" name="alamat" type="text" class="form-control" placeholder="Masukkan Alamat Anda">
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">Pilih Posisi</label>
+                                        <label class="col-md-2 col-form-label text-right">Password</label>
                                         <div class="col-md-10">
-                                            <?php $n = 0;
-                                            foreach ($data as $value){ ?>
-                                            <div class="checkbox form-check-inline">
-                                                <label>
-                                                    <input type="checkbox" id="posisi-<?php echo $n; ?>" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
-                                                </label>
-                                            </div>
-                                            <?php $n++;
-                                            } ?>
+                                            <input required value="<?php echo $data['password']; ?>" name="password" type="password" class="form-control" placeholder="Masukkan Password Anda">
                                         </div>
                                     </div>
                                     <button type="submit" id="submit" class="btn btn-primary btn-round">
-                                        <i class="material-icons">assignment</i> Submit
+                                        <i class="material-icons">assignment</i> Update
                                     </button>
                                 </div>
                             </form>
@@ -150,8 +123,6 @@
 <script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery-jvectormap.js"></script>
 <!-- Sliders Plugin -->
 <script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/nouislider.min.js"></script>
-<!--  Google Maps Plugin    -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
 <!-- Select Plugin -->
 <script src="<?php echo base_url().'assets/'; ?>dashboard/vendors/jquery.select-bootstrap.js"></script>
 <!-- Sweet Alert 2 plugin -->
@@ -170,54 +141,6 @@
 <script>
     $(document).ready(function () {
         console.log('ready');
-        $('.validasi').change(function () {
-           console.log('validasi');
-           $('#msg').html();
-           var nama = $('#nama').val();
-           var kelas = $('#kelas').val();
-           var absen = $('#absen').val();
-            $.ajax({
-                type        :   'POST',
-                url         :   '<?php echo base_url('index.php/peserta/validasiData'); ?>',
-                data        : {
-                    "nama" : nama,
-                    "kelas" : kelas,
-                    "absen" : absen
-                }
-            }).done(function (data) {
-                console.log(data);
-                $('#msg').html(data);
-                if (data=='Akun Telah Digunakan'){
-                    $('#submit').prop('disabled', true);
-                } else {
-                    $('#submit').prop('disabled', false);
-                }
-            });
-        });
-        $('.validasi').keyup(function () {
-           console.log('ketik');
-            $('#msg').html();
-            var nama = $('#nama').val();
-            var kelas = $('#kelas').val();
-            var absen = $('#absen').val();
-            $.ajax({
-                type        :   'POST',
-                url         :   '<?php echo base_url('index.php/peserta/validasiData'); ?>',
-                data        : {
-                    "nama" : nama,
-                    "kelas" : kelas,
-                    "absen" : absen
-                }
-            }).done(function (data) {
-                console.log(data);
-                $('#msg').html(data);
-                if (data=='Akun Telah Digunakan'){
-                    $('#submit').prop('disabled', true);
-                } else {
-                    $('#submit').prop('disabled', false);
-                }
-            });
-        });
     });
 </script>
 

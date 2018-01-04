@@ -110,4 +110,16 @@ class Peserta extends CI_Controller {
         $this->m_peserta->editRekrut($rekrut, $posisi);
         redirect('/peserta/table/id_rekrutmen');
     }
+    public function validasiData()
+    {
+        $nama = $_POST['nama'];
+        $kelas = $_POST['kelas'];
+        $absen = $_POST['absen'];
+        $count = $this->m_peserta->validasiPeserta($nama, $kelas, $absen);
+        if ($count == 0){
+            echo 'Akun Tersedia';
+        } else {
+            echo 'Akun Telah Digunakan';
+        }
+    }
 }
