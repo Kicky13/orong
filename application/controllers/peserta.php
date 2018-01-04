@@ -14,9 +14,13 @@ class Peserta extends CI_Controller {
         $this->load->model('m_angkatan');
         if (isset($_SESSION['loggedIn'])){
             if ($_SESSION['level'] == 1){
-                $data = $this->m_peserta->getDataTable($sort);
                 $open = $this->m_angkatan->countOpenAngkatan();
-                $this->load->view('admin/viewPeserta', array('data' => $data, 'open' => $open));
+                if ($open < 1){
+                    echo 'Halaman tidak Tersedia Untuk Saat ini';
+                } else {
+                    $data = $this->m_peserta->getDataTable($sort);
+                    $this->load->view('admin/viewPeserta', array('data' => $data));
+                }
             } else {
                 echo 'Forbidden Access';
             }
@@ -58,12 +62,13 @@ class Peserta extends CI_Controller {
             redirect('/login');
         }
     }
-    public function tambah($submitter)
+    public function tambah()
     {
         if (isset($_POST['posisi'])) {
             $nama = $_POST['nama'];
             $kelas = $_POST['kelas'];
             $absen = $_POST['absen'];
+            $submitter = $_SESSION['name'];
             $tanggal = explode('/', $_POST['ttl']);
             $ttl = $tanggal[2].'-'.$tanggal[0].'-'.$tanggal[1];
             $posisi = $_POST['posisi'];
@@ -75,6 +80,18 @@ class Peserta extends CI_Controller {
         } else {
             redirect('peserta/viewTambah');
         }
+    }
+    public function pesertaTambah($submitter)
+    {
+        $nama = $_POST['nama'];
+        $kelas = $_POST['kelas'];
+        $absen = $_POST['absen'];
+        $tanggal = explode('/', $_POST['ttl']);
+        $ttl = $tanggal[2].'-'.$tanggal[0].'-'.$tanggal[1];
+        $posisi = $_POST['posisi'];
+        $peserta = $this->m_peserta->getIDPeserta($nama, $kelas, $absen, $ttl);
+        $this->m_peserta->addRekrutmen($posisi, $peserta, $submitter);
+        redirect('peserta/viewTambahPeserta');
     }
     public function deleteRekrut($id)
     {

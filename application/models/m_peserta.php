@@ -16,7 +16,7 @@ class M_peserta extends CI_Model {
     }
     public function getDataPosisi()
     {
-        $data = $this->db->query('SELECT * FROM tb_requires r JOIN tb_posisi p ON r.id_posisi = p.id_posisi')->result_array();
+        $data = $this->db->query('SELECT * FROM tb_posisi')->result_array();
         return $data;
     }
     public function getCountPosisi()
@@ -87,5 +87,10 @@ class M_peserta extends CI_Model {
             'skor' => null
         );
         $this->db->insert('tb_rekrutmen', $data);
+    }
+    public function validasiPeserta($nama, $kelas, $absen)
+    {
+        $data = $this->db->query('SELECT * FROM tb_peserta WHERE nama_peserta = "'.$nama.'" AND kelas = "'.$kelas.'" AND no_absen = '.$absen)->num_rows();
+        return $data;
     }
 }

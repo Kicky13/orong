@@ -11,11 +11,25 @@ class Perhitungan extends CI_Controller {
     }
     public function tabelNilai($id)
     {
-        $data = $this->m_hitung->getDataTable($id);
-        $kriteria = $this->m_hitung->getKriteria($id);
-        $posisi = $this->m_hitung->getPosisi();
-        $limit = $this->m_hitung->getLimit($id);
-        $this->load->view('admin/viewHitung', array('id' => $id, 'posisi' => $posisi, 'data' => $data, 'kriteria' => $kriteria, 'limit' => $limit));
+        $this->load->model('m_angkatan');
+        if (isset($_SESSION['loggedIn'])){
+            if ($_SESSION['level'] == 1){
+                $open = $this->m_angkatan->countOpenAngkatan();
+                if ($open < 1){
+                   echo 'Halaman ini tidak tersedia untuk saat ini';
+                } else {
+                    $data = $this->m_hitung->getDataTable($id);
+                    $kriteria = $this->m_hitung->getKriteria($id);
+                    $posisi = $this->m_hitung->getPosisi();
+                    $limit = $this->m_hitung->getLimit($id);
+                    $this->load->view('admin/viewHitung', array('id' => $id, 'posisi' => $posisi, 'data' => $data, 'kriteria' => $kriteria, 'limit' => $limit));
+                }
+            } else {
+                echo 'Forbidden Access';
+            }
+        } else {
+            redirect('/login');
+        }
     }
     public function hitungNilai($id)
     {

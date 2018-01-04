@@ -58,7 +58,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah/admin'); ?>" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah/'.$_SESSION['name']); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
                                     <h4 class="card-title">Tambah Peserta</h4>
                                 </div>

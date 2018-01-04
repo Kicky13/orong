@@ -11,11 +11,17 @@ class Penilaian extends CI_Controller {
     }
     public function tabelNilai($id)
     {
+        $this->load->model('m_angkatan');
         if (isset($_SESSION['loggedIn'])){
             if ($_SESSION['level'] == 1){
-                $posisi = $this->m_penilaian->getPosisi();
-                $data = $this->m_penilaian->getDataTable($id);
-                $this->load->view('admin/viewPenilaian', array('data' => $data, 'posisi' => $posisi, 'id' => $id));
+                $open = $this->m_angkatan->countOpenAngkatan();
+                if ($open < 1){
+                    echo 'Halaman tidak tersedia untuk saat ini';
+                } else {
+                    $posisi = $this->m_penilaian->getPosisi();
+                    $data = $this->m_penilaian->getDataTable($id);
+                    $this->load->view('admin/viewPenilaian', array('data' => $data, 'posisi' => $posisi, 'id' => $id));
+                }
             } else {
                 echo 'Forbidden Access';
             }

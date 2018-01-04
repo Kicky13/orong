@@ -58,7 +58,7 @@
             <h3>DAFTAR</h3>
             <p>Daftarkan dirimu sekarang dengan mengisi formulir berikut</i></p>
         </div>
-        <form action="<?php echo base_url('index.php/peserta/tambah/Anonim') ?>" method="POST">
+        <form action="<?php echo base_url('index.php/peserta/pesertaTambah/Anonim') ?>" method="POST">
             <div class="form-group clearfix">
                 <label>Nama Lengkap</label>
                 <input required class="input-area input" name="nama" type="text" placeholder="Masukkan nama">
@@ -87,8 +87,8 @@
                 <input required class="input-area input datepicker" name="ttl" type="text" placeholder="Pilih Tanggal Lahir">
             </div>
             <div class="form-group clearfix">
-                <label>Kelas</label>
-                <select required class="input-area input" name="kelas">
+                <label>Posisi</label>
+                <select required class="input-area input" name="posisi">
                     <option disabled selected>Pilih salah satu posisi</option>
                     <?php foreach ($data as $item){ ?>
                     <option value="<?php echo $item['id_posisi']; ?>"><?php echo $item['nama_posisi']; ?></option>
@@ -96,7 +96,7 @@
                 </select>
             </div>
             <div class="form-group clearfix">
-                <button class="btn btn-raised" type="submit" id="submit">Masuk</button>
+                <button class="btn btn-raised" type="submit" id="submit">Submit</button>
             </div>
         </form>
     </div>
