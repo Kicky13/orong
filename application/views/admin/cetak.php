@@ -28,11 +28,8 @@
 <div id="page-container">
     <div id="pf1" class="pf w0 h0" data-page-no="1">
         <div class="row">
-            <div class="text-center header-fixed judul">
-                <h5><strong>DATA ANGGOTA MARCHING BAND</strong></h5>
-                <h2>GITA ORONG ORONG</h2>
-                <h3>SDN 1 GUDANG</h3>
-                <p>KECAMATAN ASEMBAGUS, KABUPATEN SITUBONDO<br>PROVINSI JAWA TIMUR</p>
+            <div class="judul">
+                <p><strong>DATA ANGGOTA MARCHING BAND</strong> <br> GITA ORONG ORONG <br> SDN 1 GUDANG <br> KECAMATAN ASEMBAGUS, KABUPATEN SITUBONDO<br>PROVINSI JAWA TIMUR</p>
             </div>
         </div>
         <div class="row">
@@ -67,13 +64,16 @@
                     <th>Posisi</th>
                     </thead>
                     <tbody>
+                    <?php $no = 1;
+                    foreach ($anggota as $item){ ?>
                     <tr>
-                        <td>1</td>
-                        <td>Teddy</td>
-                        <td>5C</td>
-                        <td>02-020-1995</td>
-                        <td>Brassline</td>
+                        <td><?php echo $no++; ?></td>
+                        <td><?php echo $item['nama_peserta']; ?></td>
+                        <td><?php echo $item['kelas']; ?></td>
+                        <td><?php echo $item['tanggal_lahir']; ?></td>
+                        <td><?php echo $item['nama_posisi']; ?></td>
                     </tr>
+                    <?php } ?>
                     </tbody>
                 </table>
             </div>

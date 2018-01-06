@@ -1,14 +1,11 @@
 .judul{
-    margin-top: 1cm;
+    margin: 0px;
     font-family: "Calibri";
-}
-.judul h2{
-    margin-bottom: 0.1cm;
-    font-size: 30px;
+    text-align: center;
+    font-size: 9px;
 }
 .subhead{
     font-size: 11px;
-    margin-top: 1cm;
     margin-left: 1cm;
 }
 .subhead p{
@@ -17,5 +14,5 @@
 .tabel{
     margin-left: 1cm;
     margin-right: 1cm;
-    font-size: 10px;
+    font-size: 7px;
 }

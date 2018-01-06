@@ -142,6 +142,7 @@
                         swal('MAAF!', 'Data belum lengkap, silahkan lengkapi terlebih dahulu', 'error');
                     } else {
                         swal('BERHASIL', 'Data berhasil diinputkan', 'success');
+                        window.location.replace('<?php echo base_url('index.php/angkatan')?>');
                     }
                 });
             });

@@ -110,7 +110,7 @@ class M_angkatan extends CI_Model
     }
     public function getDataAnggota($id)
     {
-        $data = $this->db->query('SELECT * FROM tb_anggota a JOIN tb_rekrutmen r ON a.id_rekrutmen = r.id_rekrutmen JOIN tb_peserta p ON p.id_peserta = r.id_peserta WHERE id_angkatan = '.$id.' ORDER BY id_posisi')->result_array();
+        $data = $this->db->query('SELECT * FROM tb_anggota a JOIN tb_rekrutmen r ON a.id_rekrutmen = r.id_rekrutmen JOIN tb_peserta p ON p.id_peserta = r.id_peserta JOIN tb_posisi pos ON r.id_posisi = pos.id_posisi WHERE id_angkatan = '.$id.' ORDER BY r.id_posisi')->result_array();
         return $data;
     }
 }
