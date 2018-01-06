@@ -93,16 +93,24 @@ class M_angkatan extends CI_Model
         $data = $this->db->query('SELECT * FROM tb_angkatan WHERE status_angkatan = "Open"')->num_rows();
         return $data;
     }
-    public function lockAngkatan($id)
+    public function getTahun($id)
     {
-        $this->db->set('status_angkatan', 'Lock');
-        $this->db->where('id_angkatan', $id);
-        $this->db->update('tb_angkatan');
+        $data = $this->db->query('SELECT * FROM tb_angkatan WHERE id_angkatan = '.$id)->result_array();
+        return $data[0]['tahun_angkatan'];
     }
-    public function unlockAngkatan($id)
+    public function getDataAdmin()
     {
-        $this->db->set('status_angkatan', 'Open');
-        $this->db->where('id_angkatan', $id);
-        $this->db->update('tb_angkatan');
+        $data = $this->db->query('SELECT * FROM tb_user WHERE id_akses = 1')->result_array();
+        return $data[0]['nama'];
+    }
+    public function getDataPelatih()
+    {
+        $data = $this->db->query('SELECT * FROM tb_user WHERE id_akses = 2')->result_array();
+        return $data;
+    }
+    public function getDataAnggota($id)
+    {
+        $data = $this->db->query('SELECT * FROM tb_anggota a JOIN tb_rekrutmen r ON a.id_rekrutmen = r.id_rekrutmen JOIN tb_peserta p ON p.id_peserta = r.id_peserta WHERE id_angkatan = '.$id.' ORDER BY id_posisi')->result_array();
+        return $data;
     }
 }

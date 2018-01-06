@@ -106,4 +106,67 @@ class M_hitung extends CI_Model {
         }
         return $x;
     }
+    public function analisaAnggota()
+    {
+        $this->load->model('m_angkatan');
+        $angkatan = $this->m_angkatan->getOpenAngkatan();
+        $peserta = $this->db->query('SELECT * FROM tb_peserta p JOIN tb_rekrutmen r ON p.id_peserta = r.id_peserta WHERE id_angkatan = '.$angkatan)->result_array();
+        foreach ($peserta as $value){
+            $multiple = $this->db->query('SELECT * FROM tb_rekrutmen WHERE id_peserta = '.$value['id_peserta'].' ORDER BY skor DESC')->result_array();
+            $this->db->query('DELETE FROM tb_rekrutmen WHERE id_peserta = '.$value['id_peserta'].' AND id_rekrutmen != '.$multiple[0]['id_rekrutmen']);
+        }
+    }
+    public function getPosisiMember()
+    {
+        $this->load->model('m_angkatan');
+        $angkatan = $this->m_angkatan->getOpenAngkatan();
+        $posisi = $this->db->query('SELECT * FROM tb_posisi p JOIN tb_requires r ON p.id_posisi = r.id_posisi WHERE id_angkatan = '.$angkatan)->result_array();
+        foreach ($posisi as $value){
+            $rekrutmen = $this->db->query('SELECT * FROM tb_rekrutmen WHERE id_posisi = "'.$value['id_posisi'].'" AND id_angkatan = '.$angkatan.' ORDER BY skor DESC LIMIT '.$value['jumlah_require'])->result_array();
+            foreach ($rekrutmen as $person){
+                $this->insertAnggota($person['id_rekrutmen']);
+            }
+        }
+    }
+    public function insertAnggota($rekrutmen)
+    {
+        $data = array(
+            'id_anggota' => null,
+            'id_rekrutmen' => $rekrutmen
+        );
+        $this->db->insert('tb_anggota', $data);
+    }
+    public function cekAnggota()
+    {
+        $this->load->model('m_angkatan');
+        $angkatan = $this->m_angkatan->getOpenAngkatan();
+        $anggota = $this->db->query('SELECT * FROM tb_anggota a JOIN tb_rekrutmen r ON a.id_rekrutmen = r.id_rekrutmen WHERE id_angkatan = '.$angkatan)->num_rows();
+        return $anggota;
+    }
+    public function onRequired()
+    {
+        $this->load->model('m_angkatan');
+        $angkatan = $this->m_angkatan->getOpenAngkatan();
+        $posisi = $this->db->query('SELECT * FROM tb_posisi p JOIN tb_requires r ON p.id_posisi = r.id_posisi WHERE id_angkatan = '.$angkatan)->result_array();
+        $x = 0;
+        foreach ($posisi as $value){
+            $rekrut = $this->db->query('SELECT * FROM tb_rekrutmen WHERE id_posisi = "'.$value['id_posisi'].'" AND id_angkatan = '.$angkatan)->num_rows();
+            if ($rekrut >= $value['jumlah_require']){
+                $x++;
+            } else {
+                $x = $x;
+            }
+        }
+        if ($x < 5){
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+    public function lockAngkatan()
+    {
+        $this->db->set('status_angkatan', 'Lock');
+        $this->db->where('status_angkatan', 'Open');
+        $this->db->update('tb_angkatan');
+    }
 }

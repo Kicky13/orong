@@ -36,4 +36,20 @@ class Perhitungan extends CI_Controller {
         $this->m_hitung->hitungNilai($id);
         redirect('/perhitungan/tabelNilai/'.$id);
     }
+    public function simpanPerhitungan()
+    {
+        $this->m_hitung->analisaAnggota();
+        $rekrut = $this->m_hitung->onRequired();
+        $anggota = $this->m_hitung->cekAnggota();
+        if ($anggota > 0){
+            echo 1;
+        } elseif ($rekrut == 1) {
+            echo 2;
+        } else {
+            $this->m_hitung->getPosisiMember();
+            $this->m_hitung->lockAngkatan();
+            echo 3;
+        }
+
+    }
 }

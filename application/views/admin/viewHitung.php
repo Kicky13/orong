@@ -104,6 +104,9 @@
                                         <a href="<?php echo base_url('index.php/perhitungan/hitungNilai/'.$id); ?>" type="button" class="btn btn-info btn-round">
                                             <i class="material-icons">assignment</i> Hitung
                                         </a>
+                                        <button <?php echo ($data[0]['skor'] == '')? "hidden" : "";?> id="simpan" type="button" class="btn btn-success btn-round">
+                                            <i class="material-icons">save</i> Simpan
+                                        </button>
                                     </div>
                                 </section>
                             </div>
@@ -124,6 +127,23 @@
                 console.log('ganti');
                 var id = $(this).val();
                 window.location.replace('<?php echo base_url('index.php/perhitungan/tabelNilai/')?>' + id);
+            });
+            $('#simpan').click(function () {
+               console.log('aku klik');
+               var posisi = $('#show').val();
+                $.ajax({
+                    type        :   'POST',
+                    url         :   '<?php echo base_url('index.php/perhitungan/simpanPerhitungan'); ?>'
+                }).done(function (data) {
+                    console.log(data);
+                    if (data=='1'){
+                        swal('MAAF!', 'Data sudah ada', 'error');
+                    } else if(data=='2') {
+                        swal('MAAF!', 'Data belum lengkap, silahkan lengkapi terlebih dahulu', 'error');
+                    } else {
+                        swal('BERHASIL', 'Data berhasil diinputkan', 'success');
+                    }
+                });
             });
         });
         $(function () {

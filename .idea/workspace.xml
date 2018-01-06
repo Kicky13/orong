@@ -10,7 +10,95 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="angkatan.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/angkatan.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="114" column="123" lean-forward="true" selection-start-line="114" selection-start-column="123" selection-end-line="114" selection-end-column="123" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m_angkatan.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/m_angkatan.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="502">
+              <caret line="113" column="21" lean-forward="false" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+              <folding>
+                <marker date="1515233574062" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
+                <marker date="1515233574062" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
+                <marker date="1515233574062" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
+                <marker date="1515233574062" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+                <marker date="1515233574062" expanded="true" signature="2725:2781" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="2927:2983" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="3101:3146" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="3101:3147" ph="SELECT * FRO... tb_angkatan" />
+                <marker date="1515233574062" expanded="true" signature="3295:3335" ph="SELECT * FRO... tb_user" />
+                <marker date="1515233574062" expanded="true" signature="3471:3511" ph="SELECT * FRO... tb_user" />
+                <marker date="1515233574062" expanded="true" signature="3639:3789" ph="SELECT * FRO... tb_anggota" />
+                <marker date="1515233574062" expanded="true" signature="3639:3790" ph="SELECT * FRO... tb_anggota" />
+                <marker date="1515233574062" expanded="true" signature="3639:3816" ph="SELECT * FRO... tb_anggota" />
+                <marker date="1515233574062" expanded="true" signature="3639:3817" ph="SELECT * FRO... tb_anggota" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cetak.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/cetak.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+              <folding>
+                <marker date="1515233574078" expanded="true" signature="971:980" ph="..." />
+                <marker date="1515233574078" expanded="true" signature="3073:3081" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mycostum.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/cetak/mycostum.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewAngkatan.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/viewAngkatan.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="75" column="167" lean-forward="false" selection-start-line="75" selection-start-column="167" selection-end-line="75" selection-end-column="167" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getL</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,16 +122,11 @@
         <option value="$PROJECT_DIR$/application/controllers/hitung.php" />
         <option value="$PROJECT_DIR$/application/views/part/nav_admin.php" />
         <option value="$PROJECT_DIR$/application/models/m_penilaian.php" />
-        <option value="$PROJECT_DIR$/application/models/m_hitung.php" />
         <option value="$PROJECT_DIR$/application/views/part/head.php" />
         <option value="$PROJECT_DIR$/application/views/part/footer.php" />
-        <option value="$PROJECT_DIR$/application/models/m_angkatan.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/viewAngkatan.php" />
-        <option value="$PROJECT_DIR$/application/controllers/angkatan.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewPeserta.php" />
         <option value="$PROJECT_DIR$/application/views/admin/editPeserta.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewPenilaian.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/viewHitung.php" />
         <option value="$PROJECT_DIR$/application/views/login.php" />
         <option value="$PROJECT_DIR$/application/controllers/dashboard.php" />
         <option value="$PROJECT_DIR$/application/views/pelatih/dashboard.php" />
@@ -52,7 +135,6 @@
         <option value="$PROJECT_DIR$/application/views/tambahPeserta.php" />
         <option value="$PROJECT_DIR$/application/models/m_peserta.php" />
         <option value="$PROJECT_DIR$/application/controllers/penilaian.php" />
-        <option value="$PROJECT_DIR$/application/controllers/perhitungan.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewAdmin.php" />
         <option value="$PROJECT_DIR$/application/views/admin/addAdmin.php" />
         <option value="$PROJECT_DIR$/application/views/admin/editAdmin.php" />
@@ -60,6 +142,16 @@
         <option value="$PROJECT_DIR$/application/models/m_admin.php" />
         <option value="$PROJECT_DIR$/application/controllers/peserta.php" />
         <option value="$PROJECT_DIR$/application/views/admin/addPeserta.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/viewHitung.php" />
+        <option value="$PROJECT_DIR$/application/controllers/perhitungan.php" />
+        <option value="$PROJECT_DIR$/application/models/m_hitung.php" />
+        <option value="$PROJECT_DIR$/application/models/m_cetak.php" />
+        <option value="$PROJECT_DIR$/application/controllers/cetak.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/viewAngkatan.php" />
+        <option value="$PROJECT_DIR$/assets/cetak/mycostum.css" />
+        <option value="$PROJECT_DIR$/application/views/admin/cetak.php" />
+        <option value="$PROJECT_DIR$/application/models/m_angkatan.php" />
+        <option value="$PROJECT_DIR$/application/controllers/angkatan.php" />
       </list>
     </option>
   </component>
@@ -90,6 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -134,16 +227,27 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="orong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="orong" type="b2602c69:ProjectViewProjectNode" />
+              <item name="orong" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="cetak" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../malangkab" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,6 +263,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -201,17 +308,20 @@
       <workItem from="1514857453701" duration="592000" />
       <workItem from="1514976628199" duration="745000" />
       <workItem from="1515002758187" duration="3932000" />
-      <workItem from="1515065477621" duration="20321000" />
+      <workItem from="1515065477621" duration="34557000" />
+      <workItem from="1515209435340" duration="2270000" />
+      <workItem from="1515216026105" duration="103000" />
+      <workItem from="1515216514143" duration="17020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193775000" />
+    <option name="totallyTimeSpent" value="227404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -242,70 +352,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/m_login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <marker date="1508229395257" expanded="true" signature="276:313" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="276:325" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="276:344" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="276:358" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="276:359" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="492:529" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="492:543" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="492:544" ph="SELECT * FRO... tb_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="83" lean-forward="true" selection-start-line="4" selection-start-column="83" selection-end-line="4" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/m_login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <marker date="1508229395257" expanded="true" signature="276:313" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="276:325" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="276:344" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="276:358" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="276:359" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="492:529" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="492:543" ph="SELECT * FRO... tb_user" />
-            <marker date="1508229395257" expanded="true" signature="492:544" ph="SELECT * FRO... tb_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1105">
@@ -332,13 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -429,46 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/m_hitung.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <marker date="1513222841406" expanded="true" signature="255:278" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1513222841406" expanded="true" signature="507:713" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="507:714" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="507:742" ph="SELECT * FRO... tb_rekrutmen" />
-            <marker date="1513222841406" expanded="true" signature="507:778" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="507:794" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="507:799" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="507:800" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="1771:1816" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1513222841406" expanded="true" signature="1771:1824" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1513222841406" expanded="true" signature="1771:1825" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1513222841406" expanded="true" signature="1954:2001" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="1954:2002" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2234:2388" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2234:2394" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2234:2396" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2234:2414" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2234:2415" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2234:2437" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2234:2452" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2600:2701" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="2600:2702" ph="SELECT * FRO... tb_penilaian" />
-            <marker date="1513222841406" expanded="true" signature="3633:3680" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1513222841406" expanded="true" signature="3633:3692" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1513222841406" expanded="true" signature="3633:3694" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1513222841406" expanded="true" signature="3747:3868" ph="SELECT MAX(n... " />
-            <marker date="1513222841406" expanded="true" signature="3747:3900" ph="SELECT MAX(n... " />
-            <marker date="1513222841406" expanded="true" signature="3747:3901" ph="SELECT MAX(n... " />
-            <marker date="1513222841406" expanded="true" signature="4142:4203" ph="SELECT * FRO... tb_kriteria" />
-            <marker date="1513222841406" expanded="true" signature="4256:4410" ph="SELECT MIN(n... " />
-            <marker date="1513222841406" expanded="true" signature="4623:4676" ph="SELECT * FRO... tb_requires" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/addAngkatan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -509,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -517,7 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="50" column="113" lean-forward="true" selection-start-line="50" selection-start-column="113" selection-end-line="50" selection-end-column="113" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -525,7 +522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
           <caret line="54" column="81" lean-forward="false" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -533,15 +529,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/angkatan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,29 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="60" column="69" lean-forward="false" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/m_angkatan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="94" column="5" lean-forward="true" selection-start-line="94" selection-start-column="5" selection-end-line="94" selection-end-column="5" />
-          <folding>
-            <marker date="1514291465197" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1514291465197" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
-            <marker date="1514291465197" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
-            <marker date="1514291465197" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1514291465197" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1514291465197" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1514291465197" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1514291465197" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1514291465197" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1514291465197" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
-            <marker date="1514291465197" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
-            <marker date="1514291465197" expanded="true" signature="2725:2781" ph="SELECT * FRO... tb_angkatan" />
-            <marker date="1514291465197" expanded="true" signature="2927:2983" ph="SELECT * FRO... tb_angkatan" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -583,56 +547,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/addAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="48" column="32" lean-forward="false" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
-          <folding>
-            <marker date="1515089518023" expanded="true" signature="3707:3823" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="3882:6166" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="3947:4338" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="4114:4295" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="4403:5331" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="4572:5288" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="4639:5241" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="4793:5190" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="5389:6166" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="5458:6166" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="5642:6166" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="5713:6166" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="5848:6166" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="6645:7044" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="6813:7001" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="7109:7511" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="7278:7468" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="7576:7988" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="7747:7945" ph="..." />
-            <marker date="1515089518023" expanded="true" signature="8093:8227" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/viewAngkatan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="113" column="60" lean-forward="false" selection-start-line="113" selection-start-column="60" selection-end-line="113" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +558,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="76" column="42" lean-forward="true" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -679,15 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110">
           <caret line="70" column="90" lean-forward="true" selection-start-line="70" selection-start-column="90" selection-end-line="70" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/viewHitung.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="91" column="80" lean-forward="false" selection-start-line="91" selection-start-column="80" selection-end-line="91" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,7 +603,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="83" column="72" lean-forward="true" selection-start-line="83" selection-start-column="72" selection-end-line="83" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1062">
           <caret line="51" column="40" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="59" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
           <caret line="558" column="37" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="564" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-552">
           <caret line="73" column="36" lean-forward="true" selection-start-line="73" selection-start-column="36" selection-end-line="75" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,15 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="62" column="121" lean-forward="false" selection-start-line="62" selection-start-column="121" selection-end-line="62" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="74" column="42" lean-forward="true" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,6 +677,214 @@
             <marker date="1515069839404" expanded="true" signature="3562:3660" ph="SELECT * FRO... tb_peserta" />
             <marker date="1515069839404" expanded="true" signature="3562:3698" ph="SELECT * FRO... tb_peserta" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="78" column="12" lean-forward="true" selection-start-line="78" selection-start-column="12" selection-end-line="92" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_hitung.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="172" column="0" lean-forward="true" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+          <folding>
+            <marker date="1515226010698" expanded="true" signature="255:278" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1515226010698" expanded="true" signature="507:713" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="507:714" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="507:742" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="507:778" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="507:794" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="507:799" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="507:800" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="1771:1816" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1515226010698" expanded="true" signature="1771:1824" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1515226010698" expanded="true" signature="1771:1825" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1515226010698" expanded="true" signature="1954:2001" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="1954:2002" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2234:2388" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2234:2394" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2234:2396" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2234:2414" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2234:2415" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2234:2437" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2234:2452" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2600:2701" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="2600:2702" ph="SELECT * FRO... tb_penilaian" />
+            <marker date="1515226010698" expanded="true" signature="3633:3680" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1515226010698" expanded="true" signature="3633:3692" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1515226010698" expanded="true" signature="3633:3694" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1515226010698" expanded="true" signature="3747:3868" ph="SELECT MAX(n... " />
+            <marker date="1515226010698" expanded="true" signature="3747:3900" ph="SELECT MAX(n... " />
+            <marker date="1515226010698" expanded="true" signature="3747:3901" ph="SELECT MAX(n... " />
+            <marker date="1515226010698" expanded="true" signature="4142:4203" ph="SELECT * FRO... tb_kriteria" />
+            <marker date="1515226010698" expanded="true" signature="4256:4410" ph="SELECT MIN(n... " />
+            <marker date="1515226010698" expanded="true" signature="4623:4676" ph="SELECT * FRO... tb_requires" />
+            <marker date="1515226010698" expanded="true" signature="5026:5123" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1515226010698" expanded="true" signature="5026:5124" ph="SELECT * FRO... tb_peserta" />
+            <marker date="1515226010698" expanded="true" signature="5234:5279" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5234:5280" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5234:5323" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5234:5324" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5373:5416" ph="DELETE FROM " />
+            <marker date="1515226010698" expanded="true" signature="5373:5417" ph="DELETE FROM " />
+            <marker date="1515226010698" expanded="true" signature="5373:5439" ph="DELETE FROM " />
+            <marker date="1515226010698" expanded="true" signature="5373:5461" ph="DELETE FROM " />
+            <marker date="1515226010698" expanded="true" signature="5373:5462" ph="DELETE FROM " />
+            <marker date="1515226010698" expanded="true" signature="5373:5463" ph="DELETE FROM " />
+            <marker date="1515226010698" expanded="true" signature="5691:5764" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1515226010698" expanded="true" signature="5691:5784" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1515226010698" expanded="true" signature="5691:5785" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1515226010698" expanded="true" signature="5895:5941" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5895:5983" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5895:5984" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5895:5985" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5895:6022" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5895:6023" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="5895:6024" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="6597:6698" ph="SELECT * FRO... tb_anggota" />
+            <marker date="1515226010698" expanded="true" signature="6597:6699" ph="SELECT * FRO... tb_anggota" />
+            <marker date="1515226010698" expanded="true" signature="6931:7024" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1515226010698" expanded="true" signature="6931:7025" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1515226010698" expanded="true" signature="7148:7192" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="7148:7193" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="7148:7236" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="7148:7237" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="7148:7238" ph="SELECT * FRO... tb_rekrutmen" />
+            <marker date="1515226010698" expanded="true" signature="7148:7248" ph="SELECT * FRO... tb_rekrutmen" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/viewHitung.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1446">
+          <caret line="130" column="44" lean-forward="true" selection-start-line="130" selection-start-column="44" selection-end-line="130" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/cetak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_cetak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/cetak/base.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5148">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/viewAngkatan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="75" column="167" lean-forward="false" selection-start-line="75" selection-start-column="167" selection-end-line="75" selection-end-column="167" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/cetak/mycostum.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/cetak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding>
+            <marker date="1515233574078" expanded="true" signature="971:980" ph="..." />
+            <marker date="1515233574078" expanded="true" signature="3073:3081" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/m_angkatan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="113" column="21" lean-forward="false" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
+          <folding>
+            <marker date="1515233574062" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="412:452" ph="SELECT YEAR(... " />
+            <marker date="1515233574062" expanded="true" signature="783:806" ph="SELECT * FRO... tb_posisi" />
+            <marker date="1515233574062" expanded="true" signature="931:981" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="931:992" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="931:993" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="1357:1408" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="2319:2364" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="2319:2365" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="2501:2594" ph="SELECT * FRO... tb_requires" />
+            <marker date="1515233574062" expanded="true" signature="2501:2595" ph="SELECT * FRO... tb_requires" />
+            <marker date="1515233574062" expanded="true" signature="2725:2781" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="2927:2983" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="3101:3146" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="3101:3147" ph="SELECT * FRO... tb_angkatan" />
+            <marker date="1515233574062" expanded="true" signature="3295:3335" ph="SELECT * FRO... tb_user" />
+            <marker date="1515233574062" expanded="true" signature="3471:3511" ph="SELECT * FRO... tb_user" />
+            <marker date="1515233574062" expanded="true" signature="3639:3789" ph="SELECT * FRO... tb_anggota" />
+            <marker date="1515233574062" expanded="true" signature="3639:3790" ph="SELECT * FRO... tb_anggota" />
+            <marker date="1515233574062" expanded="true" signature="3639:3816" ph="SELECT * FRO... tb_anggota" />
+            <marker date="1515233574062" expanded="true" signature="3639:3817" ph="SELECT * FRO... tb_anggota" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/angkatan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="114" column="123" lean-forward="true" selection-start-line="114" selection-start-column="123" selection-end-line="114" selection-end-column="123" />
+          <folding />
         </state>
       </provider>
     </entry>

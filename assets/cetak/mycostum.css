@@ -1,0 +1,21 @@
+.judul{
+    margin-top: 1cm;
+    font-family: "Calibri";
+}
+.judul h2{
+    margin-bottom: 0.1cm;
+    font-size: 30px;
+}
+.subhead{
+    font-size: 11px;
+    margin-top: 1cm;
+    margin-left: 1cm;
+}
+.subhead p{
+    margin: 0.5px;
+}
+.tabel{
+    margin-left: 1cm;
+    margin-right: 1cm;
+    font-size: 10px;
+}

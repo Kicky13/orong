@@ -73,18 +73,13 @@
                                         </span>
                                                 Edit Angkatan
                                             </a>
-                                            <button type="button" data-id="<?php echo $value['id_angkatan']; ?>" <?php echo ($value['status_angkatan'] == 'Open') ? "" : "hidden"; ?> class="btn btn-danger lock">
+                                            <a <?php echo ($value['status_angkatan'] == 'Open') ? "hidden" : ""; ?> href="<?php echo base_url('index.php/angkatan/cetak/' . $value['id_angkatan']); ?>"
+                                                                                                                    class="btn btn-success">
                                         <span class="btn-label">
-                                            <i class="material-icons">lock</i>
+                                            <i class="material-icons">print</i>
                                         </span>
-                                                Lock Angkatan
-                                            </button>
-                                            <button type="button" data-id="<?php echo $value['id_angkatan']; ?>" <?php echo ($open == 1) ? "hidden" : ""; ?> class="btn btn-info unlock">
-                                        <span class="btn-label">
-                                            <i class="material-icons">lock</i>
-                                        </span>
-                                                Unlock Angkatan
-                                            </button>
+                                                Cetak
+                                            </a>
                                         </td>
                                     </tr>
                                 <?php } ?>
@@ -135,7 +130,7 @@
             var id = $(this).attr('data-id');
             swal({
                     title: "Apa anda yakin?",
-                    text: "Mengunci angkatan yang anda pilih!",
+                    text: "Mengunci angkatan yang anda pilih?",
                     type: "warning",
                     showCancelButton: true,
                     confirmButtonClass: "btn-danger",

@@ -101,19 +101,17 @@ class Angkatan extends CI_Controller {
             redirect('/login');
         }
     }
-    public function lockAngkatan($id)
-    {
-        $this->m_angkatan->lockAngkatan($id);
-        redirect('/angkatan');
-    }
-    public function unlockAngkatan($id)
-    {
-        $this->m_angkatan->unlockAngkatan($id);
-        redirect('/angkatan');
-    }
     public function countAngkatan()
     {
         $open = $this->m_angkatan->countOpenAngkatan();
         echo $open;
+    }
+    public function cetak($id)
+    {
+        $angkatan = $this->m_angkatan->getTahun($id);
+        $admin = $this->m_angkatan->getDataAdmin();
+        $pelatih = $this->m_angkatan->getDataPelatih();
+        $anggota = $this->m_angkatan->getDataAnggota($id);
+        $this->load->view('admin/cetak', array('angkatan' => $angkatan, 'admin' => $admin, 'pelatih' => $pelatih, 'anggota' => $anggota));
     }
 }
