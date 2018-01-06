@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="tabel">
+            <div class="tabel page-break">
                 <table class="table table-responsive">
                     <thead>
                     <th>No</th>

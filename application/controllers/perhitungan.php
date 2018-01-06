@@ -16,7 +16,7 @@ class Perhitungan extends CI_Controller {
             if ($_SESSION['level'] == 1){
                 $open = $this->m_angkatan->countOpenAngkatan();
                 if ($open < 1){
-                   echo 'Halaman ini tidak tersedia untuk saat ini';
+                    $this->load->view('notFoundError');
                 } else {
                     $data = $this->m_hitung->getDataTable($id);
                     $kriteria = $this->m_hitung->getKriteria($id);

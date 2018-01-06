@@ -11,11 +11,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="angkatan.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/angkatan.php">
+      <file leaf-file-name="peserta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="114" column="123" lean-forward="false" selection-start-line="114" selection-start-column="123" selection-end-line="114" selection-end-column="123" />
+            <state relative-caret-position="499">
+              <caret line="52" column="45" lean-forward="false" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addPeserta.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="176" column="15" lean-forward="false" selection-start-line="176" selection-start-column="15" selection-end-line="176" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="errorPendaftar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/errorPendaftar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-450">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -24,7 +44,7 @@
       <file leaf-file-name="m_angkatan.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/m_angkatan.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
+            <state relative-caret-position="598">
               <caret line="112" column="254" lean-forward="false" selection-start-line="112" selection-start-column="254" selection-end-line="112" selection-end-column="254" />
               <folding>
                 <marker date="1515240124128" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
@@ -49,38 +69,6 @@
                 <marker date="1515240124128" expanded="true" signature="3639:3868" ph="SELECT * FRO... tb_anggota" />
                 <marker date="1515240124128" expanded="true" signature="3639:3869" ph="SELECT * FRO... tb_anggota" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cetak.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/admin/cetak.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-              <folding>
-                <marker date="1515240769745" expanded="true" signature="971:980" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mycostum.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/cetak/mycostum.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewAngkatan.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/admin/viewAngkatan.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="143" column="7" lean-forward="true" selection-start-line="143" selection-start-column="7" selection-end-line="143" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -133,15 +121,11 @@
         <option value="$PROJECT_DIR$/application/views/home.php" />
         <option value="$PROJECT_DIR$/application/views/tambahPeserta.php" />
         <option value="$PROJECT_DIR$/application/models/m_peserta.php" />
-        <option value="$PROJECT_DIR$/application/controllers/penilaian.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewAdmin.php" />
         <option value="$PROJECT_DIR$/application/views/admin/addAdmin.php" />
         <option value="$PROJECT_DIR$/application/views/admin/editAdmin.php" />
         <option value="$PROJECT_DIR$/application/controllers/admin.php" />
         <option value="$PROJECT_DIR$/application/models/m_admin.php" />
-        <option value="$PROJECT_DIR$/application/controllers/peserta.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/addPeserta.php" />
-        <option value="$PROJECT_DIR$/application/controllers/perhitungan.php" />
         <option value="$PROJECT_DIR$/application/models/m_hitung.php" />
         <option value="$PROJECT_DIR$/application/models/m_cetak.php" />
         <option value="$PROJECT_DIR$/application/controllers/cetak.php" />
@@ -149,8 +133,14 @@
         <option value="$PROJECT_DIR$/application/controllers/angkatan.php" />
         <option value="$PROJECT_DIR$/application/views/admin/viewHitung.php" />
         <option value="$PROJECT_DIR$/application/models/m_angkatan.php" />
-        <option value="$PROJECT_DIR$/application/views/admin/cetak.php" />
         <option value="$PROJECT_DIR$/assets/cetak/mycostum.css" />
+        <option value="$PROJECT_DIR$/application/views/admin/cetak.php" />
+        <option value="$PROJECT_DIR$/application/controllers/penilaian.php" />
+        <option value="$PROJECT_DIR$/application/controllers/perhitungan.php" />
+        <option value="$PROJECT_DIR$/application/views/notFoundError.php" />
+        <option value="$PROJECT_DIR$/application/views/errorPendaftar.php" />
+        <option value="$PROJECT_DIR$/application/controllers/peserta.php" />
+        <option value="$PROJECT_DIR$/application/views/admin/addPeserta.php" />
       </list>
     </option>
   </component>
@@ -311,12 +301,12 @@
       <workItem from="1515209435340" duration="2270000" />
       <workItem from="1515216026105" duration="103000" />
       <workItem from="1515216514143" duration="17020000" />
-      <workItem from="1515238334008" duration="2342000" />
+      <workItem from="1515238334008" duration="5795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229746000" />
+    <option name="totallyTimeSpent" value="233199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -353,21 +343,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -540,14 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/penilaian.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/addAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -628,21 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="62" column="121" lean-forward="false" selection-start-line="62" selection-start-column="121" selection-end-line="62" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="118" column="21" lean-forward="false" selection-start-line="118" selection-start-column="21" selection-end-line="118" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/m_peserta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="533">
@@ -692,14 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="78" column="23" lean-forward="false" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="49" column="44" lean-forward="false" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -789,6 +733,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,6 +741,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5148">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -807,17 +753,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/cetak.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+          <folding>
+            <marker date="1515241868250" expanded="true" signature="971:980" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/cetak/mycostum.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/admin/viewAngkatan.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
-          <caret line="143" column="7" lean-forward="true" selection-start-line="143" selection-start-column="7" selection-end-line="143" selection-end-column="7" />
+          <caret line="143" column="7" lean-forward="false" selection-start-line="143" selection-start-column="7" selection-end-line="143" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/perhitungan.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="55" lean-forward="false" selection-start-line="18" selection-start-column="55" selection-end-line="18" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/penilaian.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/angkatan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="1938">
           <caret line="114" column="123" lean-forward="false" selection-start-line="114" selection-start-column="123" selection-end-line="114" selection-end-column="123" />
           <folding />
         </state>
@@ -825,7 +805,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/m_angkatan.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
+        <state relative-caret-position="598">
           <caret line="112" column="254" lean-forward="false" selection-start-line="112" selection-start-column="254" selection-end-line="112" selection-end-column="254" />
           <folding>
             <marker date="1515240124128" expanded="true" signature="261:286" ph="SELECT * FRO... tb_angkatan" />
@@ -853,20 +833,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/admin/cetak.php">
+    <entry file="file://$PROJECT_DIR$/application/views/notFoundError.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="44" column="28" lean-forward="true" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-          <folding>
-            <marker date="1515240769745" expanded="true" signature="971:980" ph="..." />
-          </folding>
+        <state relative-caret-position="193">
+          <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/cetak/mycostum.css">
+    <entry file="file://$PROJECT_DIR$/application/views/errorPendaftar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="-450">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/peserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="52" column="45" lean-forward="false" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/admin/addPeserta.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="176" column="15" lean-forward="false" selection-start-line="176" selection-start-column="15" selection-end-line="176" selection-end-column="15" />
           <folding />
         </state>
       </provider>

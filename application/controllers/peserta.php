@@ -16,7 +16,7 @@ class Peserta extends CI_Controller {
             if ($_SESSION['level'] == 1){
                 $open = $this->m_angkatan->countOpenAngkatan();
                 if ($open < 1){
-                    echo 'Halaman tidak Tersedia Untuk Saat ini';
+                    $this->load->view('notFoundError');
                 } else {
                     $data = $this->m_peserta->getDataTable($sort);
                     $this->load->view('admin/viewPeserta', array('data' => $data));
@@ -44,8 +44,14 @@ class Peserta extends CI_Controller {
     }
     public function viewTambahPeserta()
     {
-        $data = $this->m_peserta->getDataPosisi();
-        $this->load->view('tambahPeserta', array('data' => $data));
+        $this->load->model('m_angkatan');
+        $open = $this->m_angkatan->countOpenAngkatan();
+        if ($open > 0){
+            $data = $this->m_peserta->getDataPosisi();
+            $this->load->view('tambahPeserta', array('data' => $data));
+        } else {
+            $this->load->view('errorPendaftar');
+        }
     }
     public function viewEdit($id)
     {

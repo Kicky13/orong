@@ -16,7 +16,7 @@ class Penilaian extends CI_Controller {
             if ($_SESSION['level'] == 1){
                 $open = $this->m_angkatan->countOpenAngkatan();
                 if ($open < 1){
-                    echo 'Halaman tidak tersedia untuk saat ini';
+                    $this->load->view('notFoundError');
                 } else {
                     $posisi = $this->m_penilaian->getPosisi();
                     $data = $this->m_penilaian->getDataTable($id);

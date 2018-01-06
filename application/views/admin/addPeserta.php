@@ -107,7 +107,7 @@
                                             foreach ($data as $value){ ?>
                                             <div class="checkbox form-check-inline">
                                                 <label>
-                                                    <input type="checkbox" id="posisi-<?php echo $n; ?>" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
+                                                    <input class="cekbox" type="checkbox" id="posisi-<?php echo $n; ?>" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
                                                 </label>
                                             </div>
                                             <?php $n++;
@@ -170,6 +170,12 @@
 <script>
     $(document).ready(function () {
         console.log('ready');
+        var max = 3;
+        var cek = $('.cekbox');
+        $('.cekbox').change(function () {
+            var current = cek.filter(':checked').length;
+            cek.filter(':not(:checked)').prop('disabled', current >= max);
+        });
         $('.validasi').change(function () {
            console.log('validasi');
            $('#msg').html();
