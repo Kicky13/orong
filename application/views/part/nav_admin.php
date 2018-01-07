@@ -55,15 +55,6 @@
                     </p>
                 </a>
             </li>
-
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="material-icons">print</i>
-                    <p>
-                        Cetak Data
-                    </p>
-                </a>
-            </li>
             <li class="nav-item">
                 <a class="nav-link active" href="<?php echo base_url('index.php/admin'); ?>">
                     <i class="material-icons">school</i>

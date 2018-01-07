@@ -30,9 +30,6 @@ class M_admin extends CI_Model {
             'role' => $posisi,
             'email' => $email,
             'alamat' => $alamat,
-            'jumlah_akses_panduan' => 0,
-            'jenis_panduan' => null,
-            'jumlah_akses_uji' => 0,
             'password' => $password,
             'id_akses' => $jabatan
         );
