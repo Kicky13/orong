@@ -64,12 +64,15 @@ class Angkatan extends CI_Controller {
     }
     public function add()
     {
+        $this->load->model('m_log');
         if (isset($_SESSION['loggedIn'])){
             if ($_SESSION['level'] == 1){
                 $nama = $_POST['nama'];
                 $tahun = $_POST['tahun'];
                 $posisi = $this->m_angkatan->getPosisi();
                 $id = $this->m_angkatan->addAngkatan($nama, $tahun);
+                $aktivitas = 'Menambahkan angkatan baru '.$nama;
+                $this->m_log->insert($_SESSION['id'], $aktivitas);
                 foreach ($posisi as $value){
                     $jumlah = $_POST['jumlah'.$value['id_posisi']];
                     $this->m_angkatan->addRequires($id, $value['id_posisi'], $jumlah);
@@ -84,11 +87,14 @@ class Angkatan extends CI_Controller {
     }
     public function sunting($id)
     {
+        $this->load->model('m_log');
         if (isset($_SESSION['loggedIn'])){
             if ($_SESSION['level'] == 1){
                 $nama = $_POST['nama'];
                 $posisi = $this->m_angkatan->getPosisi();
                 $this->m_angkatan->editAngkatan($id, $nama);
+                $aktivitas = 'Menyunting informasi angkatan '.$nama;
+                $this->m_log->insert($_SESSION['id'], $aktivitas);
                 foreach ($posisi as $value){
                     $jumlah = $_POST['jumlah'.$value['id_posisi']];
                     $this->m_angkatan->editRequires($id, $value['id_posisi'], $jumlah);

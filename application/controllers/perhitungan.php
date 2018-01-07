@@ -33,12 +33,18 @@ class Perhitungan extends CI_Controller {
     }
     public function hitungNilai($id)
     {
+        $this->load->model('m_log');
+        $aktivitas = 'Menghitung nilai keseluruhan calon peserta';
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         $this->m_hitung->hitungNilai($id);
         redirect('/perhitungan/tabelNilai/'.$id);
     }
     public function simpanPerhitungan()
     {
+        $this->load->model('m_log');
         $this->m_hitung->analisaAnggota();
+        $aktivitas = 'Seleksi Data Calon Peserta Yang terdaftar';
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         $rekrut = $this->m_hitung->onRequired();
         $anggota = $this->m_hitung->cekAnggota();
         if ($anggota > 0){
@@ -46,6 +52,8 @@ class Perhitungan extends CI_Controller {
         } elseif ($rekrut == 1) {
             echo 2;
         } else {
+            $aktivitas = 'Menyimpan Data Calon Peserta Diterima';
+            $this->m_log->insert($_SESSION['id'], $aktivitas);
             $this->m_hitung->getPosisiMember();
             $this->m_hitung->lockAngkatan();
             echo 3;

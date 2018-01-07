@@ -20,19 +20,7 @@
                 </button>
                 <a class="navbar-brand" href="#"> Penilaian Calon Peserta </a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="" class="nav-link" data-toggle="dropdown">
-                            <p>selamat datang Ahmad Ichsanul Karim</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="http://localhost/orong2">
-                            <i class="material-icons">home</i>
-                        </a>
-                    </li>
-            </div>
+            <?php $this->load->view('part/identitas'); ?>
         </nav>
         <div class="content">
             <div class="container-fluid">

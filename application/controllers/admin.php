@@ -37,6 +37,7 @@ class Admin extends CI_Controller {
     }
     public function tambah()
     {
+        $this->load->model('m_log');
         if (isset($_POST['posisi'])){
             $posisi = $_POST['posisi'];
         } else {
@@ -47,6 +48,8 @@ class Admin extends CI_Controller {
         $email = $_POST['email'];
         $alamat = $_POST['alamat'];
         $password = $_POST['password'];
+        $aktivitas = 'Menambahkan admin '.$nama;
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         $this->m_admin->tambah($nama, $jabatan, $posisi, $email, $alamat, $password);
         redirect('/admin');
     }
@@ -65,10 +68,13 @@ class Admin extends CI_Controller {
     }
     public function edit($id)
     {
+        $this->load->model('m_log');
         $nama = $_POST['nama'];
         $email = $_POST['email'];
         $alamat = $_POST['alamat'];
         $password = $_POST['password'];
+        $aktivitas = 'Menyunting informasi admin '.$nama;
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         $this->m_admin->update($id, $nama, $email, $alamat, $password);
         redirect('/admin');
     }

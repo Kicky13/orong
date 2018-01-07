@@ -70,6 +70,7 @@ class Peserta extends CI_Controller {
     }
     public function tambah()
     {
+        $this->load->model('m_log');
         if (isset($_POST['posisi'])) {
             $nama = $_POST['nama'];
             $kelas = $_POST['kelas'];
@@ -82,6 +83,8 @@ class Peserta extends CI_Controller {
             foreach ($posisi as $value) {
                 $this->m_peserta->addRekrutmen($value, $peserta, $submitter);
             }
+            $aktivitas = 'Menambahkan calon peserta '.$nama;
+            $this->m_log->insert($_SESSION['id'], $aktivitas);
             redirect('peserta/table/id_rekrutmen');
         } else {
             redirect('peserta/viewTambah');
@@ -101,17 +104,23 @@ class Peserta extends CI_Controller {
     }
     public function deleteRekrut($id)
     {
+        $this->load->model('m_log');
         $this->m_peserta->deleteRekrut($id);
+        $aktivitas = 'Menghapus calon peserta';
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         redirect('/peserta/table/id_rekrutmen');
     }
     public function edit($rekrut, $peserta)
     {
+        $this->load->model('m_log');
         $nama = $_POST['nama'];
         $kelas = $_POST['kelas'];
         $absen = $_POST['absen'];
         $tanggal = explode('/', $_POST['ttl']);
         $ttl = $tanggal[2].'-'.$tanggal[0].'-'.$tanggal[1];
         $posisi = $_POST['posisi'];
+        $aktivitas = 'Menyunting informasi calon peserta '.$nama;
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         $this->m_peserta->editPeserta($peserta, $nama, $kelas, $absen, $ttl);
         $this->m_peserta->editRekrut($rekrut, $posisi);
         redirect('/peserta/table/id_rekrutmen');

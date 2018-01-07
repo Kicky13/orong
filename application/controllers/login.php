@@ -19,15 +19,18 @@ class Login extends CI_Controller {
     }
     public function login()
     {
+        $this->load->model('m_log');
         $username = $_POST['username'];
         $password = $_POST['password'];
         $user = $this->m_login->getUserData($username, $password);
         $cek = count($user);
         if ($cek >= 1){
+            $aktivitas = 'Login';
             $_SESSION['loggedIn'] = 1;
             $_SESSION['name'] = $user['nama'];
             $_SESSION['id'] = $user['id_user'];
             $_SESSION['level'] = $user['id_akses'];
+            $this->m_log->insert($user['id_user'], $aktivitas);
             redirect('/dashboard');
         } else {
             redirect('/login');
@@ -35,6 +38,9 @@ class Login extends CI_Controller {
     }
     public function logout()
     {
+        $this->load->model('m_log');
+        $aktivitas = 'Logout';
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         unset($_SESSION['loggedIn']);
         unset($_SESSION['name']);
         unset($_SESSION['id']);

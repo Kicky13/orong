@@ -56,21 +56,27 @@ class Penilaian extends CI_Controller {
     }
     public function tambah($id)
     {
+        $this->load->model('m_log');
         $kriteria = $this->m_penilaian->getKriteria($id);
         foreach ($kriteria as $item){
             $nilai = $_POST[$item['id_kriteria']];
             $this->m_penilaian->insert($id, $item['id_kriteria'], $nilai);
         }
+        $aktivitas = 'Menambahkan nilai calon peserta';
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         redirect('/penilaian/tabelNilai/AL');
     }
     public function edit($id)
     {
+        $this->load->mdel('m_log');
         $this->m_penilaian->alterNilai($id);
         $kriteria = $this->m_penilaian->getKriteria($id);
         foreach ($kriteria as $item){
             $nilai = $_POST[$item['id_kriteria']];
             $this->m_penilaian->insert($id, $item['id_kriteria'], $nilai);
         }
+        $aktivitas = 'Menyunting nilai calon peserta';
+        $this->m_log->insert($_SESSION['id'], $aktivitas);
         redirect('/penilaian/tabelNilai/AL');
     }
 }
