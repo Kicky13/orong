@@ -119,20 +119,32 @@
             $('#simpan').click(function () {
                console.log('aku klik');
                var posisi = $('#show').val();
-                $.ajax({
-                    type        :   'POST',
-                    url         :   '<?php echo base_url('index.php/perhitungan/simpanPerhitungan'); ?>'
-                }).done(function (data) {
-                    console.log(data);
-                    if (data=='1'){
-                        swal('MAAF!', 'Data sudah ada', 'error');
-                    } else if(data=='2') {
-                        swal('MAAF!', 'Data belum lengkap, silahkan lengkapi terlebih dahulu', 'error');
-                    } else {
-                        swal('BERHASIL', 'Data berhasil diinputkan', 'success');
-                        window.location.replace('<?php echo base_url('index.php/angkatan')?>');
-                    }
-                });
+                swal({
+                        title: "Apa anda yakin?",
+                        text: "Data yang telah diproses tidak bisa kembali",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonClass: "btn-danger",
+                        confirmButtonText: "Ya, Seleksi Angkatan ini!",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        $.ajax({
+                            type        :   'POST',
+                            url         :   '<?php echo base_url('index.php/perhitungan/simpanPerhitungan'); ?>'
+                        }).done(function (data) {
+                            console.log(data);
+                            if (data=='1'){
+                                swal('MAAF!', 'Data sudah ada', 'error');
+                            } else if(data=='2') {
+                                swal('MAAF!', 'Data belum lengkap, silahkan lengkapi terlebih dahulu', 'error');
+                                location.reload();
+                            } else {
+                                swal('BERHASIL', 'Data berhasil diinputkan', 'success');
+                                window.location.replace('<?php echo base_url('index.php/angkatan')?>');
+                            }
+                        });
+                    });
             });
         });
         $(function () {
