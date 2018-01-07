@@ -14,6 +14,13 @@ class M_peserta extends CI_Model {
         $data = $this->db->query('SELECT * FROM tb_peserta p JOIN tb_rekrutmen r ON p.id_peserta = r.id_peserta JOIN tb_angkatan a ON r.id_angkatan = a.id_angkatan JOIN tb_posisi ps ON ps.id_posisi = r.id_posisi WHERE r.id_angkatan = '.$angkatan.' ORDER BY '.$sort)->result_array();
         return $data;
     }
+    public function getTablePelatih($sort, $posisi)
+    {
+        $this->load->model('m_angkatan');
+        $angkatan = $this->m_angkatan->getOpenAngkatan();
+        $data = $this->db->query('SELECT * FROM tb_peserta p JOIN tb_rekrutmen r ON p.id_peserta = r.id_peserta JOIN tb_angkatan a ON r.id_angkatan = a.id_angkatan JOIN tb_posisi ps ON ps.id_posisi = r.id_posisi WHERE r.id_angkatan = '.$angkatan.' AND r.id_posisi = "'.$posisi.'" ORDER BY '.$sort)->result_array();
+        return $data;
+    }
     public function getDataPosisi()
     {
         $data = $this->db->query('SELECT * FROM tb_posisi')->result_array();

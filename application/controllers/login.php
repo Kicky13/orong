@@ -30,6 +30,7 @@ class Login extends CI_Controller {
             $_SESSION['name'] = $user['nama'];
             $_SESSION['id'] = $user['id_user'];
             $_SESSION['level'] = $user['id_akses'];
+            $_SESSION['role'] = $user['role'];
             $this->m_log->insert($user['id_user'], $aktivitas);
             redirect('/dashboard');
         } else {

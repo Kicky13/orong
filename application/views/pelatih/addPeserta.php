@@ -22,7 +22,7 @@
 </head>
 <body>
 <div class="wrapper">
-    <?php $this->load->view('part/nav_admin'); ?>
+    <?php $this->load->view('part/nav_pelatih'); ?>
     <div class="main-panel">
         <nav class="navbar navbar-toggleable-md navbar-default navbar-absolute navbar-inverse" data-topbar-color="blue">
             <div class="navbar-minimize">
@@ -46,7 +46,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-                            <form method="post" action="<?php echo base_url('index.php/peserta/tambah'); ?>" class="form-horizontal">
+                            <form method="post" action="<?php echo base_url('index.php/peserta/pesertaTambah/'.$_SESSION['name']); ?>" class="form-horizontal">
                                 <div class="card-header card-header-text">
                                     <h4 class="card-title">Tambah Peserta <span class="label label-info" id="msg"></span></h4>
                                 </div>
@@ -88,20 +88,7 @@
                                             <input required name="ttl" type="text" class="form-control datepicker" placeholder="Pilih Tanggal"/>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label class="col-md-2 col-form-label text-right">Pilih Posisi</label>
-                                        <div class="col-md-10">
-                                            <?php $n = 0;
-                                            foreach ($data as $value){ ?>
-                                            <div class="checkbox form-check-inline">
-                                                <label>
-                                                    <input class="cekbox" type="checkbox" id="posisi-<?php echo $n; ?>" name="posisi[]" value="<?php echo $value['id_posisi']; ?>"><?php echo $value['nama_posisi']; ?>
-                                                </label>
-                                            </div>
-                                            <?php $n++;
-                                            } ?>
-                                        </div>
-                                    </div>
+                                    <input name="posisi" type="hidden" value="<?php echo $posisi; ?>">
                                     <button type="submit" id="submit" class="btn btn-primary btn-round">
                                         <i class="material-icons">assignment</i> Submit
                                     </button>
@@ -165,11 +152,11 @@
             cek.filter(':not(:checked)').prop('disabled', current >= max);
         });
         $('.validasi').change(function () {
-           console.log('validasi');
-           $('#msg').html();
-           var nama = $('#nama').val();
-           var kelas = $('#kelas').val();
-           var absen = $('#absen').val();
+            console.log('validasi');
+            $('#msg').html();
+            var nama = $('#nama').val();
+            var kelas = $('#kelas').val();
+            var absen = $('#absen').val();
             $.ajax({
                 type        :   'POST',
                 url         :   '<?php echo base_url('index.php/peserta/validasiData'); ?>',
@@ -189,7 +176,7 @@
             });
         });
         $('.validasi').keyup(function () {
-           console.log('ketik');
+            console.log('ketik');
             $('#msg').html();
             var nama = $('#nama').val();
             var kelas = $('#kelas').val();

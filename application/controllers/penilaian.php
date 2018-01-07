@@ -22,6 +22,15 @@ class Penilaian extends CI_Controller {
                     $data = $this->m_penilaian->getDataTable($id);
                     $this->load->view('admin/viewPenilaian', array('data' => $data, 'posisi' => $posisi, 'id' => $id));
                 }
+            } elseif ($_SESSION['level'] == 2){
+                $open = $this->m_angkatan->countOpenAngkatan();
+                if ($open < 1){
+                    $this->load->view('notFoundError');
+                } else {
+                    $posisi = $this->m_penilaian->getPosisi();
+                    $data = $this->m_penilaian->getDataTable($id);
+                    $this->load->view('pelatih/penilaian', array('data' => $data, 'posisi' => $posisi, 'id' => $id));
+                }
             } else {
                 echo 'Forbidden Access';
             }
@@ -45,14 +54,37 @@ class Penilaian extends CI_Controller {
     }
     public function nilaiBaru($id)
     {
-        $kriteria = $this->m_penilaian->getKriteria($id);
-        $this->load->view('admin/addPenilaian', array('kriteria' => $kriteria, 'id' => $id));
+        if (isset($_SESSION['loggedIn'])){
+            if ($_SESSION['level'] == 1){
+                $kriteria = $this->m_penilaian->getKriteria($id);
+                $this->load->view('admin/addPenilaian', array('kriteria' => $kriteria, 'id' => $id));
+            } elseif ($_SESSION['level'] == 2){
+                $kriteria = $this->m_penilaian->getKriteria($id);
+                $this->load->view('pelatih/addPenilaian', array('kriteria' => $kriteria, 'id' => $id));
+            } else {
+                echo 'Forbidden Access';
+            }
+        } else {
+            redirect('/login');
+        }
     }
     public function nilaiSunting($id)
     {
-        $kriteria = $this->m_penilaian->getKriteria($id);
-        $data = $this->m_penilaian->getDataedit($id);
-        $this->load->view('admin/editPenilaian', array('kriteria' => $kriteria, 'data' => $data, 'id' => $id));
+        if (isset($_SESSION['loggedIn'])){
+            if ($_SESSION['level'] == 1){
+                $kriteria = $this->m_penilaian->getKriteria($id);
+                $data = $this->m_penilaian->getDataedit($id);
+                $this->load->view('admin/editPenilaian', array('kriteria' => $kriteria, 'data' => $data, 'id' => $id));
+            } elseif ($_SESSION['level'] == 2){
+                $kriteria = $this->m_penilaian->getKriteria($id);
+                $data = $this->m_penilaian->getDataedit($id);
+                $this->load->view('pelatih/editPenilaian', array('kriteria' => $kriteria, 'data' => $data, 'id' => $id));
+            } else {
+                echo 'Forbidden Access';
+            }
+        } else {
+            redirect('/login');
+        }
     }
     public function tambah($id)
     {
@@ -64,7 +96,11 @@ class Penilaian extends CI_Controller {
         }
         $aktivitas = 'Menambahkan nilai calon peserta';
         $this->m_log->insert($_SESSION['id'], $aktivitas);
-        redirect('/penilaian/tabelNilai/AL');
+        if ($_SESSION[''] == 1){
+            redirect('/penilaian/tabelNilai/AL');
+        } else {
+            redirect('/penilaian/tabelNilai/'.$_SESSION['role']);
+        }
     }
     public function edit($id)
     {
@@ -77,6 +113,10 @@ class Penilaian extends CI_Controller {
         }
         $aktivitas = 'Menyunting nilai calon peserta';
         $this->m_log->insert($_SESSION['id'], $aktivitas);
-        redirect('/penilaian/tabelNilai/AL');
+        if ($_SESSION[''] == 1){
+            redirect('/penilaian/tabelNilai/AL');
+        } else {
+            redirect('/penilaian/tabelNilai/'.$_SESSION['role']);
+        }
     }
 }

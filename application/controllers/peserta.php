@@ -21,6 +21,14 @@ class Peserta extends CI_Controller {
                     $data = $this->m_peserta->getDataTable($sort);
                     $this->load->view('admin/viewPeserta', array('data' => $data));
                 }
+            } elseif ($_SESSION['level'] == 2) {
+                $open = $this->m_angkatan->countOpenAngkatan();
+                if ($open < 1){
+                    $this->load->view('notFoundError');
+                } else {
+                    $data = $this->m_peserta->getTablePelatih($sort, $_SESSION['role']);
+                    $this->load->view('pelatih/peserta', array('data' => $data));
+                }
             } else {
                 echo 'Forbidden Access';
             }
@@ -35,6 +43,11 @@ class Peserta extends CI_Controller {
                 $jumlah = $this->m_peserta->getCountPosisi();
                 $data = $this->m_peserta->getDataPosisi();
                 $this->load->view('admin/addPeserta', array('data' => $data, 'jumlah' => $jumlah));
+            } elseif ($_SESSION['level'] == 2){
+                $jumlah = $this->m_peserta->getCountPosisi();
+                $data = $this->m_peserta->getDataPosisi();
+                $posisi = $_SESSION['role'];
+                $this->load->view('pelatih/addPeserta', array('data' => $data, 'jumlah' => $jumlah, 'posisi' => $posisi));
             } else {
                 echo 'Forbidden Access';
             }
@@ -61,6 +74,11 @@ class Peserta extends CI_Controller {
                 $data = $this->m_peserta->getDataPosisi();
                 $detail = $this->m_peserta->getDetailRekrut($id);
                 $this->load->view('admin/editPeserta', array('data' => $data, 'jumlah' => $jumlah, 'detail' => $detail));
+            } elseif ($_SESSION['level'] == 2){
+                $jumlah = $this->m_peserta->getCountPosisi();
+                $data = $this->m_peserta->getDataPosisi();
+                $detail = $this->m_peserta->getDetailRekrut($id);
+                $this->load->view('pelatih/editPeserta', array('data' => $data, 'jumlah' => $jumlah, 'detail' => $detail));
             } else {
                 echo 'Forbidden Access';
             }
@@ -92,6 +110,7 @@ class Peserta extends CI_Controller {
     }
     public function pesertaTambah($submitter)
     {
+        $this->load->model('m_log');
         $nama = $_POST['nama'];
         $kelas = $_POST['kelas'];
         $absen = $_POST['absen'];
@@ -100,7 +119,13 @@ class Peserta extends CI_Controller {
         $posisi = $_POST['posisi'];
         $peserta = $this->m_peserta->getIDPeserta($nama, $kelas, $absen, $ttl);
         $this->m_peserta->addRekrutmen($posisi, $peserta, $submitter);
-        redirect('peserta/viewTambahPeserta');
+        if (isset($_SESSION['loggedIn'])){
+            $aktivitas = 'Menambahkan calon peserta '.$nama;
+            $this->m_log->insert($_SESSION['id'], $aktivitas);
+            redirect('/peserta/table/id_rekrutmen');
+        } else {
+            redirect('peserta/viewTambahPeserta');
+        }
     }
     public function deleteRekrut($id)
     {

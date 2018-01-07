@@ -17,7 +17,9 @@ class Dashboard extends CI_Controller {
                 $myLog = $this->m_log->getCurrentLog($_SESSION['id']);
                 $this->load->view('admin/dashboard', array('data' => $log, 'personal' => $myLog));
             } else if ($_SESSION['level'] == 2) {
-                $this->load->view('pelatih/dashboard');
+                $log = $this->m_log->getDataLog();
+                $myLog = $this->m_log->getCurrentLog($_SESSION['id']);
+                $this->load->view('pelatih/dashboard', array('data' => $log, 'personal' => $myLog));
             } else {
                 echo 'Forbidden Access';
             }

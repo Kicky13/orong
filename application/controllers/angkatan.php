@@ -16,6 +16,10 @@ class Angkatan extends CI_Controller {
                 $data = $this->m_angkatan->getDataTable();
                 $n = $this->m_angkatan->countOpenAngkatan();
                 $this->load->view('admin/viewAngkatan', array('data' => $data, 'open' => $n));
+            } elseif ($_SESSION['level'] == 2){
+                $data = $this->m_angkatan->getDataTable();
+                $n = $this->m_angkatan->countOpenAngkatan();
+                $this->load->view('pelatih/angkatan', array('data' => $data, 'open' => $n));
             } else {
                 echo 'Forbidden Access';
             }

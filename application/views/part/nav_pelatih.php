@@ -12,7 +12,7 @@
     <div class="sidebar-wrapper">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url(); ?>">
+                <a class="nav-link" href="<?php echo base_url('index.php/dashboard'); ?>">
                     <i class="material-icons">dashboard</i>
                     <p>
                         Halaman Utama
@@ -20,7 +20,15 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url(); ?>">
+                <a class="nav-link" href="<?php echo base_url('index.php/angkatan'); ?>">
+                    <i class="material-icons">group</i>
+                    <p>
+                        Angkatan
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo base_url('index.php/peserta/table/id_rekrutmen'); ?>">
                     <i class="material-icons">person_outline</i>
                     <p>
                         Calon Peserta
@@ -28,7 +36,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url(); ?>">
+                <a class="nav-link" href="<?php echo base_url('index.php/penilaian/tabelNilai/'.$_SESSION['role']); ?>">
                     <i class="material-icons">create</i>
                     <p>
                         Penilaian
