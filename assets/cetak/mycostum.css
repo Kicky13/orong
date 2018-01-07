@@ -1,10 +1,13 @@
 .judul{
-    margin-top: 5px;
+    margin-top: 0px;
     font-family: "Calibri";
     text-align: center;
 }
-.judul h2{
-    padding-top: 1px;
+.identitas{
+    margin-top: 0cm;
+    margin-left: 1cm;
+}
+.judul p{
     font-size: 10px;
 }
 .subhead{
@@ -19,7 +22,4 @@
     margin-left: 1cm;
     margin-right: 1cm;
     font-size: 10px;
-}
-@media print {
-    .page-break { display: block; page-break-before: auto; }
 }

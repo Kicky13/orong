@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="<?php echo base_url() . 'assets/cetak/'; ?>base.min.css"/>
     <link rel="stylesheet" href="<?php echo base_url() . 'assets/cetak/'; ?>fancy.min.css"/>
     <link rel="stylesheet" href="<?php echo base_url() . 'assets/cetak/'; ?>main.css"/>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url() . 'assets/cetak/'; ?>mycostum.css"/>
     <link rel="stylesheet" href="<?php echo base_url() . 'assets/css/'; ?>bootstrap.css"/>
     <script src="<?php echo base_url() . 'assets/cetak/'; ?>compatibility.min.js"></script>
@@ -27,33 +28,44 @@
 </div>
 <div id="page-container">
     <div id="pf1" class="pf w0 h0" data-page-no="1">
+        <button class="btn-round btn-danger" id="pdf"> Convert to PDF</button>
+        <button class="btn-round btn-info" id="back"> Back</button>
         <div class="row">
             <div class="judul">
-                <p><strong>DATA ANGGOTA MARCHING BAND</strong> <br> GITA ORONG ORONG <br> SDN 1 GUDANG <br> KECAMATAN ASEMBAGUS, KABUPATEN SITUBONDO<br>PROVINSI JAWA TIMUR</p>
+                <p style="font-size: 10px">DATA ANGGOTA MARCHING BAND <br> <strong style="font-size: 19px">GITA ORONG ORONG</strong><br> SDN 1 GUDANG <br> KECAMATAN ASEMBAGUS, KABUPATEN SITUBONDO<br>PROVINSI JAWA TIMUR</p>
             </div>
         </div>
         <div class="row">
             <div class="subhead">
-                <div class="col-md-2">
-                    <p>Angkatan</p>
-                    <p>Pelatih Utama</p>
-                    <p>Anggota</p>
-                </div>
-                <div class="col-sm-1">
-                    <p>:</p>
-                    <p>:</p>
-                    <p>:</p>
-                </div>
-                <div class="col-sm-5">
-                    <p><?php echo $angkatan; ?></p>
-                    <p><?php echo $admin; ?></p>
-                    <?php foreach ($pelatih as $value){ ?>
-                    <p><?php echo $value['nama']; ?></p>
-                    <?php } ?>
+                <div class="identitas page-break">
+                    <table>
+                        <tr>
+                            <td>Angkatan &ensp; </td>
+                            <td> :&ensp; </td>
+                            <td> <?php echo $angkatan; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Pelatih Utama &ensp; </td>
+                            <td> :&ensp; </td>
+                            <td> <?php echo $admin; ?></td>
+                        </tr>
+                        <tr>
+                            <td>Anggota &ensp; </td>
+                            <td> :&ensp; </td>
+                            <td> <?php echo $pelatih[0]['nama']?></td>
+                        </tr>
+                        <?php for ($i = 1; $i < count($pelatih); $i++){ ?>
+                        <tr>
+                            <td> </td>
+                            <td> </td>
+                            <td> <?php echo $pelatih[$i]['nama']?></td>
+                        </tr>
+                        <?php } ?>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row page-break">
             <div class="tabel page-break">
                 <table class="table table-responsive">
                     <thead>
@@ -83,7 +95,25 @@
 </div>
 </div>
 <div class="loading-indicator">
-
 </div>
 </body>
+<script src="<?php echo base_url() . 'assets/'; ?>dashboard/vendors/jquery-3.1.1.min.js " type="text/javascript "></script>
+<script>
+    $('#pdf').click(function () {
+        console.log('pdf');
+       $('#pdf').hide();
+       $('#back').hide();
+       window.print();
+    });
+    $('#back').click(function () {
+        window.history.back();
+    });
+    var printEvent = window.matchMedia('print');
+    printEvent.addListener(function(printEnd) {
+        if (!printEnd.matches) {
+            $('#pdf').show();
+            $('#back').show();
+        };
+    });
+</script>
 </html>
