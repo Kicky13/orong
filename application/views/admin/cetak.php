@@ -28,8 +28,8 @@
 </div>
 <div id="page-container">
     <div id="pf1" class="pf w0 h0" data-page-no="1">
-        <button class="btn-round btn-danger" id="pdf"> Convert to PDF</button>
-        <button class="btn-round btn-info" id="back"> Back</button>
+        <button class="btn-round btn-danger" id="pdf"> Cetak Dokumen</button>
+        <button class="btn-round btn-info" id="back"> Kembali</button>
         <div class="row">
             <div class="judul">
                 <p style="font-size: 10px">DATA ANGGOTA MARCHING BAND <br> <strong style="font-size: 19px">GITA ORONG ORONG</strong><br> SDN 1 GUDANG <br> KECAMATAN ASEMBAGUS, KABUPATEN SITUBONDO<br>PROVINSI JAWA TIMUR</p>
