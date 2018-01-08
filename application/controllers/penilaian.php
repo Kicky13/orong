@@ -113,7 +113,7 @@ class Penilaian extends CI_Controller {
         }
         $aktivitas = 'Menyunting nilai calon peserta';
         $this->m_log->insert($_SESSION['id'], $aktivitas);
-        if ($_SESSION['role'] == 1){
+        if ($_SESSION['level'] == 1){
             redirect('/penilaian/tabelNilai/AL');
         } else {
             redirect('/penilaian/tabelNilai/'.$_SESSION['role']);
