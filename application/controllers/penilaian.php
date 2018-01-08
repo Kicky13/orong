@@ -104,7 +104,7 @@ class Penilaian extends CI_Controller {
     }
     public function edit($id)
     {
-        $this->load->mdel('m_log');
+        $this->load->model('m_log');
         $this->m_penilaian->alterNilai($id);
         $kriteria = $this->m_penilaian->getKriteria($id);
         foreach ($kriteria as $item){
