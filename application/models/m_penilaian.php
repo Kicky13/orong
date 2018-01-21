@@ -74,4 +74,10 @@ class M_penilaian extends CI_Model {
         $this->db->where('id_rekrutmen', $id);
         $this->db->delete('tb_penilaian');
     }
+    public function verifikasi($id)
+    {
+        $this->load->model('m_angkatan');
+        $angkatan = $this->m_angkatan->getOpenAngkatan();
+        $this->db->query('UPDATE tb_rekrutmen SET status_nilai = 2 WHERE id_posisi = "'.$id.'" AND id_angkatan = '.$angkatan);
+    }
 }

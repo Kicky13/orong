@@ -39,6 +39,7 @@
                                                 <th>Nama</th>
                                                 <th>Kelas</th>
                                                 <th>Posisi</th>
+                                                <th class="text-center">Status</th>
                                                 <th class="disabled-sorting text-center">Aksi</th>
                                             </tr>
                                             </thead>
@@ -48,6 +49,7 @@
                                                 <th>Nama</th>
                                                 <th>Kelas</th>
                                                 <th>Posisi</th>
+                                                <th class="text-center">Status</th>
                                                 <th class="text-center">Aksi</th>
                                             </tr>
                                             </tfoot>
@@ -59,8 +61,9 @@
                                                     <td><?php echo $item['nama_peserta']; ?></td>
                                                     <td><?php echo $item['kelas']; ?></td>
                                                     <td><?php echo $item['nama_posisi']; ?></td>
+                                                    <td class="text-center"><?php echo ($item['status_nilai'] == 1) ? "Belum Diverifikasi" : "Terverifikasi"; ?></td>
                                                     <td class="text-center">
-                                                        <a href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-<?php echo ($item['status'] == 'cek') ? "success" : "info"; ?>">
+                                                        <a <?php echo ($item['status_nilai'] == 2) ? "hidden" : ""; ?> href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-<?php echo ($item['status'] == 'cek') ? "success" : "info"; ?>">
                                         <span class="btn-label">
                                             <i class="material-icons">create</i>
                                         </span>

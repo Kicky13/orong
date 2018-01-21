@@ -51,6 +51,7 @@
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Posisi</th>
+                                            <th class="text-center">Status</th>
                                             <th class="disabled-sorting text-center">Aksi</th>
                                         </tr>
                                         </thead>
@@ -60,6 +61,7 @@
                                             <th>Nama</th>
                                             <th>Kelas</th>
                                             <th>Posisi</th>
+                                            <th class="text-center">Status</th>
                                             <th class="text-center">Aksi</th>
                                         </tr>
                                         </tfoot>
@@ -71,6 +73,7 @@
                                                 <td><?php echo $item['nama_peserta']; ?></td>
                                                 <td><?php echo $item['kelas']; ?></td>
                                                 <td><?php echo $item['nama_posisi']; ?></td>
+                                                <td class="text-center"><?php echo($item['status_nilai'] == 1) ? "Belum Diverifikasi" : "Terverifikasi"; ?></td>
                                                 <td class="text-center">
                                                     <a href="<?php echo base_url('index.php/penilaian/inputNilai/'.$item['id_rekrutmen']); ?>" class="btn btn-<?php echo ($item['status'] == 'cek') ? "success" : "info"; ?>">
                                         <span class="btn-label">
@@ -83,6 +86,9 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                    <button type="submit" id="verif" data-id="<?php echo $id; ?>" class="btn btn-success btn-round">
+                                        <i class="material-icons">check</i> Verifikasi
+                                    </button>
                                 </section>
                             </div>
                             <!-- end content-->
@@ -102,6 +108,22 @@
                 console.log('ganti');
                 var id = $(this).val();
                 window.location.replace('<?php echo base_url('index.php/penilaian/tabelNilai/')?>'+id);
+            });
+            $('#verif').click(function () {
+                console.log('klik');
+                var id = $(this).attr('data-id');
+                swal({
+                    title: "Apa anda yakin?",
+                    text: "Data yang telah diproses tidak bisa kembali",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "Ya, Verifikasi Nilai!",
+                    closeOnConfirm: false
+                }, 
+                function () {
+                    window.location.replace('<?php echo base_url('index.php/penilaian/verifikasiNilai/'); ?>'+id);
+                });
             });
         });
         $(function () {

@@ -55,6 +55,16 @@
                     </p>
                 </a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="<?php echo base_url('index.php/record/index/0/AL'); ?>">
+                    <i class="material-icons">save</i>
+                    <p>
+                        Record
+                    </p>
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link active" href="<?php echo base_url('index.php/admin'); ?>">
                     <i class="material-icons">school</i>

@@ -119,4 +119,9 @@ class Penilaian extends CI_Controller {
             redirect('/penilaian/tabelNilai/'.$_SESSION['role']);
         }
     }
+    public function verifikasiNilai($id)
+    {
+        $this->m_penilaian->verifikasi($id);
+        $this->tabelNilai($id);
+    }
 }

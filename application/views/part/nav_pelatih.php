@@ -44,6 +44,14 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link active" href="<?php echo base_url('index.php/record/index/0/AL'); ?>">
+                    <i class="material-icons">save</i>
+                    <p>
+                        Record
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url('index.php/login/logout'); ?>">
                     <i class="material-icons">cancel</i>
                     <p>
