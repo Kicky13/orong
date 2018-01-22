@@ -92,7 +92,7 @@
                                                 <?php $no = 1;
                                                 $x = 1;
                                                 foreach ($data as $item) { ?>
-                                                    <tr style="<?php echo ($x > $limit) ? "background-color: #FF530D" : ""; ?>">
+                                                    <tr>
                                                         <td><?php echo $no++; ?></td>
                                                         <td><?php echo $item['nama_peserta']; ?></td>
                                                         <td><?php echo $item['nama_posisi']; ?></td>
@@ -121,7 +121,6 @@
     <script>
         $(document).ready(function () {
             console.log('ready');
-            $('#posisi').hide();
             $('#angkatan').change(function () {
                 console.log('angkatan');
                 $('#posisi').show();
