@@ -91,7 +91,8 @@ class M_peserta extends CI_Model {
             'id_posisi' => $posisi,
             'id_peserta' => $peserta,
             'submitter' => $submitter,
-            'skor' => null
+            'skor' => null,
+            'status_nilai' => 1
         );
         $this->db->insert('tb_rekrutmen', $data);
     }

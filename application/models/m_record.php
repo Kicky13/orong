@@ -15,7 +15,7 @@ class M_record extends CI_Model {
             $data[0]['nama_peserta'] = '';
             $data[0]['nama_posisi'] = '';
             $data[0]['skor'] = '';
-            $kriteria = $this->getKriteria($id);
+            $kriteria = $this->getKriteria($posisi);
             foreach ($kriteria as $value){
                 $data[0][$value['id_kriteria']] = '';
             }
